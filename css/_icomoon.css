@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'andy';
+  src: url('fonts/andy.eot');
+  src: url('fonts/andy.eot?#iefix') format('embedded-opentype'), url('fonts/andy.ttf') format('truetype'), url('fonts/andy.woff') format('woff'), url('fonts/andy.svg#andy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'andy';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-jack:before {
+  content: "\e600";
+}
+.icon-rabbit:before {
+  content: "\e601";
+}

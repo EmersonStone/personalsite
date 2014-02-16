@@ -1,0 +1,104 @@
+//COLORS
+
+@grey: #333;
+@mediumgrey: #666;
+@lightgrey: #999;
+@navpale: #aaa;
+@pale: #ccc;
+@white: #fff;
+
+
+@subtle: #cbd7d3;
+@attention: #e46e57;
+@secondary: #74c2bb;
+@tertiary: #2c3e51;
+
+//TYPOGRAPHY
+
+@title: "Knockout 27 A", "Knockout 27 B", impact, helvetica, sans-serif;
+@sans: "Gotham SSm A", "Gotham SSm B", helvetica, sans-serif;
+@serif: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+@icon: "andy";
+
+
+//LAYOUT
+
+@footer-size: 180px;
+
+.box-sizing(@sizing: border-box) {
+  -ms-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.rounded(@radius: 3px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  -webkit-border-top-right-radius: @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius: @bottomleft;
+  -webkit-border-top-left-radius: @topleft;
+  -moz-border-radius-topright: @topright;
+  -moz-border-radius-bottomright: @bottomright;
+  -moz-border-radius-bottomleft: @bottomleft;
+  -moz-border-radius-topleft: @topleft;
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+  .background-clip(padding-box);
+}
+
+.background-clip(@argument: padding-box) {
+  -moz-background-clip: @argument;
+  -webkit-background-clip: @argument;
+  background-clip: @argument;
+}
+
+.border-top {
+	border-top: 1px solid @subtle;
+}
+
+.border-bottom {
+	border-bottom: 1px solid @subtle;
+}
+
+
+
+//ANIMATION
+
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+
+.transition(@duration:0.3s, @ease:ease-in-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.translate(@x:0, @y:0) {
+  .transform(translate(@x, @y));
+}
