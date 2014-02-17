@@ -9,6 +9,7 @@ html,
 body {
   height: 100%;
   font-family: @serif;
+  background-color: @white;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -109,7 +110,7 @@ ul {
 p {
   margin-bottom: 1em;
   font-size: 1.15em;
-  color: @mediumgrey;
+  color: @grey;
   a {
     color: #000;
     border-bottom: 1px solid #000;
@@ -219,9 +220,16 @@ a .logo {
 }
 
 .bio {
-  padding: 20px 0 30px;
-  img {
-    max-width: 100%;
+}
+
+.recentarticle {
+  cite {
+    display: block;
+    font-style: normal;
+    font-family: @sans;
+    text-align: right;
+    font-size: .8em;
+    line-height: 2.35em;
   }
 }
 

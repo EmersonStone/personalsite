@@ -2063,6 +2063,7 @@ html,
 body {
   height: 100%;
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  background-color: #fcfcfc;
   /* The html and body elements cannot have any padding or margin. */
 
 }
@@ -2162,7 +2163,7 @@ ul {
 p {
   margin-bottom: 1em;
   font-size: 1.15em;
-  color: #666666;
+  color: #333333;
 }
 p a {
   color: #000;
@@ -2213,7 +2214,7 @@ a .logo {
 }
 .tagline h4 {
   padding: 0 10px;
-  background: #ffffff;
+  background: #fcfcfc;
   position: relative;
   z-index: 2;
 }
@@ -2262,11 +2263,13 @@ a .logo {
   text-align: center;
   color: #2c3e51;
 }
-.bio {
-  padding: 20px 0 30px;
-}
-.bio img {
-  max-width: 100%;
+.recentarticle cite {
+  display: block;
+  font-style: normal;
+  font-family: "Gotham SSm A", "Gotham SSm B", helvetica, sans-serif;
+  text-align: right;
+  font-size: .8em;
+  line-height: 2.35em;
 }
 .dribbble img {
   width: 100%;
@@ -2373,7 +2376,7 @@ a .logo {
     top: 0px;
     background: #333333;
     width: 240px;
-    color: #ffffff;
+    color: #fcfcfc;
     height: 100%;
     min-height: 100%;
     -ms-box-sizing: border-box;
@@ -2411,7 +2414,7 @@ a .logo {
   }
   nav li a {
     display: inline-block;
-    color: #ffffff;
+    color: #fcfcfc;
     text-decoration: none;
     width: 100%;
     height: 30px;
@@ -2437,7 +2440,7 @@ a .logo {
     position: absolute;
     right: 30px;
     top: 15px;
-    color: #ffffff;
+    color: #fcfcfc;
     font-family: "Gotham SSm A", "Gotham SSm B", helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 0.878em;
@@ -2464,7 +2467,7 @@ a .logo {
     position: absolute;
     right: 20px;
     top: 22px;
-    color: #ffffff;
+    color: #fcfcfc;
     font-size: 0.878em;
     font-family: "andy";
   }
@@ -2487,7 +2490,7 @@ a .logo {
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   body {
-    background: #ffffff;
+    background: #fcfcfc;
   }
   .tagline hr {
     width: 50%;
