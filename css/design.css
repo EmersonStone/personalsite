@@ -1553,23 +1553,12 @@ body {
   height: 100%;
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
   background-color: #fcfcfc;
-  /* The html and body elements cannot have any padding or margin. */
-
 }
-/* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
   height: auto;
-  /* Negative indent footer by its height */
-
-  margin: 0 auto -180px;
-  /* Pad bottom by footer height */
-
-  padding: 0 0 180px;
-}
-/* Set the fixed height of the footer here */
-#footer {
-  height: 180px;
+  margin: 0;
+  padding: 0 ;
 }
 body {
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
@@ -1578,12 +1567,12 @@ body {
   line-height: 1.6;
 }
 ::-moz-selection {
-  background: #e46e57;
+  background: #333333;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #e46e57;
+  background: #333333;
   color: #fff;
   text-shadow: none;
 }
@@ -1604,6 +1593,7 @@ h1 {
   font-size: 6em;
   text-transform: uppercase;
   letter-spacing: -1px;
+  font-weight: 100;
 }
 h2 {
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;

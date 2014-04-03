@@ -5,44 +5,28 @@
 
 // STICKY FOOTER
 
-html,
-body {
+html, body {
   height: 100%;
   font-family: @serif;
   background-color: @white;
-  /* The html and body elements cannot have any padding or margin. */
 }
 
-/* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
   height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -@footer-size;
-  /* Pad bottom by footer height */
-  padding: 0 0 @footer-size;
+  margin: 0;
+  padding: 0 ;
 }
-
-/* Set the fixed height of the footer here */
-#footer {
-  height: @footer-size;
-}
-
-
-//MY LESS CODE
-
-//TYPOGRAPHY
 
 body {
   font-family: @serif;
   font-size: 18px;
   color: @grey;
   line-height: 1.6;
-  //background: url('../img/bg.png');
 }
 
-::-moz-selection{ background: @attention; color:#fff; text-shadow: none; }
-::selection { background: @attention; color:#fff; text-shadow: none; }
+::-moz-selection{ background: @grey; color:#fff; text-shadow: none; }
+::selection { background: @grey; color:#fff; text-shadow: none; }
 
 h1, h2, h3, h4, h5, h6, p {
   -webkit-margin-before: 0px;
@@ -56,6 +40,7 @@ h1 {
   font-size: 6em;
   text-transform: uppercase;
   letter-spacing: -1px;
+  font-weight: 100;
 }
 
 h2 {
@@ -84,9 +69,9 @@ h4 {
 a {
   text-decoration: none;
   outline: none;
-  color: @attention;
+  color: @link;
   &:hover, &:focus {
-    color: darken(@attention, 20%);
+    color: darken(@link, 20%);
     cursor: pointer;
     outline: none;
     text-decoration: none;
@@ -115,7 +100,7 @@ p {
     color: #000;
     border-bottom: 1px solid #000;
     &:hover {
-      border-bottom: 1px solid @attention;
+      border-bottom: 1px solid @link;
     }
   }
 }
@@ -199,7 +184,7 @@ a .logo {
     color: lighten(@grey, 45%);
     .transition;
     &:hover, &:focus, &:active {
-      color: @attention;
+      color: @link;
     }
   }
   li {
@@ -260,7 +245,7 @@ a .logo {
   }
   a:hover {
     div {
-      color: darken(@attention, 20%);
+      color: darken(@link, 20%);
     }
   }
   .caption {
@@ -413,10 +398,10 @@ a .logo {
         text-transform: uppercase;
         .transition;
         &:hover {
-          color: @attention;
+          color: @link;
         }
         &.selected {
-          color: @attention;
+          color: @link;
         }
       }
     }
@@ -448,11 +433,11 @@ a .logo {
   }
 
   .cap {
-    background: darken(@attention, 25%)
+    background: darken(@link, 25%)
   }
 
   .topbar {
-    background: @attention;
+    background: @link;
     width: 100%;
     height: 53px;
     border-bottom: 1px solid @navpale;
@@ -466,7 +451,7 @@ a .logo {
     font-size: 0.878em;
     font-family: @icon;
     &:hover, &:focus {
-      color: @attention;
+      color: @link;
     }
   }
 
