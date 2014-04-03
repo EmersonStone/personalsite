@@ -73,8 +73,6 @@
 	border-bottom: 1px solid @subtle;
 }
 
-
-
 //ANIMATION
 
 .transform(...) {
@@ -85,7 +83,7 @@
   transform: @arguments;
 }
 
-.transition(@duration:0.3s, @ease:ease-in-out) {
+.transition(@duration:0.2s, @ease:(cubic-bezier(0.2,0.3,0.25,0.9))) {
   -webkit-transition: all @duration @ease;
   -moz-transition: all @duration @ease;
   -o-transition: all @duration @ease;

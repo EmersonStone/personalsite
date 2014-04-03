@@ -1,13 +1,16 @@
-$("#footer-icon").hover(function(){
-$(this).text('!')}, 
+$(".rabbit").hover(function(){
+$(this).text('!')},
 
 function(){
 $(this).text('"');
 })
 
 $(function(){
-  $("#menu-toggle,#nav-close").click(function(){
-    $("#wrap").toggleClass("pushed");
+  $("#menu-toggle, #nav-close").click(function(){
+    $("#container").toggleClass("pushed");
+  });
+  $(".container").click(function(){
+    $("#container").removeClass("pushed");
   });
 });
 
