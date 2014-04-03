@@ -257,19 +257,28 @@ nav {
 //MAIN
 
 .introduction {
-  margin-top: 80px;
+  margin-top: 100px;
+  .make-row;
+  .make-sm-column(4);
+  .make-sm-column-offset(4);
 }
 
 .subtitle {
   .text-center;
+  position: relative;
 }
-
-.number {
-  font-family: @numbers;
+.subtitle:before {
+  content: attr(data-highlight);
+  position: absolute;
+  top: -.7em;
+  left: -.75em;
+  font-family: @serif;
+  font-style: italic;
   font-weight: 400;
-  font-style: normal;
-  color: @subtle;
-  font-size: 3em;
+  color: rgba(0,0,0,.08);
+  font-size: 3.5em;
+  text-transform: none;
+  letter-spacing: -2px;
 }
 
 //RESPONSIVE
@@ -305,8 +314,20 @@ nav {
       top: -5px;
     }
     h3 {
-      margin-top: 21px;
-      padding-bottom: 15px;
+      margin-top: 16px;
+      padding-bottom: 11px;
     }
+  }
+
+  .subtitle:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .subtitle:before {
+    left: .75em;
   }
 }
