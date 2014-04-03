@@ -104,6 +104,79 @@ hr {
   background: @white;
 }
 
+//PAGE DESIGN
+
+//HERO
+
+.hero {
+  margin-top: 36px;
+  .text-center;
+  .make-row;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  .img-circle;
+  .center-block;
+}
+
+.logo {
+  margin-top: 5px;
+  line-height: 1;
+  a {
+    .transition;
+  }
+}
+
+.tagline {
+  padding: 0 25px;
+  background: @white;
+}
+
+.strikethrough {
+  margin-top: -15px;
+  z-index: -1;
+  width: 50%;
+}
+
+//MAIN
+
+.introduction {
+  margin-top: 100px;
+  .make-row;
+  .make-md-column(10);
+  .make-md-column-offset(1);
+  .make-lg-column(8);
+  .make-lg-column-offset(2);
+  p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: @mediumgrey;
+    font-family: @sans;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+.subtitle {
+  .text-center;
+  position: relative;
+}
+.subtitle:before {
+  content: attr(data-highlight);
+  position: absolute;
+  top: -.7em;
+  left: 2em;
+  font-family: @serif;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(0,0,0,.08);
+  font-size: 3.5em;
+  text-transform: none;
+  letter-spacing: -2px;
+}
+
 //SIDE MENU
 
 #container {
@@ -154,6 +227,7 @@ nav {
     padding-right: 20px;
     color: @lightgrey;
     border-bottom: 1px solid @navpale;
+    font-weight: 400;
   }
   ul {
     float: left;
@@ -174,8 +248,12 @@ nav {
       line-height: 45px;
       text-transform: uppercase;
       .transition;
-      &:hover, &.selected {
+      &:hover {
         color: @link;
+      }
+      &.selected {
+        color: @link;
+        cursor: default;
       }
     }
   }
@@ -195,6 +273,10 @@ nav {
   font-weight: 500;
   display: inline-block;
   padding: 20px 10px 10px 20px;
+  .transition;
+  &:hover, &:focus {
+    color: darken(@link, 20%)
+  }
 }
 
 .mobile-nav {
@@ -218,71 +300,15 @@ nav {
   }
 }
 
-//PAGE DESIGN
-
-//HERO
-
-.hero {
-  margin-top: 36px;
-  .text-center;
-  .make-row;
-}
-
-.avatar {
-  width: 120px;
-  height: 120px;
-  .img-circle;
-  .center-block;
-}
-
-.logo {
-  margin-top: 5px;
-  line-height: 1;
-  a {
-    .transition;
-  }
-}
-
-.tagline {
-  padding: 0 25px;
-  background: @white;
-}
-
-.strikethrough {
-  margin-top: -13px;
-  z-index: -1;
-  width: 50%;
-}
-
-//MAIN
-
-.introduction {
-  margin-top: 100px;
-  .make-row;
-  .make-sm-column(4);
-  .make-sm-column-offset(4);
-}
-
-.subtitle {
-  .text-center;
-  position: relative;
-}
-.subtitle:before {
-  content: attr(data-highlight);
-  position: absolute;
-  top: -.7em;
-  left: -.75em;
-  font-family: @serif;
-  font-style: italic;
-  font-weight: 400;
-  color: rgba(0,0,0,.08);
-  font-size: 3.5em;
-  text-transform: none;
-  letter-spacing: -2px;
-}
-
 //RESPONSIVE
-
+@media screen and (max-width: 480px) {
+    .introduction {
+      p {
+        font-size: 1.35em;
+        text-align: left;
+      }
+    }
+}
 @media screen and (max-width: 768px) {
   .hero a {
     color: @grey;
@@ -326,8 +352,18 @@ nav {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   .subtitle:before {
-    left: .75em;
+    left: 4em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle:before {
+    left: 3.75em;
   }
 }
