@@ -1,13 +1,11 @@
-@import "_mixins.less";
 @import "_icomoon.less";
 @import "_bootstrap.less";
-
+@import "_mixins.less";
 
 
 // ELEMENTS
 
-html,
-body {
+html, body {
   height: 100%;
   font-family: @serif;
   background-color: @white;
@@ -100,6 +98,10 @@ hr {
     cursor: default;
     text-decoration: none;
   }
+}
+
+.container {
+  background: @white;
 }
 
 //SIDE MENU
@@ -218,9 +220,14 @@ nav {
 
 //PAGE DESIGN
 
+//HERO
+
 .hero {
   margin-top: 36px;
   .text-center;
+  .make-row;
+  .make-sm-column(8);
+  .clearfix;
 }
 
 .avatar {
@@ -247,6 +254,30 @@ nav {
   margin-top: -13px;
   z-index: -1;
   width: 50%;
+}
+
+//MAIN
+
+.introduction {
+  margin-top: 120px;
+  .center-block;
+}
+
+.title {
+  .make-sm-column(4);
+  .make-sm-column-offset(4);
+}
+
+.subtitle {
+  .text-center;
+}
+
+.number {
+  font-family: @numbers;
+  font-weight: 400;
+  font-style: normal;
+  color: @subtle;
+  font-size: 3em;
 }
 
 //RESPONSIVE
