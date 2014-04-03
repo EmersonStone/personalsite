@@ -37,6 +37,110 @@
 .icon-menu:before {
   content: "\24";
 }
+/*
+YUI 3.15.0 (build 834026e)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html {
+  color: #000;
+  background: #ffffff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+legend {
+  color: #000000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
 article,
 aside,
 details,
@@ -1736,7 +1840,7 @@ nav ul:nth-of-type(2) {
   font-size: 1em;
   font-weight: 500;
   display: inline-block;
-  padding: 20px 0 10px 20px;
+  padding: 20px 10px 10px 20px;
 }
 .mobile-nav {
   font-family: "andy";
@@ -1752,7 +1856,7 @@ nav ul:nth-of-type(2) {
   color: #fefefe;
   font-size: 1em;
   font-family: "andy";
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 10px 30px;
 }
 #nav-close:hover,
 #nav-close:focus {
@@ -1793,6 +1897,10 @@ nav ul:nth-of-type(2) {
   .hero a {
     color: #222222;
   }
+  .hero a:hover,
+  .hero a:focus {
+    color: #888888;
+  }
   .strikethrough {
     width: 80%;
   }
@@ -1809,11 +1917,11 @@ nav ul:nth-of-type(2) {
   }
   .topbar #menu-toggle {
     color: #fefefe;
-    right: 20px;
-    top: 15px;
+    right: 10px;
+    top: -5px;
   }
   nav #nav-close {
-    top: 15px;
+    top: -5px;
   }
   nav h3 {
     margin-top: 21px;
