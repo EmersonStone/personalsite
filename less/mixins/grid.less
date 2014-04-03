@@ -24,6 +24,9 @@
   float: left;
   width: percentage((@columns / @grid-columns));
   min-height: 1px;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding-left:  (@gutter / 2);
   padding-right: (@gutter / 2);
 }
@@ -41,6 +44,9 @@
 .make-sm-column(@columns; @gutter: @grid-gutter-width) {
   position: relative;
   min-height: 1px;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding-left:  (@gutter / 2);
   padding-right: (@gutter / 2);
 
@@ -69,6 +75,9 @@
 .make-md-column(@columns; @gutter: @grid-gutter-width) {
   position: relative;
   min-height: 1px;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding-left:  (@gutter / 2);
   padding-right: (@gutter / 2);
 
@@ -97,6 +106,9 @@
 .make-lg-column(@columns; @gutter: @grid-gutter-width) {
   position: relative;
   min-height: 1px;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding-left:  (@gutter / 2);
   padding-right: (@gutter / 2);
 
