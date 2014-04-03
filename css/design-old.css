@@ -177,10 +177,10 @@ a img:hover {
   background: #000000;
 }
 a .logo {
-  -webkit-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  -moz-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  -o-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
 .logo {
   margin-top: 8px;
@@ -217,10 +217,10 @@ a .logo {
 }
 .navbar a {
   color: #959595;
-  -webkit-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  -moz-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  -o-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-  transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
 .navbar a:hover,
 .navbar a:focus,
@@ -342,10 +342,10 @@ a .logo {
     width: 100%;
     position: absolute;
     z-index: 10;
-    -webkit-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    -moz-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    -o-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   }
   .pagedesign {
     top: 210px;
@@ -370,10 +370,10 @@ a .logo {
     -o-transform: translate3d(240px, 0, 0);
     -ms-transform: translate3d(240px, 0, 0);
     transform: translate3d(240px, 0, 0);
-    -webkit-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    -moz-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    -o-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
     position: fixed;
     right: 0px;
     top: 0px;
@@ -423,10 +423,10 @@ a .logo {
     height: 30px;
     line-height: 45px;
     text-transform: uppercase;
-    -webkit-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    -moz-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    -o-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
-    transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   }
   nav li a:hover {
     color: #e46e57;
