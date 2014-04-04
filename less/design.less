@@ -21,6 +21,18 @@ body {
 //::-moz-selection{ background: @grey; color:#fff; text-shadow: none; }
 //::selection { background: @grey; color:#fff; text-shadow: none; }
 
+a {
+  text-decoration: none;
+  outline: none;
+  color: @link;
+  &:hover, &:focus {
+    color: darken(@link, 20%);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, p {
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
@@ -37,11 +49,12 @@ h1 {
 }
 
 h2 {
-  font-family: @serif;
+  font-family: @sans;
   font-size: 1.6em;
   line-height: 1.4;
   font-weight: 300;
   color: @grey;
+  margin-bottom: .3em;
 }
 
 h3 {
@@ -62,37 +75,15 @@ h4 {
 
 p {
   font-size: 1.25em;
-  margin: 1em 0;
+  margin-bottom: 2em;
   color: @mediumgrey;
-  a {
-    color: @grey;
-    background-position: 0 1.35rem;
-    background-size: 1px 1px;
-    text-decoration: none;
-    background-image: linear-gradient(#fff 50%, @grey 50%);
-    background-repeat: repeat-x;
-    &:hover {
-      color: @mediumgrey;
-      background-image: linear-gradient(#fff 50%, @mediumgrey 50%);
-    }
-  }
-}
-
-a {
-  text-decoration: none;
-  outline: none;
-  color: @link;
-  &:hover, &:focus {
-    color: darken(@link, 20%);
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-  }
+  .mediumlinks(0, 1.05em);
 }
 
 .subtitle {
   .text-center;
   position: relative;
+  margin-bottom: 25px;
 }
 .subtitle:before {
   content: attr(data-highlight);
@@ -188,7 +179,8 @@ hr {
 }
 
 .callout {
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 1em;
   font-size: 1.5em;
   color: @mediumgrey;
   font-family: @sans;
@@ -203,6 +195,49 @@ hr {
   .make-md-column-offset(1);
   .make-lg-column(8);
   .make-lg-column-offset(2);
+}
+
+.articlesamplephoto {
+  .make-row;
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-xs-column(10);
+  .make-xs-column-offset(1);
+  .clearfix;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.articlesampletitle {
+  .make-row;
+  .make-xs-column(12);
+  clear: both;
+  .mediumlinks(0, 1.1em);
+}
+
+.articlemetadata {
+  font-family: @sans;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: lighten(@lightgrey, 15%);
+  font-size: .8em;
+  margin-top: .6em;
+  margin-bottom: .5em;
+  display: block;
+}
+
+.date {
+  text-transform: none;
+  font-size: .85rem;
+  color: @mediumgrey;
+  letter-spacing: 0;
+}
+
+.divider {
+  display: inline-block;
+  margin: 0 1em;
 }
 
 //SIDE MENU
@@ -220,7 +255,7 @@ hr {
   position: absolute;
   z-index: 10;
   min-height: 100%;
-  height: 9000px;
+  height: 4000px;
   background: @white;
   .transition;
 }
