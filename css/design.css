@@ -50,7 +50,6 @@
 }
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -940,7 +939,9 @@ th {
 .articlesamplephoto:before,
 .articlesamplephoto:after,
 .articlesampletitle:before,
-.articlesampletitle:after {
+.articlesampletitle:after,
+.recentwork:before,
+.recentwork:after {
   content: " ";
   display: table;
 }
@@ -952,7 +953,8 @@ th {
 .introduction:after,
 .recentwriting:after,
 .articlesamplephoto:after,
-.articlesampletitle:after {
+.articlesampletitle:after,
+.recentwork:after {
   clear: both;
 }
 .center-block {
@@ -1192,6 +1194,104 @@ th {
     display: none !important;
   }
 }
+html {
+  color: #000;
+  background: #ffffff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+legend {
+  color: #000000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
 .border-top {
   border-top: 1px solid #cbd7d3;
 }
@@ -1201,11 +1301,11 @@ th {
 html,
 body {
   height: 100%;
-  font-family: "Mercury Text G1 A", "Mercury Text G1 B" georgia, serif;
+  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
   background-color: #fefefe;
 }
 body {
-  font-family: "Mercury Text G1 A", "Mercury Text G1 B" georgia, serif;
+  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
   font-size: 16px;
   color: #222222;
   line-height: 1.6;
@@ -1256,7 +1356,7 @@ h3 {
   font-weight: 500;
 }
 h4 {
-  font-family: "Mercury Text G1 A", "Mercury Text G1 B" georgia, serif;
+  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
   font-style: italic;
   color: #626262;
   display: inline-block;
@@ -1290,7 +1390,7 @@ p a:hover {
   position: absolute;
   top: -0.7em;
   left: 2em;
-  font-family: "Mercury Text G1 A", "Mercury Text G1 B" georgia, serif;
+  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
   font-style: italic;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.05);
@@ -1361,7 +1461,7 @@ hr {
   width: 50%;
 }
 .introduction {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -1404,7 +1504,7 @@ hr {
   text-align: center;
 }
 .recentwriting {
-  margin-top: 100px;
+  margin-top: 30px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -1527,6 +1627,51 @@ hr {
 .divider {
   display: inline-block;
   margin: 0 1em;
+}
+.readmore {
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: .65em;
+  display: inline-block;
+  padding-left: 1em;
+  letter-spacing: 1px;
+}
+.readmore a {
+  color: #aeaeae;
+}
+.recentwork {
+  margin-top: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .recentwork {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+@media (min-width: 992px) {
+  .recentwork {
+    margin-left: 8.333333333333332%;
+  }
+}
+@media (min-width: 1200px) {
+  .recentwork {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 1200px) {
+  .recentwork {
+    margin-left: 16.666666666666664%;
+  }
 }
 #container {
   width: 100%;
