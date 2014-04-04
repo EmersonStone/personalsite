@@ -934,7 +934,9 @@ th {
 .hero:before,
 .hero:after,
 .introduction:before,
-.introduction:after {
+.introduction:after,
+.recentwriting:before,
+.recentwriting:after {
   content: " ";
   display: table;
 }
@@ -943,7 +945,8 @@ th {
 .container-fluid:after,
 .row:after,
 .hero:after,
-.introduction:after {
+.introduction:after,
+.recentwriting:after {
   clear: both;
 }
 .center-block {
@@ -1241,6 +1244,23 @@ h4 {
   font-size: 1.25em;
   font-weight: 100;
 }
+p {
+  font-size: 1.25em;
+  margin: 1em 0;
+  color: #444444;
+}
+p a {
+  color: #222222;
+  background-position: 0 1.35rem;
+  background-size: 1px 1px;
+  text-decoration: none;
+  background-image: linear-gradient(#ffffff 50%, #222222 50%);
+  background-repeat: repeat-x;
+}
+p a:hover {
+  color: #444444;
+  background-image: linear-gradient(#ffffff 50%, #444444 50%);
+}
 a {
   text-decoration: none;
   outline: none;
@@ -1252,6 +1272,23 @@ a:focus {
   cursor: pointer;
   outline: none;
   text-decoration: none;
+}
+.subtitle {
+  text-align: center;
+  position: relative;
+}
+.subtitle:before {
+  content: attr(data-highlight);
+  position: absolute;
+  top: -0.7em;
+  left: 2em;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B" georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 3.5em;
+  text-transform: none;
+  letter-spacing: -2px;
 }
 ul {
   list-style: none;
@@ -1349,7 +1386,7 @@ hr {
     margin-left: 16.666666666666664%;
   }
 }
-.introduction p {
+.callout {
   margin-top: 20px;
   font-size: 1.5em;
   color: #444444;
@@ -1357,22 +1394,39 @@ hr {
   font-weight: 200;
   text-align: center;
 }
-.subtitle {
-  text-align: center;
+.recentwriting {
+  margin-top: 100px;
+  margin-left: -15px;
+  margin-right: -15px;
   position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.subtitle:before {
-  content: attr(data-highlight);
-  position: absolute;
-  top: -0.7em;
-  left: 2em;
-  font-family: "Mercury Text G1 A", "Mercury Text G1 B" georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.08);
-  font-size: 3.5em;
-  text-transform: none;
-  letter-spacing: -2px;
+@media (min-width: 992px) {
+  .recentwriting {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+@media (min-width: 992px) {
+  .recentwriting {
+    margin-left: 8.333333333333332%;
+  }
+}
+@media (min-width: 1200px) {
+  .recentwriting {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 1200px) {
+  .recentwriting {
+    margin-left: 16.666666666666664%;
+  }
 }
 #container {
   width: 100%;
@@ -1385,9 +1439,9 @@ hr {
   height: 100%;
   position: absolute;
   z-index: 10;
-  min-height: 500px;
+  min-height: 100%;
+  height: 9000px;
   background: #fefefe;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
@@ -1510,14 +1564,14 @@ nav ul:nth-of-type(2) {
   color: #fefefe;
   font-size: 1em;
   font-family: "andy";
-  padding: 20px 20px 10px 30px;
+  padding: 20px 20px 10px 60px;
 }
 #nav-close:hover,
 #nav-close:focus {
   color: #e46e57;
 }
 @media screen and (max-width: 480px) {
-  .introduction p {
+  .callout {
     font-size: 1.35em;
     text-align: left;
   }

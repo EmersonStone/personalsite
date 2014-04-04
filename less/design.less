@@ -60,6 +60,24 @@ h4 {
   font-weight: 100;
 }
 
+p {
+  font-size: 1.25em;
+  margin: 1em 0;
+  color: @mediumgrey;
+  a {
+    color: @grey;
+    background-position: 0 1.35rem;
+    background-size: 1px 1px;
+    text-decoration: none;
+    background-image: linear-gradient(#fff 50%, @grey 50%);
+    background-repeat: repeat-x;
+    &:hover {
+      color: @mediumgrey;
+      background-image: linear-gradient(#fff 50%, @mediumgrey 50%);
+    }
+  }
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -70,6 +88,24 @@ a {
     outline: none;
     text-decoration: none;
   }
+}
+
+.subtitle {
+  .text-center;
+  position: relative;
+}
+.subtitle:before {
+  content: attr(data-highlight);
+  position: absolute;
+  top: -.7em;
+  left: 2em;
+  font-family: @serif;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(0,0,0,.05);
+  font-size: 3.5em;
+  text-transform: none;
+  letter-spacing: -2px;
 }
 
 ul {
@@ -149,32 +185,24 @@ hr {
   .make-md-column-offset(1);
   .make-lg-column(8);
   .make-lg-column-offset(2);
-  p {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: @mediumgrey;
-    font-family: @sans;
-    font-weight: 200;
-    text-align: center;
-  }
 }
 
-.subtitle {
-  .text-center;
-  position: relative;
+.callout {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: @mediumgrey;
+  font-family: @sans;
+  font-weight: 200;
+  text-align: center;
 }
-.subtitle:before {
-  content: attr(data-highlight);
-  position: absolute;
-  top: -.7em;
-  left: 2em;
-  font-family: @serif;
-  font-style: italic;
-  font-weight: 400;
-  color: rgba(0,0,0,.08);
-  font-size: 3.5em;
-  text-transform: none;
-  letter-spacing: -2px;
+
+.recentwriting {
+  margin-top: 100px;
+  .make-row;
+  .make-md-column(10);
+  .make-md-column-offset(1);
+  .make-lg-column(8);
+  .make-lg-column-offset(2);
 }
 
 //SIDE MENU
@@ -191,9 +219,9 @@ hr {
   height: 100%;
   position: absolute;
   z-index: 10;
-  min-height: 500px;
+  min-height: 100%;
+  height: 9000px;
   background: @white;
-  box-shadow: 0 0 25px rgba(0,0,0,.15);
   .transition;
 }
 
@@ -294,7 +322,7 @@ nav {
   color: @white;
   font-size: 1em;
   font-family: @icon;
-  padding: 20px 20px 10px 30px;
+  padding: 20px 20px 10px 60px;
   &:hover, &:focus {
     color: @link;
   }
@@ -302,12 +330,10 @@ nav {
 
 //RESPONSIVE
 @media screen and (max-width: 480px) {
-    .introduction {
-      p {
-        font-size: 1.35em;
-        text-align: left;
-      }
-    }
+  .callout {
+    font-size: 1.35em;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 768px) {
   .hero a {
