@@ -1393,7 +1393,7 @@ p a:hover {
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
   font-style: italic;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.07);
   font-size: 3.5em;
   text-transform: none;
   letter-spacing: -2px;
@@ -1716,6 +1716,7 @@ nav {
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  overflow-x: hidden;
   position: fixed;
   right: 0px;
   top: 0px;
