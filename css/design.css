@@ -1865,7 +1865,7 @@ nav ul:nth-of-type(2) {
 }
 @media screen and (max-width: 480px) {
   p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 769px) {
