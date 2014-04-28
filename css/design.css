@@ -1302,7 +1302,7 @@ html,
 body {
   height: 100%;
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
-  background-color: #fefefe;
+  background-color: #faf6f2;
 }
 body {
   font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
@@ -1366,7 +1366,7 @@ h4 {
 p {
   font-size: 1.25em;
   margin-bottom: 2em;
-  color: #444444;
+  color: #555555;
 }
 p a {
   color: #222222;
@@ -1377,8 +1377,8 @@ p a {
   background-repeat: repeat-x;
 }
 p a:hover {
-  color: #444444;
-  background-image: linear-gradient(#ffffff 50%, #444444 50%);
+  color: #555555;
+  background-image: linear-gradient(#ffffff 50%, #555555 50%);
 }
 .subtitle {
   text-align: center;
@@ -1425,7 +1425,7 @@ hr {
   text-decoration: none;
 }
 .container {
-  background: #fefefe;
+  background: #faf6f2;
 }
 .hero {
   margin-top: 36px;
@@ -1453,7 +1453,7 @@ hr {
 }
 .tagline {
   padding: 0 25px;
-  background: #fefefe;
+  background: #faf6f2;
 }
 .strikethrough {
   margin-top: -15px;
@@ -1498,7 +1498,7 @@ hr {
   margin-top: 0;
   margin-bottom: 1em;
   font-size: 1.5em;
-  color: #444444;
+  color: #555555;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
   font-weight: 200;
   text-align: center;
@@ -1605,8 +1605,8 @@ hr {
   background-repeat: repeat-x;
 }
 .articlesampletitle a:hover {
-  color: #444444;
-  background-image: linear-gradient(#ffffff 50%, #444444 50%);
+  color: #555555;
+  background-image: linear-gradient(#ffffff 50%, #555555 50%);
 }
 .articlemetadata {
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
@@ -1621,7 +1621,7 @@ hr {
 .date {
   text-transform: none;
   font-size: .85rem;
-  color: #444444;
+  color: #555555;
   letter-spacing: 0;
 }
 .divider {
@@ -1686,7 +1686,7 @@ hr {
   z-index: 10;
   min-height: 100%;
   height: 4000px;
-  background: #fefefe;
+  background: #faf6f2;
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
@@ -1722,7 +1722,7 @@ nav {
   top: 0px;
   background: #222222;
   width: 250px;
-  color: #fefefe;
+  color: #faf6f2;
   height: 100%;
   min-height: 100%;
   -ms-box-sizing: border-box;
@@ -1732,6 +1732,8 @@ nav {
   padding: 0;
   font-size: 1em;
   background: url(../img/nav-bg.jpg) no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
 }
 nav h3 {
   margin-top: 31px;
@@ -1755,7 +1757,7 @@ nav li {
 }
 nav li a {
   display: inline-block;
-  color: #fefefe;
+  color: #faf6f2;
   text-decoration: none;
   width: 100%;
   height: 30px;
@@ -1807,7 +1809,7 @@ nav ul:nth-of-type(2) {
   position: absolute;
   right: 0;
   top: 10px;
-  color: #fefefe;
+  color: #faf6f2;
   font-size: 1em;
   font-family: "andy";
   padding: 20px 20px 10px 60px;
@@ -1845,7 +1847,7 @@ nav ul:nth-of-type(2) {
     transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   }
   .topbar #menu-toggle {
-    color: #fefefe;
+    color: #faf6f2;
     right: 10px;
     top: -5px;
   }
@@ -1873,5 +1875,15 @@ nav ul:nth-of-type(2) {
 @media screen and (min-width: 1200px) {
   .subtitle:before {
     left: 3.75em;
+  }
+}
+@media screen and (min-height: 768px) {
+  .logomark {
+    position: relative;
+    float: left;
+  }
+  .logomark .rabbit {
+    position: fixed;
+    bottom: 50px;
   }
 }
