@@ -1507,6 +1507,32 @@ hr {
   z-index: -1;
   width: 50%;
 }
+.primarynav {
+  border-bottom: 1px solid #dddddd;
+}
+.primarynav a {
+  color: #222222;
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+.primarynav a:hover,
+.primarynav a:focus {
+  color: #e46e57;
+}
+.primarynav li {
+  display: inline-block;
+  padding: 15px;
+  margin: 20px 50px 15px;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.primarynav .selected {
+  color: #e46e57;
+}
 .introduction {
   margin-top: 90px;
   margin-left: -15px;
@@ -2131,5 +2157,26 @@ nav ul:nth-of-type(2) {
   .logomark .rabbit {
     position: fixed;
     bottom: 50px;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .primarynav {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .strikethrough {
+    width: 100%;
+  }
+  .primarynav {
+    display: block !important;
+  }
+  .tagline {
+    color: #a2a2a2;
   }
 }

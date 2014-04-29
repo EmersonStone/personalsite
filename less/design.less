@@ -181,6 +181,29 @@ hr {
   width: 50%;
 }
 
+.primarynav {
+  border-bottom: 1px solid @pale;
+  a {
+    color: @grey;
+    .transition;
+    &:hover, &:focus {
+      color: @link;
+    }
+  }
+  li {
+    display: inline-block;
+    padding: 15px;
+    margin: 20px 50px 15px;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .selected {
+    color: @link;
+  }
+}
+
 //MAIN
 
 .introduction {
@@ -592,4 +615,25 @@ nav {
       bottom: 50px;
     }
     }
+}
+
+@media screen and (max-width: 1599px) {
+  .primarynav {
+    .hidden;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #menu-toggle {
+    .hidden;
+  }
+  .strikethrough {
+    width: 100%;
+  }
+  .primarynav {
+    .show;
+  }
+  .tagline {
+    color: lighten(@lightgrey, 10%);
+  }
 }
