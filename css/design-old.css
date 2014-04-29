@@ -138,14 +138,14 @@ legend {
 html,
 body {
   height: 100%;
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   background-color: #fcfaf7;
   /* The html and body elements cannot have any padding or margin. */
 
 }
 /* Wrapper for page content to push down footer */
 body {
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   font-size: 18px;
   color: #222222;
   line-height: 1.6;
@@ -179,7 +179,7 @@ h1 {
   letter-spacing: -1px;
 }
 h2 {
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   font-size: 1.6em;
   line-height: 1.4;
   font-weight: 300;
@@ -192,7 +192,7 @@ h3 {
   font-weight: 500;
 }
 h4 {
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   font-style: italic;
   color: #626262;
   display: inline-block;

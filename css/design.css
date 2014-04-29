@@ -930,6 +930,8 @@ th {
 .container-fluid:after,
 .row:before,
 .row:after,
+.maincontent:before,
+.maincontent:after,
 .hero:before,
 .hero:after,
 .introduction:before,
@@ -939,7 +941,11 @@ th {
 .articlesamplephoto:before,
 .articlesamplephoto:after,
 .recentwork:before,
-.recentwork:after {
+.recentwork:after,
+.recentworksamples:before,
+.recentworksamples:after,
+.currentinterests:before,
+.currentinterests:after {
   content: " ";
   display: table;
 }
@@ -947,11 +953,14 @@ th {
 .container:after,
 .container-fluid:after,
 .row:after,
+.maincontent:after,
 .hero:after,
 .introduction:after,
 .recentwriting:after,
 .articlesamplephoto:after,
-.recentwork:after {
+.recentwork:after,
+.recentworksamples:after,
+.currentinterests:after {
   clear: both;
 }
 .center-block {
@@ -1298,11 +1307,11 @@ legend {
 html,
 body {
   height: 100%;
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   background-color: #fcfaf7;
 }
 body {
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   font-size: 16px;
   color: #222222;
   line-height: 1.6;
@@ -1342,7 +1351,7 @@ h2 {
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
   font-size: 1.6em;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 200;
   color: #222222;
   margin-bottom: .3em;
 }
@@ -1353,12 +1362,17 @@ h3 {
   font-weight: 500;
 }
 h4 {
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   font-style: italic;
   color: #626262;
   display: inline-block;
   font-size: 1.25em;
-  font-weight: 100;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
 }
 p {
   font-size: 1.25em;
@@ -1387,10 +1401,10 @@ p a:hover {
   position: absolute;
   top: -0.7em;
   left: 2em;
-  font-family: 'Mercury Text G1 A', 'Mercury Text G1 B' georgia, serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   font-style: italic;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.07);
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.1);
   font-size: 3.5em;
   text-transform: none;
   letter-spacing: -2px;
@@ -1466,9 +1480,45 @@ hr {
   margin: 0px 0 0 20px;
 }
 .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.maincontent {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .maincontent {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+@media (min-width: 992px) {
+  .maincontent {
+    margin-left: 8.333333333333332%;
+  }
+}
+@media (min-width: 1200px) {
+  .maincontent {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 1200px) {
+  .maincontent {
+    margin-left: 16.666666666666664%;
+  }
 }
 .hero {
   margin-top: 36px;
@@ -1496,7 +1546,7 @@ hr {
   width: 50%;
 }
 .introduction {
-  margin-top: 80px;
+  margin-top: 90px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -1539,7 +1589,7 @@ hr {
   text-align: center;
 }
 .recentwriting {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -1617,6 +1667,11 @@ hr {
 .articlesamplephoto img {
   width: 100%;
 }
+.articlesamplephoto:hover,
+.articlesamplephoto:focus {
+  opacity: .85;
+  cursor: pointer;
+}
 .articlesample {
   clear: both;
 }
@@ -1636,7 +1691,7 @@ hr {
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #aeaeae;
+  color: #959595;
   font-size: .8em;
   margin-top: .6em;
   margin-bottom: .5em;
@@ -1661,10 +1716,10 @@ hr {
   letter-spacing: 1px;
 }
 .readmore a {
-  color: #aeaeae;
+  color: #959595;
 }
 .recentwork {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -1696,6 +1751,119 @@ hr {
   .recentwork {
     margin-left: 16.666666666666664%;
   }
+}
+.recentworksamples {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -30px;
+}
+.recentworksample {
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .recentworksample {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+.recentworksample img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.recentworksample img:hover,
+.recentworksample img:focus {
+  opacity: .85;
+  cursor: pointer;
+}
+.currentinterests {
+  margin-top: 40px;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .currentinterests {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+@media (min-width: 992px) {
+  .currentinterests {
+    margin-left: 8.333333333333332%;
+  }
+}
+@media (min-width: 1200px) {
+  .currentinterests {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 1200px) {
+  .currentinterests {
+    margin-left: 16.666666666666664%;
+  }
+}
+.currentinterests p {
+  margin-bottom: 1em;
+}
+.currentinterests ul {
+  border-top: 1px solid #c8c8c8;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.currentinterests ul a {
+  color: #222222;
+  display: block;
+}
+.currentinterests ul a:hover,
+.currentinterests ul a:focus {
+  background: #f3f8fb;
+}
+.currentinterests ul p {
+  font-size: 1.1em;
+  font-weight: 300;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
+  line-height: 1.4;
+}
+.currentinterests li {
+  padding: 20px 15px 10px;
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 1px;
+  font-size: .9em;
+}
+.loadmore {
+  text-align: center;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-size: .9em;
+}
+.loadmore a {
+  color: #222222;
+  background-position: 0 0.95em;
+  background-size: 1px 1px;
+  text-decoration: none;
+  background-image: linear-gradient(#ffffff 50%, #222222 50%);
+  background-repeat: repeat-x;
+}
+.loadmore a:hover {
+  color: #555555;
+  background-image: linear-gradient(#ffffff 50%, #555555 50%);
+}
+.loadmore a {
+  color: #959595;
 }
 #container {
   width: 100%;
@@ -1890,13 +2058,23 @@ nav ul:nth-of-type(2) {
     right: 0;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
   .subtitle:before {
     left: 4em;
   }
+  .recentworksample img {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 992px) {
-  
+  .recentwork p {
+    margin-bottom: 1em;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subtitle:before {
