@@ -137,49 +137,6 @@ hr {
   background: @white;
 }
 
-.hexagon {
-    overflow: hidden;
-    visibility: hidden;
-    -webkit-transform: rotate(120deg);
-       -moz-transform: rotate(120deg);
-         -o-transform: rotate(120deg);
-            transform: rotate(120deg);
-    cursor: pointer;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    }
-.hexagon-in1 {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
-.hexagon-in2 {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-image: url(../img/andy-stone.jpg);
-    visibility: visible;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
-.hexagon-in2:hover {
-    opacity: .8;
-    }
-
-.hexagon2 {
-    width: 150px;
-    height: 180px;
-    margin: 0px 0 0 20px;
-    }
-
 .avatar {
   width: 120px;
   height: 120px;
@@ -257,6 +214,7 @@ hr {
   img {
     width: 100%;
   }
+  .transition;
   &:hover, &:focus {
     opacity: .85;
     cursor: pointer;
@@ -298,6 +256,7 @@ hr {
   display: inline-block;
   padding-left: 1em;
   letter-spacing: 1px;
+  .mediumlinks(0, .95em);
   a {
     color: lighten(@lightgrey, 5%);
   }
@@ -318,6 +277,7 @@ hr {
   img {
     width: 100%;
     margin-bottom: 20px;
+    .transition;
     &:hover, &:focus {
       opacity: .85;
       cursor: pointer;
@@ -338,6 +298,7 @@ hr {
     a {
       color: @grey;
       display: block;
+      .transition;
       &:hover, &:focus {
         background: lighten(@secondary, 41%);
       }
@@ -375,7 +336,6 @@ hr {
 .footer {
   border-top: 1px solid lighten(@lightgrey, 25%);
   margin-top: 130px;
-  height: 600px;
 }
 
 .footerlogo {
@@ -403,14 +363,17 @@ hr {
 
 .footerinformation {
   .make-sm-column(4);
+  .make-sm-column-offset(4);
+  text-align: center;
   margin: 30px 0;
-  height: 200px;
+  height: 100px;
+  h3 {
+    font-weight: 300;
+  }
+  p {
+    font-size: 1.1em;
+  }
 }
-
-
-
-
-
 
 //SIDE MENU
 
