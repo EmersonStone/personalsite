@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid lighten(@lightgrey, 25%);
+  margin-top: 130px;
+}
+
+.footerlogo {
+  .img-circle;
+  .center-block;
+  text-align: center;
+  background-color: @white;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  border: 1px solid lighten(@lightgrey, 25%);
+  .rabbit {
+    margin: 0;
+    font-size: 3em;
+    color: lighten(@lightgrey, 25%);
+    position: relative;
+    right: -2px;
+    cursor: pointer;
+  }
+}
+
+.footercontent {
+  .make-row;
+}
+
+.footerinformation {
+  .make-sm-column(4);
+  .make-sm-column-offset(4);
+  text-align: center;
+  margin: 30px 0;
+  height: 100px;
+  h3 {
+    font-weight: 300;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}

@@ -1,0 +1,55 @@
+.hero {
+  margin-top: 36px;
+  .text-center;
+  .make-row;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  .img-circle;
+  .center-block;
+}
+
+.logo {
+  margin-top: 5px;
+  line-height: 1;
+  a {
+    .transition;
+  }
+}
+
+.tagline {
+  padding: 0 25px;
+  background: @white;
+}
+
+.strikethrough {
+  margin-top: -15px;
+  z-index: -1;
+  width: 50%;
+}
+
+.primarynav {
+  border-bottom: 1px solid @pale;
+  a {
+    color: @grey;
+    .transition;
+    &:hover, &:focus {
+      color: @link;
+    }
+  }
+  li {
+    display: inline-block;
+    padding: 15px;
+    margin: 20px 50px 15px;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .selected {
+    color: @link;
+  }
+}
+

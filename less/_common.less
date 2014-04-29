@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  font-family: @serif;
+  background-color: @white;
+}
+
+body {
+  font-family: @serif;
+  font-size: 16px;
+  color: @grey;
+  line-height: 1.6;
+}
+
+//::-moz-selection{ background: @grey; color:#fff; text-shadow: none; }
+//::selection { background: @grey; color:#fff; text-shadow: none; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: @link;
+  &:hover, &:focus {
+    color: darken(@link, 20%);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+h1 {
+  font-family: @title;
+  font-size: 6em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: @sans;
+  font-size: 1.6em;
+  line-height: 1.4;
+  font-weight: 200;
+  color: @grey;
+  margin-bottom: .3em;
+}
+
+h3 {
+  font-family: @sans;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: @serif;
+  font-style: italic;
+  color: lighten(@grey, 25%);
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.4em;
+  font-weight: 400;
+  font-family: @serif;
+}
+
+p {
+  font-size: 1.25em;
+  margin-bottom: 2em;
+  color: @mediumgrey;
+  .mediumlinks(0, 1.05em);
+}
+
+.subtitle {
+  .text-center;
+  position: relative;
+  margin-bottom: 25px;
+}
+.subtitle:before {
+  content: attr(data-highlight);
+  position: absolute;
+  top: -.7em;
+  left: 2em;
+  font-family: @serif;
+  font-style: italic;
+  font-weight: 100;
+  color: rgba(0,0,0,.1);
+  font-size: 3.5em;
+  text-transform: none;
+  letter-spacing: -2px;
+}
+
+ul {
+  list-style: none;
+  font-family: @sans;
+  -webkit-padding-start: 0;
+}
+
+hr {
+  border-style: none;
+  border-width: 0;
+  border-top: 1px solid @pale;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  background: @white;
+}
+
+.rabbit {
+  font-family: @icon;
+  font-size: 5em;
+  color: @subtle;
+  display: inline-block;
+  margin: 0 95px;
+  text-align: center;
+  &:hover, &:focus {
+    color: @subtle;
+    cursor: default;
+    text-decoration: none;
+  }
+}

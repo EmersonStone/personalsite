@@ -1,0 +1,114 @@
+@media screen and (max-width: 480px) {
+  .callout {
+    font-size: 1.25em;
+    text-align: left;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero a {
+    color: @grey;
+    &:hover, &:focus {
+      color: @lightgrey;
+    }
+  }
+
+  .strikethrough {
+    width: 80%;
+  }
+
+  .topbar {
+    display: block;
+    background: desaturate(@link, 5%);
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid @navpale;
+    .transition;
+    #menu-toggle {
+      color: @white;
+      right: 10px;
+      top: -5px;
+    }
+  }
+
+  nav {
+    #nav-close {
+      top: -5px;
+    }
+    h3 {
+      margin-top: 16px;
+      padding-bottom: 11px;
+    }
+  }
+
+  .subtitle:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle:before {
+    left: 4em;
+  }
+  .recentworksample {
+    img {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recentwork {
+    p {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle:before {
+    left: 3.75em;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .logomark {
+    position: relative;
+    float: left;
+    .rabbit {
+      position: fixed;
+      bottom: 50px;
+    }
+    }
+}
+
+@media screen and (max-width: 1599px) {
+  .primarynav {
+    .hidden;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #menu-toggle {
+    .hidden;
+  }
+  .strikethrough {
+    width: 100%;
+  }
+  .primarynav {
+    .show;
+  }
+  .tagline {
+    color: lighten(@lightgrey, 10%);
+  }
+}

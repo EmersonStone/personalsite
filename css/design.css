@@ -1301,6 +1301,39 @@ legend {
 #yui3-css-stamp.cssreset {
   display: none;
 }
+.maincontent {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .maincontent {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+@media (min-width: 992px) {
+  .maincontent {
+    margin-left: 8.333333333333332%;
+  }
+}
+@media (min-width: 1200px) {
+  .maincontent {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 1200px) {
+  .maincontent {
+    margin-left: 16.666666666666664%;
+  }
+}
 .border-top {
   border-top: 1px solid #cbd7d3;
 }
@@ -1424,6 +1457,9 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
 }
+.container {
+  background: #fcfaf7;
+}
 .rabbit {
   font-family: "andy";
   font-size: 5em;
@@ -1438,8 +1474,11 @@ hr {
   cursor: default;
   text-decoration: none;
 }
-.container {
-  background: #fcfaf7;
+.hero {
+  margin-top: 36px;
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .avatar {
   width: 120px;
@@ -1448,45 +1487,6 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.maincontent {
-  margin-left: -15px;
-  margin-right: -15px;
-  position: relative;
-  min-height: 1px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .maincontent {
-    float: left;
-    width: 83.33333333333334%;
-  }
-}
-@media (min-width: 992px) {
-  .maincontent {
-    margin-left: 8.333333333333332%;
-  }
-}
-@media (min-width: 1200px) {
-  .maincontent {
-    float: left;
-    width: 66.66666666666666%;
-  }
-}
-@media (min-width: 1200px) {
-  .maincontent {
-    margin-left: 16.666666666666664%;
-  }
-}
-.hero {
-  margin-top: 36px;
-  text-align: center;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 .logo {
   margin-top: 5px;
@@ -2013,6 +2013,9 @@ nav ul {
 nav li {
   float: left;
   clear: both;
+  font-weight: 300;
+  width: 100%;
+  display: block;
 }
 nav li a {
   display: inline-block;
