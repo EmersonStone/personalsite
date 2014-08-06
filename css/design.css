@@ -1406,7 +1406,7 @@ h4 {
   font-weight: 400;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 300;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
 }
@@ -1704,7 +1704,7 @@ hr {
   text-transform: uppercase;
   font-size: .65em;
   display: inline-block;
-  padding-left: 1em;
+  margin-left: 1em;
   letter-spacing: 1px;
 }
 .readmore a {
@@ -1759,7 +1759,7 @@ hr {
 .recentworksamples {
   margin-left: -15px;
   margin-right: -15px;
-  margin-top: -30px;
+  margin-top: 0px;
 }
 .recentworksample {
   position: relative;
@@ -1844,7 +1844,7 @@ hr {
   background: #ddeaf3;
 }
 .currentinterests ul p {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 300;
   font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   line-height: 1.4;
@@ -1917,6 +1917,7 @@ hr {
   text-align: center;
   margin: 30px 0;
   height: 100px;
+  margin-bottom: 270px;
 }
 @media (min-width: 768px) {
   .footerinformation {
@@ -2093,6 +2094,9 @@ nav ul:nth-of-type(2) {
   }
   p {
     font-size: 1.1em;
+  }
+  .readmore {
+    font-size: .75em;
   }
   .footerinformation {
     text-align: left !important;
