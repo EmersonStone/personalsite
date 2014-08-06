@@ -1406,14 +1406,14 @@ h4 {
   font-weight: 400;
 }
 h5 {
-  font-size: 1.4em;
-  font-weight: 400;
-  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
 }
 p {
   font-size: 1.25em;
-  margin-bottom: 2em;
-  color: #555555;
+  margin-bottom: 1.5em;
+  color: #4f4f4f;
 }
 p a {
   color: #222222;
@@ -1424,8 +1424,8 @@ p a {
   background-repeat: repeat-x;
 }
 p a:hover {
-  color: #555555;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
+  color: #4f4f4f;
+  background-image: linear-gradient(#ffffff 50%, #888888 50%);
 }
 .subtitle {
   text-align: center;
@@ -1571,7 +1571,7 @@ hr {
   margin-top: 0;
   margin-bottom: 1em;
   font-size: 1.5em;
-  color: #555555;
+  color: #4f4f4f;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
   font-weight: 200;
   text-align: center;
@@ -1676,8 +1676,8 @@ hr {
   background-repeat: repeat-x;
 }
 .articlesample a:hover {
-  color: #555555;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
+  color: #4f4f4f;
+  background-image: linear-gradient(#ffffff 50%, #888888 50%);
 }
 .articlemetadata {
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
@@ -1692,7 +1692,7 @@ hr {
 .date {
   text-transform: none;
   font-size: .85rem;
-  color: #555555;
+  color: #4f4f4f;
   letter-spacing: 0;
 }
 .divider {
@@ -1716,11 +1716,11 @@ hr {
   background-repeat: repeat-x;
 }
 .readmore a:hover {
-  color: #555555;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
+  color: #4f4f4f;
+  background-image: linear-gradient(#ffffff 50%, #888888 50%);
 }
 .readmore a {
-  color: #959595;
+  color: #222222;
 }
 .recentwork {
   margin-top: 40px;
@@ -1841,13 +1841,14 @@ hr {
 }
 .currentinterests ul a:hover,
 .currentinterests ul a:focus {
-  background: #f3f8fb;
+  background: #ddeaf3;
 }
 .currentinterests ul p {
-  font-size: 1.1em;
+  font-size: 1.25rem;
   font-weight: 300;
-  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
+  font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   line-height: 1.4;
+  margin-top: 2px;
 }
 .currentinterests li {
   padding: 20px 15px 10px;
@@ -1871,11 +1872,11 @@ hr {
   background-repeat: repeat-x;
 }
 .loadmore a:hover {
-  color: #555555;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
+  color: #4f4f4f;
+  background-image: linear-gradient(#ffffff 50%, #888888 50%);
 }
 .loadmore a {
-  color: #959595;
+  color: #222222;
 }
 .footer {
   border-top: 1px solid #c8c8c8;
@@ -1928,11 +1929,16 @@ hr {
     margin-left: 33.33333333333333%;
   }
 }
-.footerinformation h3 {
-  font-weight: 300;
-}
 .footerinformation p {
   font-size: 1.1em;
+}
+.mobile-description {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .mobile-description {
+    display: block !important;
+  }
 }
 #container {
   width: 100%;
@@ -2087,6 +2093,9 @@ nav ul:nth-of-type(2) {
   }
   p {
     font-size: 1.1em;
+  }
+  .footerinformation {
+    text-align: left !important;
   }
 }
 @media screen and (max-width: 768px) {

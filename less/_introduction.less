@@ -73,7 +73,7 @@
   letter-spacing: 1px;
   .mediumlinks(0, .95em);
   a {
-    color: lighten(@lightgrey, 5%);
+    color: @grey;
   }
 }
 
@@ -115,14 +115,15 @@
       display: block;
       .transition;
       &:hover, &:focus {
-        background: lighten(@secondary, 41%);
+        background: lighten(@secondary, 35%);
       }
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.25rem;
       font-weight: 300;
-      font-family: @sans;
+      font-family: @serif;
       line-height: 1.4;
+      margin-top: 2px;
     }
   }
   li {
@@ -141,6 +142,6 @@
   font-size: .9em;
   .mediumlinks(0, .95em);
   a {
-    color: lighten(@lightgrey, 5%);
+    color: @grey;
   }
 }
