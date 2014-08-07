@@ -1344,7 +1344,7 @@ html,
 body {
   height: 100%;
   font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
-  background-color: #fcfaf7;
+  background-color: #fefefe;
 }
 body {
   font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
@@ -1378,7 +1378,7 @@ p {
 }
 h1 {
   font-family: "Knockout 27 A", "Knockout 27 B", impact, helvetica, sans-serif;
-  font-size: 6em;
+  font-size: 6.5em;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: 100;
@@ -1409,6 +1409,7 @@ h5 {
   font-size: 1.25em;
   font-weight: 300;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
+  line-height: 1.4;
 }
 p {
   font-size: 1.25em;
@@ -1458,7 +1459,7 @@ hr {
   margin-bottom: 0;
 }
 .container {
-  background: #fcfaf7;
+  background: #fefefe;
 }
 .rabbit {
   font-family: "andy";
@@ -1500,7 +1501,7 @@ hr {
 }
 .tagline {
   padding: 0 25px;
-  background: #fcfaf7;
+  background: #fefefe;
 }
 .strikethrough {
   margin-top: -15px;
@@ -1762,6 +1763,8 @@ hr {
   margin-top: 0px;
 }
 .recentworksample {
+  margin-bottom: 20px;
+  font-size: .9em;
   position: relative;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -1778,7 +1781,6 @@ hr {
 }
 .recentworksample img {
   width: 100%;
-  margin-bottom: 20px;
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
@@ -1788,6 +1790,9 @@ hr {
 .recentworksample img:focus {
   opacity: .85;
   cursor: pointer;
+}
+.recentworksample .getmore {
+  margin-top: 10px;
 }
 .currentinterests {
   margin-top: 40px;
@@ -1824,7 +1829,7 @@ hr {
   }
 }
 .currentinterests p {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .currentinterests ul {
   border-top: 1px solid #c8c8c8;
@@ -1843,27 +1848,43 @@ hr {
 .currentinterests ul a:focus {
   background: #ddeaf3;
 }
+.currentinterests ul h5 {
+  display: inline-block;
+}
+.currentinterests ul h5 a {
+  color: #222222;
+  background-position: 0 1.15em;
+  background-size: 1px 1px;
+  text-decoration: none;
+  background-image: linear-gradient(#ffffff 50%, #222222 50%);
+  background-repeat: repeat-x;
+}
+.currentinterests ul h5 a:hover {
+  color: #4f4f4f;
+  background-image: linear-gradient(#ffffff 50%, #888888 50%);
+}
 .currentinterests ul p {
   font-size: 1.25em;
   font-weight: 300;
   font-family: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
   line-height: 1.4;
   margin-top: 2px;
+  margin-bottom: 1em;
 }
-.currentinterests li {
+.currentinterests ul li {
   padding: 20px 15px 10px;
   border-bottom: 1px solid #c8c8c8;
   margin-bottom: 1px;
   font-size: .9em;
 }
-.loadmore {
+.getmore {
   text-align: center;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
   text-transform: uppercase;
   margin-top: 25px;
   font-size: .9em;
 }
-.loadmore a {
+.getmore a {
   color: #222222;
   background-position: 0 0.95em;
   background-size: 1px 1px;
@@ -1871,11 +1892,11 @@ hr {
   background-image: linear-gradient(#ffffff 50%, #222222 50%);
   background-repeat: repeat-x;
 }
-.loadmore a:hover {
+.getmore a:hover {
   color: #4f4f4f;
   background-image: linear-gradient(#ffffff 50%, #888888 50%);
 }
-.loadmore a {
+.getmore a {
   color: #222222;
 }
 .footer {
@@ -1888,7 +1909,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #fcfaf7;
+  background-color: #fefefe;
   width: 80px;
   height: 80px;
   margin-top: -40px;
@@ -1917,17 +1938,16 @@ hr {
   text-align: center;
   margin: 30px 0;
   height: 100px;
-  margin-bottom: 270px;
 }
 @media (min-width: 768px) {
   .footerinformation {
     float: left;
-    width: 33.33333333333333%;
+    width: 50%;
   }
 }
 @media (min-width: 768px) {
   .footerinformation {
-    margin-left: 33.33333333333333%;
+    margin-left: 25%;
   }
 }
 .footerinformation p {
@@ -1953,7 +1973,7 @@ hr {
   position: absolute;
   z-index: 10;
   min-height: 100%;
-  background: #fcfaf7;
+  background: #fefefe;
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
@@ -1989,7 +2009,7 @@ nav {
   top: 0px;
   background: #222222;
   width: 250px;
-  color: #fcfaf7;
+  color: #fefefe;
   height: 100%;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2026,7 +2046,7 @@ nav li {
 }
 nav li a {
   display: inline-block;
-  color: #fcfaf7;
+  color: #fefefe;
   text-decoration: none;
   width: 100%;
   height: 30px;
@@ -2078,7 +2098,7 @@ nav ul:nth-of-type(2) {
   position: absolute;
   right: 0;
   top: 10px;
-  color: #fcfaf7;
+  color: #fefefe;
   font-size: 1em;
   font-family: "andy";
   padding: 20px 20px 10px 60px;
@@ -2096,10 +2116,14 @@ nav ul:nth-of-type(2) {
     font-size: 1.1em;
   }
   .readmore {
-    font-size: .75em;
+    font-size: .8em;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
   }
   .footerinformation {
     text-align: left !important;
+    margin-bottom: 270px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2125,7 +2149,7 @@ nav ul:nth-of-type(2) {
     transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   }
   .topbar #menu-toggle {
-    color: #fcfaf7;
+    color: #fefefe;
     right: 10px;
     top: -5px;
   }
@@ -2151,7 +2175,7 @@ nav ul:nth-of-type(2) {
   .subtitle:before {
     left: 4em;
   }
-  .recentworksample img {
+  .recentworksample {
     margin-bottom: 40px;
   }
 }
