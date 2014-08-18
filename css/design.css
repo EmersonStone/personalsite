@@ -1637,6 +1637,11 @@ hr {
 .noimage {
   background-image: none;
 }
+@media screen and (max-width: 767px) {
+  .noimage {
+    background-image: url(../img/dropshadow@2x.png);
+  }
+}
 .footer {
   border-top: 1px solid #d9d9d9;
   margin-top: 130px;
@@ -1749,7 +1754,7 @@ nav {
   position: fixed;
   right: 0px;
   top: 0px;
-  background: #054057;
+  background: #212e37;
   width: 250px;
   color: #cccccc;
   height: 100%;
@@ -1762,6 +1767,9 @@ nav {
   overflow: hidden;
   z-index: 0;
   letter-spacing: 0.0625em;
+  -webkit-box-shadow: inset 10px -10px 36px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 10px -10px 36px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 10px -10px 36px -10px rgba(0, 0, 0, 0.75);
 }
 nav h3 {
   margin-top: 31px;
@@ -1797,12 +1805,12 @@ nav li {
 nav li a {
   padding-left: 28px;
   display: inline-block;
-  color: #ffffff;
+  color: #cccccc;
   text-decoration: none;
   width: 100%;
   line-height: 2.25em;
   text-transform: uppercase;
-  border-left: 2px solid #054057;
+  border-left: 2px solid #212e37;
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
@@ -1810,10 +1818,10 @@ nav li a {
 }
 nav li a.selected {
   border-left: 2px solid #ffffff;
+  color: #ffffff;
 }
 nav li a:hover {
   color: #ffffff;
-  opacity: .75;
   border-left: 2px solid #ffffff;
 }
 nav ul:nth-of-type(2) {
@@ -2237,7 +2245,7 @@ nav ul:nth-of-type(2) {
     background-size: cover;
   }
   nav #nav-close {
-    top: -22px;
+    top: -2px;
   }
   nav h3 {
     margin-top: 15px;

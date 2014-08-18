@@ -34,7 +34,7 @@ nav {
   position: fixed;
   right: 0px;
   top: 0px;
-  background: @secondary;
+  background: @quaternary;
   width: 250px;
   color: @pale;
   height: 100%;
@@ -44,6 +44,9 @@ nav {
   overflow: hidden;
   z-index: 0;
   letter-spacing: 0.0625em;
+  -webkit-box-shadow: inset 10px -10px 36px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 10px -10px 36px -10px rgba(0,0,0,0.75);
+  box-shadow: inset 10px -10px 36px -10px rgba(0,0,0,0.75);
   h3 {
     margin-top: 31px;
     padding-bottom: 16px;
@@ -71,19 +74,19 @@ nav {
     a {
       padding-left: 28px;
       display: inline-block;
-      color: @white;
+      color: @pale;
       text-decoration: none;
       width: 100%;
       line-height: 2.25em;
       text-transform: uppercase;
-      border-left: 2px solid @secondary;
+      border-left: 2px solid @quaternary;
       &.selected {
         border-left: 2px solid @white;
+        color: @white;
       }
       .transition;
       &:hover {
         color: @white;
-        opacity: .75;
         border-left: 2px solid @white;
       }
     }
