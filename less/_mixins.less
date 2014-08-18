@@ -1,44 +1,136 @@
 //RESET
 
-
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
-
 
 //COLORS
 
+@standardtext: #555; // paragraphs and most of the text on page
+@titletext: #888; // for secondary type that doesn't need to be so bold
+@boldtext: #242423; // for subtitles and bold lists that need to stand out
+@light: #999; // for dividers and some copy that doesn't need to draw focus
+@pale: #ccc; // primarily for rabbit
+@white: #fff; // standard white on this project for backgrounds and hovers
 
-@grey: #222;
-@mediumgrey: #4f4f4f;
-@lightgrey: #888;
-@navpale: #aaa;
-@pale: #ddd;
-@white: #fefefe;
-
-@subtle: #cbd7d3;
-@link: #e46e57;
-@secondary: #5998c4;
-@tertiary: #2c3e51;
-
+@primary: #00B5FB; // bright blue to be used throughout the project
+@secondary: #054057; // darker blue for a bit of the nordic feel
+@tertiary: #FEFFA7; // bright yellow for highlights and for attention
 
 //TYPOGRAPHY
 
-
-@title: "Knockout 27 A", "Knockout 27 B", impact, helvetica, sans-serif;
-@sans: "Ideal Sans SSm A", "Ideal Sans SSm B", helvetica, sans-serif;
-@serif: "Mercury Text G1 A", "Mercury Text G1 B", georgia, serif;
+@logo: "Knockout 27 A", "Knockout 27 B", impact, helvetica, sans-serif;
+@title: "Hoefler Titling A", "Hoefler Titling B", georgia, serif;
+@sans: "Verlag A", "Verlag B", helvetica, sans-serif;
+@serif: "Hoefler Text A", "Hoefler Text B", georgia, serif;
 @icon: "andy";
-
 
 //DESIGN ELEMENTS
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
 
 .maincontent {
   .make-row;
-  .make-md-column(10);
-  .make-md-column-offset(1);
-  .make-lg-column(8);
-  .make-lg-column-offset(2);
+  .make-md-column(8);
+  .make-md-column-offset(2);
 }
+
+.callout {
+  font-family: @title;
+  color: @titletext;
+  font-size: 2.25em;
+  line-height: 1.35;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+  .make-sm-column(10);
+  .make-sm-column-offset(1);
+}
+
+.mainparagraph {
+  font-family: @serif;
+  color: @standardtext;
+  font-size: 1.375em;
+  line-height: 2em;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  font-family: @sans;
+  color: @boldtext;
+  font-size: 1.125em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.125em;
+}
+
+.raise {
+  font-size: 0.5625em;
+  line-height: 1.4;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  display: inline-block;
+  position: relative;
+  top: -.55em;
+  border-bottom: 2px solid @primary;
+}
+
+.number {
+  margin-right: 25px;
+}
+
+.simplelist {
+  .subtitle;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+}
+
+.metadata {
+  font-family: @sans;
+  color: @light;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  span {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.divider {
+  clear: both;
+  margin: 50px auto;
+  text-align: center;
+  width: 50px;
+  height: 2px;
+  background-color: @primary;
+}
+
+.getmore {
+  text-align: center;
+  font-family: @sans;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-size: 1em;
+  line-height: 1;
+  clear: both;
+  .mediumlinks(0, 1.1em);
+}
+
+
+//CROSS BROWSER HELP
 
 .box-sizing(@sizing: border-box) {
   -ms-box-sizing: @sizing;
@@ -81,25 +173,17 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
   background-clip: @argument;
 }
 
-.border-top {
-	border-top: 1px solid @subtle;
-}
-
-.border-bottom {
-	border-bottom: 1px solid @subtle;
-}
-
 .mediumlinks(@x: 0, @y:1.1em) {
   a {
-    color: @grey;
+    color: @boldtext;
     background-position: @x @y;
     background-size: 1px 1px;
     text-decoration: none;
-    background-image: linear-gradient(#fff 50%, @grey 50%);
+    background-image: linear-gradient(#fff 50%, @standardtext 50%);
     background-repeat: repeat-x;
     &:hover {
-      color: @mediumgrey;
-      background-image: linear-gradient(#fff 50%, @lightgrey 50%);
+      background-image: linear-gradient(#fff 50%, @primary 50%);
+      color: @primary;
     }
   }
 }

@@ -30,7 +30,7 @@ nav {
   position: fixed;
   right: 0px;
   top: 0px;
-  background: @grey;
+  background: @white;
   width: 250px;
   color: @white;
   height: 100%;
@@ -45,8 +45,6 @@ nav {
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 20px;
-    color: @lightgrey;
-    border-bottom: 1px solid @navpale;
     font-weight: 400;
   }
   ul {
@@ -72,10 +70,8 @@ nav {
       text-transform: uppercase;
       .transition;
       &:hover {
-        color: @link;
       }
       &.selected {
-        color: @link;
         cursor: default;
       }
     }
@@ -89,17 +85,14 @@ nav {
   position: absolute;
   right: 25px;
   top: 10px;
-  color: @link;
   font-family: @sans;
   text-transform: uppercase;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
   display: inline-block;
   padding: 20px 10px 10px 20px;
   .transition;
-  &:hover, &:focus {
-    color: darken(@link, 20%)
-  }
 }
 
 .mobile-nav {
@@ -107,18 +100,18 @@ nav {
   margin-left: 6px;
   display: inline-block;
   position: relative;
-  top: 1px;
+  top: -1px;
+  font-size: 0.6875em;
 }
 
 #nav-close {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: 14px;
   color: @white;
-  font-size: 1em;
+  font-size: 0.6875em;
   font-family: @icon;
   padding: 20px 20px 10px 60px;
   &:hover, &:focus {
-    color: @link;
   }
 }

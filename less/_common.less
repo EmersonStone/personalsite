@@ -1,25 +1,27 @@
 html, body {
   height: 100%;
-  font-family: @serif;
   background-color: @white;
 }
 
 body {
   font-family: @serif;
   font-size: 16px;
-  color: @grey;
+  color: @standardtext;
   line-height: 1.6;
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
 
-//::-moz-selection{ background: @grey; color:#fff; text-shadow: none; }
-//::selection { background: @grey; color:#fff; text-shadow: none; }
+//::-moz-selection{ background: @tertiary; color: @boldtext; text-shadow: none; }
+//::selection { background: @tertiary; color: @boldtext; text-shadow: none; }
 
 a {
   text-decoration: none;
   outline: none;
-  color: @link;
+  color: @primary;
   &:hover, &:focus {
-    color: darken(@link, 20%);
+    color: darken(@primary, 10%);
     cursor: pointer;
     outline: none;
     text-decoration: none;
@@ -34,10 +36,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-family: @title;
-  font-size: 6.5em;
+  font-family: @logo;
+  color: @boldtext;
+  font-size: 5em;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  letter-spacing: -1px;
   font-weight: 100;
 }
 
@@ -46,7 +51,6 @@ h2 {
   font-size: 1.6em;
   line-height: 1.4;
   font-weight: 200;
-  color: @grey;
   margin-bottom: .3em;
 }
 
@@ -60,7 +64,6 @@ h3 {
 h4 {
   font-family: @serif;
   font-style: italic;
-  color: lighten(@grey, 25%);
   display: inline-block;
   font-size: 1.25em;
   font-weight: 400;
@@ -74,30 +77,12 @@ h5 {
 }
 
 p {
-  font-size: 1.25em;
-  margin-bottom: 1.5em;
-  color: @mediumgrey;
-  .mediumlinks(0, 1.05em);
+  font-size: 1.375em;
+  margin-bottom: 1em;
+  color: @standardtext;
+  .mediumlinks(0, 1.1em);
 }
 
-.subtitle {
-  .text-center;
-  position: relative;
-  margin-bottom: 25px;
-}
-.subtitle:before {
-  content: attr(data-highlight);
-  position: absolute;
-  top: -.7em;
-  left: 2em;
-  font-family: @serif;
-  font-style: italic;
-  font-weight: 100;
-  color: rgba(0,0,0,.1);
-  font-size: 3.5em;
-  text-transform: none;
-  letter-spacing: -2px;
-}
 
 ul {
   list-style: none;
@@ -120,12 +105,12 @@ hr {
 .rabbit {
   font-family: @icon;
   font-size: 5em;
-  color: @subtle;
+  color: @pale;
   display: inline-block;
   margin: 0 95px;
   text-align: center;
   &:hover, &:focus {
-    color: @subtle;
+    color: @pale;
     cursor: default;
     text-decoration: none;
   }
