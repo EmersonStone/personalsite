@@ -1487,11 +1487,10 @@ h1 {
   font-weight: 100;
 }
 h2 {
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  font-size: 1.6em;
+  font-family: "Hoefler Titling A", "Hoefler Titling B", georgia, serif;
+  font-size: 2.25;
   line-height: 1.4;
-  font-weight: 200;
-  margin-bottom: .3em;
+  font-weight: 300;
 }
 h3 {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
@@ -1641,6 +1640,9 @@ hr {
     opacity: .75;
   }
 }
+.noimage {
+  background-image: none;
+}
 .footer {
   border-top: 1px solid #d9d9d9;
   margin-top: 130px;
@@ -1735,6 +1737,10 @@ hr {
   -ms-transform: translate3d(0px, 0, 0);
   transform: translate3d(0px, 0, 0);
 }
+#container.pushed nav h3,
+#container.pushed nav ul {
+  opacity: 1;
+}
 nav {
   -webkit-transform: translate3d(250px, 0, 0);
   -moz-transform: translate3d(250px, 0, 0);
@@ -1749,9 +1755,9 @@ nav {
   position: fixed;
   right: 0px;
   top: 0px;
-  background: #ffffff;
+  background: #054057;
   width: 250px;
-  color: #ffffff;
+  color: #cccccc;
   height: 100%;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1759,23 +1765,33 @@ nav {
   box-sizing: border-box;
   padding: 0;
   font-size: 1em;
-  background: url(../img/nav-bg.jpg) no-repeat top center;
-  background-size: cover;
   overflow: hidden;
+  z-index: 0;
+  letter-spacing: 0.0625em;
 }
 nav h3 {
   margin-top: 31px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-left: 30px;
   padding-right: 20px;
   font-weight: 400;
+  border-bottom: 1px solid #555555;
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  opacity: 0;
 }
 nav ul {
   float: left;
   margin-top: 5px;
   margin-bottom: 35px;
   width: 100%;
-  padding-left: 30px;
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  opacity: 0;
 }
 nav li {
   float: left;
@@ -1785,20 +1801,26 @@ nav li {
   display: block;
 }
 nav li a {
+  padding-left: 28px;
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
   width: 100%;
-  height: 30px;
-  line-height: 45px;
+  line-height: 2.25em;
   text-transform: uppercase;
+  border-left: 2px solid #054057;
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
 nav li a.selected {
-  cursor: default;
+  border-left: 2px solid #ffffff;
+}
+nav li a:hover {
+  color: #ffffff;
+  opacity: .75;
+  border-left: 2px solid #ffffff;
 }
 nav ul:nth-of-type(2) {
   margin-bottom: 125px;
@@ -1840,11 +1862,19 @@ nav ul:nth-of-type(2) {
   font-size: 0.6875em;
   font-family: "andy";
   padding: 20px 20px 10px 60px;
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
 @media screen and (max-width: 479px) {
   #nav-close {
     font-size: 1.142857143em;
   }
+}
+#nav-close:hover,
+#nav-close:focus {
+  opacity: .75;
 }
 .introduction {
   margin-top: 65px;
@@ -2224,11 +2254,10 @@ nav ul:nth-of-type(2) {
     top: -5px;
   }
   nav #nav-close {
-    top: -5px;
+    top: 0px;
   }
   nav h3 {
     margin-top: 16px;
-    padding-bottom: 11px;
   }
   .profilepic {
     display: none;
@@ -2252,6 +2281,7 @@ nav ul:nth-of-type(2) {
   .logomark {
     position: relative;
     float: left;
+    z-index: 100;
   }
   .logomark .rabbit {
     position: fixed;
