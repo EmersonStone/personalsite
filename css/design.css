@@ -1363,6 +1363,11 @@ legend {
   text-align: center;
   letter-spacing: 0.125em;
 }
+@media screen and (max-width: 479px) {
+  .subtitle {
+    text-align: left;
+  }
+}
 .raise {
   font-size: 0.5625em;
   line-height: 1.4;
@@ -1374,7 +1379,12 @@ legend {
   border-bottom: 2px solid #00b5fb;
 }
 .number {
-  margin-right: 25px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 479px) {
+  .number {
+    text-align: left;
+  }
 }
 .simplelist {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
@@ -1388,6 +1398,11 @@ legend {
   font-size: 1em;
   line-height: 2em;
   text-align: left;
+}
+@media screen and (max-width: 479px) {
+  .simplelist {
+    text-align: left;
+  }
 }
 .metadata {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
@@ -1607,6 +1622,11 @@ hr {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.125em;
+}
+@media screen and (max-width: 479px) {
+  .logo h3 {
+    text-align: left;
+  }
 }
 .logo h1 {
   line-height: .75em;
