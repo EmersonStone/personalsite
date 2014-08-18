@@ -93,6 +93,9 @@ nav {
   display: inline-block;
   padding: 20px 10px 10px 20px;
   .transition;
+  @media screen and (max-width: 479px) {
+    font-size: 1.142857143em;
+  }
 }
 
 .mobile-nav {
@@ -107,11 +110,12 @@ nav {
 #nav-close {
   position: absolute;
   right: 0;
-  top: 14px;
+  top: 15px;
   color: @white;
   font-size: 0.6875em;
   font-family: @icon;
   padding: 20px 20px 10px 60px;
-  &:hover, &:focus {
+  @media screen and (max-width: 479px) {
+    font-size: 1.142857143em;
   }
 }
