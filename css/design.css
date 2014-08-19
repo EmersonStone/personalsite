@@ -1436,6 +1436,15 @@ legend {
   background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
   color: #00b5fb;
 }
+@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
+  .getmore a {
+    text-decoration: underline;
+  }
+  .getmore a:hover,
+  .getmore a:focus {
+    text-decoration: underline;
+  }
+}
 html,
 body {
   height: 100%;
@@ -1527,6 +1536,15 @@ p a {
 p a:hover {
   background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
   color: #00b5fb;
+}
+@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
+  p a {
+    text-decoration: underline;
+  }
+  p a:hover,
+  p a:focus {
+    text-decoration: underline;
+  }
 }
 ul {
   list-style: none;
@@ -1772,7 +1790,7 @@ nav {
   box-shadow: inset 10px -10px 36px -10px rgba(0, 0, 0, 0.75);
 }
 nav h3 {
-  margin-top: 31px;
+  margin-top: 30px;
   padding-bottom: 16px;
   padding-left: 30px;
   padding-right: 20px;
@@ -1854,7 +1872,7 @@ nav ul:nth-of-type(2) {
 #nav-close {
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 13px;
   color: #ffffff;
   font-size: 0.6875em;
   font-family: "andy";
@@ -2116,6 +2134,15 @@ nav ul:nth-of-type(2) {
   background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
   color: #00b5fb;
 }
+@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
+  .articlesample a {
+    text-decoration: underline;
+  }
+  .articlesample a:hover,
+  .articlesample a:focus {
+    text-decoration: underline;
+  }
+}
 .articlemetadata {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
   text-transform: uppercase;
@@ -2150,6 +2177,15 @@ nav ul:nth-of-type(2) {
 .readmore a:hover {
   background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
   color: #00b5fb;
+}
+@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
+  .readmore a {
+    text-decoration: underline;
+  }
+  .readmore a:hover,
+  .readmore a:focus {
+    text-decoration: underline;
+  }
 }
 .readmore a {
   color: #242423;
@@ -2205,6 +2241,15 @@ nav ul:nth-of-type(2) {
 .currentinterests ul h5 a:hover {
   background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
   color: #00b5fb;
+}
+@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
+  .currentinterests ul h5 a {
+    text-decoration: underline;
+  }
+  .currentinterests ul h5 a:hover,
+  .currentinterests ul h5 a:focus {
+    text-decoration: underline;
+  }
 }
 .currentinterests ul p {
   font-size: 1.25em;
