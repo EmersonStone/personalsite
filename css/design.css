@@ -2270,9 +2270,9 @@ nav ul:nth-of-type(2) {
   margin-right: -15px;
 }
 .clientlist ul {
+  position: relative;
   float: left;
   width: 50%;
-  position: relative;
   min-height: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2281,17 +2281,6 @@ nav ul:nth-of-type(2) {
   padding-right: 15px;
   margin-top: 5px;
   margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .clientlist ul {
-    float: left;
-    width: 41.66666666666667%;
-  }
-}
-@media (min-width: 768px) {
-  .clientlist ul:first-of-type {
-    margin-left: 8.333333333333332%;
-  }
 }
 .clientlist li {
   margin-bottom: .75em;
