@@ -1358,9 +1358,9 @@ h4 {
   font-weight: 400;
 }
 h5 {
-  font-size: 1.25em;
+  font-size: 1.375em;
   font-weight: 300;
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
+  font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
   line-height: 1.4;
 }
 p {
@@ -1538,8 +1538,6 @@ hr {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
   color: #999999;
   font-size: 1em;
-  line-height: 3em;
-  margin-bottom: .5em;
   font-weight: 700;
   display: block;
   letter-spacing: 0.125em;
@@ -1671,9 +1669,13 @@ hr {
     background-image: url(../img/dropshadow@2x.png);
   }
 }
-.footer {
-  border-top: 1px solid #d9d9d9;
-  margin-top: 130px;
+footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 90px;
+}
+footer ul,
+footer p {
+  color: #999999;
 }
 .footerlogo {
   border-radius: 50%;
@@ -1684,13 +1686,13 @@ hr {
   background-color: #ffffff;
   width: 80px;
   height: 80px;
-  margin-top: -40px;
-  border: 1px solid #d9d9d9;
+  margin-top: -53px;
+  border: 1px solid #cccccc;
 }
 .footerlogo .rabbit {
   margin: 0;
   font-size: 3em;
-  color: #d9d9d9;
+  color: #cccccc;
   position: relative;
   right: -2px;
   cursor: pointer;
@@ -1698,8 +1700,11 @@ hr {
 .footercontent {
   margin-left: -15px;
   margin-right: -15px;
+  padding: 53px 0;
 }
-.footerinformation {
+.footernavigation {
+  float: left;
+  width: 50%;
   position: relative;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -1707,30 +1712,32 @@ hr {
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
-  margin: 30px 0;
-  height: 100px;
+  margin-bottom: 27px;
+}
+@media (min-width: 768px) {
+  .footernavigation {
+    float: left;
+    width: 25%;
+  }
+}
+.footernavigation li {
+  margin-bottom: .75em;
+}
+.footerinformation {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .footerinformation {
     float: left;
     width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .footerinformation {
-    margin-left: 25%;
-  }
-}
-.footerinformation p {
-  font-size: 1.1em;
-}
-.mobile-description {
-  display: none !important;
-}
-@media (max-width: 767px) {
-  .mobile-description {
-    display: block !important;
   }
 }
 #container {
@@ -2015,7 +2022,6 @@ nav ul:nth-of-type(2) {
 }
 .recentworksample {
   margin-bottom: 20px;
-  font-size: .9em;
   float: left;
   width: 83.33333333333334%;
   margin-left: 8.333333333333332%;
@@ -2072,6 +2078,10 @@ nav ul:nth-of-type(2) {
   .recentwriting {
     margin-left: 16.666666666666664%;
   }
+}
+.recentwriting .metadata {
+  line-height: 3em;
+  margin-bottom: .5em;
 }
 .articlesamplephoto {
   margin-left: -15px;
@@ -2154,11 +2164,21 @@ nav ul:nth-of-type(2) {
   }
 }
 .currentinterests p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
+}
+.currentinterests h5 {
+  color: #242423;
+  display: inline-block;
+}
+.currentinterests .metadata {
+  line-height: 2.4em;
+  margin-bottom: .25em;
 }
 .currentinterests ul {
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #cccccc;
 }
 .currentinterests ul a {
   display: block;
@@ -2167,42 +2187,19 @@ nav ul:nth-of-type(2) {
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
-.currentinterests ul h5 {
-  display: inline-block;
-}
-.currentinterests ul h5 a {
-  color: #242423;
-  background-position: 0 1.15em;
-  background-size: 1px 1px;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
-  background-repeat: repeat-x;
-}
-.currentinterests ul h5 a:hover {
-  background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
-  color: #00b5fb;
-}
-@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
-  .currentinterests ul h5 a {
-    text-decoration: underline;
-  }
-  .currentinterests ul h5 a:hover,
-  .currentinterests ul h5 a:focus {
-    text-decoration: underline;
-  }
+.currentinterests ul a:hover,
+.currentinterests ul a:focus {
+  background: #f1fbff;
 }
 .currentinterests ul p {
-  font-size: 1.25em;
   font-weight: 300;
   font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
-  line-height: 1.4;
-  margin-top: 2px;
-  margin-bottom: 1em;
 }
 .currentinterests ul li {
-  padding: 20px 15px 10px;
+  border-top: 1px solid #cccccc;
+  line-height: 1.181818182;
+  padding: 34px 15px 5px;
   margin-bottom: 1px;
-  font-size: .9em;
 }
 @media screen and (max-width: 480px) {
   .callout {
