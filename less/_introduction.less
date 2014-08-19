@@ -12,12 +12,12 @@
 }
 
 .aboutme {
-  clear: both;
   .make-row;
   p {
     .make-sm-column(9);
     .make-md-column(8);
   }
+  clear: both;
 }
 
 .profilepic {
@@ -40,18 +40,21 @@
 }
 
 .recentworksamples {
-  clear: both;
   .make-row;
   margin-top: 0px;
   .getmore {
     margin-bottom: 27px;
   }
+  clear: both;
 }
 
 .recentworksample {
   margin-bottom: 20px;
   font-size: .9em;
+  .make-xs-column(10);
+  .make-xs-column-offset(1);
   .make-sm-column(4);
+  .make-sm-column-offset(0);
   img {
     width: 100%;
     .transition;
@@ -68,6 +71,13 @@
 .recentwriting {
   margin-top: 30px;
   .maincontent;
+  .subtitle {
+    margin-bottom: 27px;
+  }
+  .getmore {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 }
 
 .articlesamplephoto {
@@ -90,37 +100,6 @@
 
 .articlesample {
   clear: both;
-  .mediumlinks(0, 1.1em);
-}
-
-.articlemetadata {
-  font-family: @sans;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: .8em;
-  margin-top: .6em;
-  margin-bottom: .5em;
-  display: block;
-}
-
-.date {
-  text-transform: none;
-  font-size: .85rem;
-  color: @titletext;
-  letter-spacing: 0;
-}
-
-.readmore {
-  font-family: @sans;
-  text-transform: uppercase;
-  font-size: .65em;
-  display: inline-block;
-  margin-left: 1em;
-  letter-spacing: 1px;
-  .mediumlinks(0, .95em);
-  a {
-    color: @boldtext;
-  }
 }
 
 .currentinterests {

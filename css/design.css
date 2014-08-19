@@ -1287,6 +1287,142 @@ legend {
 #yui3-css-stamp.cssreset {
   display: none;
 }
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+}
+body {
+  font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+}
+@media screen and (max-width: 479px) {
+  body {
+    font-size: 14px;
+  }
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: #00b5fb;
+}
+a:hover,
+a:focus {
+  color: #0090c8;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+h1 {
+  font-family: "Knockout 27 A", "Knockout 27 B", impact, helvetica, sans-serif;
+  color: #242423;
+  font-size: 5em;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h2 {
+  font-family: "Hoefler Titling A", "Hoefler Titling B", georgia, serif;
+  font-size: 2.25em;
+  font-style: italic;
+  line-height: 1.2;
+  font-weight: 300;
+}
+h3 {
+  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+h4 {
+  font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
+  font-style: italic;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.25em;
+  font-weight: 300;
+  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
+  line-height: 1.4;
+}
+p {
+  font-size: 1.375em;
+  margin-bottom: 1em;
+  color: #555555;
+}
+p a {
+  color: #242423;
+  background-position: 0 1.1em;
+  background-size: 1px 1px;
+  text-decoration: none;
+  background-image: linear-gradient(#ffffff 50%, #555555 50%);
+  background-repeat: repeat-x;
+}
+p a:hover {
+  background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
+  color: #00b5fb;
+}
+@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
+  p a {
+    text-decoration: underline;
+  }
+  p a:hover,
+  p a:focus {
+    text-decoration: underline;
+  }
+}
+ul {
+  list-style: none;
+  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
+  -webkit-padding-start: 0;
+}
+hr {
+  border-style: none;
+  border-width: 0;
+  border-top: 1px solid #cccccc;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  background: #ffffff;
+}
+@media screen and (max-width: 479px) {
+  .container .subtitle {
+    text-align: left;
+  }
+}
+.rabbit {
+  font-family: "andy";
+  font-size: 5em;
+  color: #cccccc;
+  display: inline-block;
+  margin: 0 95px;
+  text-align: center;
+}
+.rabbit:hover,
+.rabbit:focus {
+  color: #cccccc;
+  cursor: default;
+  text-decoration: none;
+}
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -1399,9 +1535,14 @@ legend {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
   color: #999999;
   font-size: 1em;
-  line-height: 1em;
+  line-height: 3em;
+  margin-bottom: .5em;
   font-weight: 700;
+  display: block;
   letter-spacing: 0.125em;
+}
+.metadata strong {
+  color: #242423;
 }
 .metadata span {
   margin-left: 1em;
@@ -1423,6 +1564,7 @@ legend {
   font-size: 1em;
   line-height: 1;
   clear: both;
+  display: block;
 }
 .getmore a {
   color: #242423;
@@ -1444,141 +1586,6 @@ legend {
   .getmore a:focus {
     text-decoration: underline;
   }
-}
-html,
-body {
-  height: 100%;
-  background-color: #ffffff;
-}
-body {
-  font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
-  font-size: 16px;
-  color: #555555;
-  line-height: 1.6;
-}
-@media screen and (max-width: 479px) {
-  body {
-    font-size: 14px;
-  }
-}
-a {
-  text-decoration: none;
-  outline: none;
-  color: #00b5fb;
-}
-a:hover,
-a:focus {
-  color: #0090c8;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-h1 {
-  font-family: "Knockout 27 A", "Knockout 27 B", impact, helvetica, sans-serif;
-  color: #242423;
-  font-size: 5em;
-  line-height: 1em;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-h2 {
-  font-family: "Hoefler Titling A", "Hoefler Titling B", georgia, serif;
-  font-size: 2.25;
-  line-height: 1.4;
-  font-weight: 300;
-}
-h3 {
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-h4 {
-  font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
-  font-style: italic;
-  display: inline-block;
-  font-size: 1.25em;
-  font-weight: 400;
-}
-h5 {
-  font-size: 1.25em;
-  font-weight: 300;
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  line-height: 1.4;
-}
-p {
-  font-size: 1.375em;
-  margin-bottom: 1em;
-  color: #555555;
-}
-p a {
-  color: #242423;
-  background-position: 0 1.1em;
-  background-size: 1px 1px;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
-  background-repeat: repeat-x;
-}
-p a:hover {
-  background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
-  color: #00b5fb;
-}
-@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
-  p a {
-    text-decoration: underline;
-  }
-  p a:hover,
-  p a:focus {
-    text-decoration: underline;
-  }
-}
-ul {
-  list-style: none;
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  -webkit-padding-start: 0;
-}
-hr {
-  border-style: none;
-  border-width: 0;
-  border-top: 1px solid #cccccc;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.container {
-  background: #ffffff;
-}
-@media screen and (max-width: 479px) {
-  .container .subtitle {
-    text-align: left;
-  }
-}
-.rabbit {
-  font-family: "andy";
-  font-size: 5em;
-  color: #cccccc;
-  display: inline-block;
-  margin: 0 95px;
-  text-align: center;
-}
-.rabbit:hover,
-.rabbit:focus {
-  color: #cccccc;
-  cursor: default;
-  text-decoration: none;
 }
 .hero {
   text-align: center;
@@ -1920,9 +1927,9 @@ nav ul:nth-of-type(2) {
   }
 }
 .aboutme {
-  clear: both;
   margin-left: -15px;
   margin-right: -15px;
+  clear: both;
 }
 .aboutme p {
   position: relative;
@@ -2002,10 +2009,10 @@ nav ul:nth-of-type(2) {
   margin-bottom: 27px;
 }
 .recentworksamples {
-  clear: both;
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 0px;
+  clear: both;
 }
 .recentworksamples .getmore {
   margin-bottom: 27px;
@@ -2013,6 +2020,9 @@ nav ul:nth-of-type(2) {
 .recentworksample {
   margin-bottom: 20px;
   font-size: .9em;
+  float: left;
+  width: 83.33333333333334%;
+  margin-left: 8.333333333333332%;
   position: relative;
   min-height: 1px;
   -webkit-box-sizing: border-box;
@@ -2025,6 +2035,11 @@ nav ul:nth-of-type(2) {
   .recentworksample {
     float: left;
     width: 33.33333333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .recentworksample {
+    margin-left: 0%;
   }
 }
 .recentworksample img {
@@ -2064,6 +2079,13 @@ nav ul:nth-of-type(2) {
   .recentwriting {
     margin-left: 16.666666666666664%;
   }
+}
+.recentwriting .subtitle {
+  margin-bottom: 27px;
+}
+.recentwriting .getmore {
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 .articlesamplephoto {
   margin-left: -15px;
@@ -2121,74 +2143,6 @@ nav ul:nth-of-type(2) {
 }
 .articlesample {
   clear: both;
-}
-.articlesample a {
-  color: #242423;
-  background-position: 0 1.1em;
-  background-size: 1px 1px;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
-  background-repeat: repeat-x;
-}
-.articlesample a:hover {
-  background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
-  color: #00b5fb;
-}
-@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
-  .articlesample a {
-    text-decoration: underline;
-  }
-  .articlesample a:hover,
-  .articlesample a:focus {
-    text-decoration: underline;
-  }
-}
-.articlemetadata {
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: .8em;
-  margin-top: .6em;
-  margin-bottom: .5em;
-  display: block;
-}
-.date {
-  text-transform: none;
-  font-size: .85rem;
-  color: #888888;
-  letter-spacing: 0;
-}
-.readmore {
-  font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: .65em;
-  display: inline-block;
-  margin-left: 1em;
-  letter-spacing: 1px;
-}
-.readmore a {
-  color: #242423;
-  background-position: 0 0.95em;
-  background-size: 1px 1px;
-  text-decoration: none;
-  background-image: linear-gradient(#ffffff 50%, #555555 50%);
-  background-repeat: repeat-x;
-}
-.readmore a:hover {
-  background-image: linear-gradient(#ffffff 50%, #00b5fb 50%);
-  color: #00b5fb;
-}
-@media (-webkit-max-device-pixel-ratio: 1.5), (max-resolution: 144dpi) {
-  .readmore a {
-    text-decoration: underline;
-  }
-  .readmore a:hover,
-  .readmore a:focus {
-    text-decoration: underline;
-  }
-}
-.readmore a {
-  color: #242423;
 }
 .currentinterests {
   margin-top: 40px;

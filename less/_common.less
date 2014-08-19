@@ -48,8 +48,9 @@ h1 {
 
 h2 {
   font-family: @title;
-  font-size: 2.25;
-  line-height: 1.4;
+  font-size: 2.25em;
+  font-style: italic;
+  line-height: 1.2;
   font-weight: 300;
 }
 
@@ -97,6 +98,8 @@ hr {
   margin-bottom: 0;
 }
 
+//DESIGN ELEMENTS
+
 .container {
   background: @white;
     .subtitle {
@@ -118,4 +121,118 @@ hr {
     cursor: default;
     text-decoration: none;
   }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.maincontent {
+  .make-row;
+  .make-md-column(8);
+  .make-md-column-offset(2);
+}
+
+.callout {
+  font-family: @title;
+  color: @titletext;
+  font-size: 2.25em;
+  line-height: 1.35;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+  .make-sm-column(10);
+  .make-sm-column-offset(1);
+}
+
+.mainparagraph {
+  font-family: @serif;
+  color: @standardtext;
+  font-size: 1.375em;
+  line-height: 2em;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  font-family: @sans;
+  color: @boldtext;
+  font-size: 1.125em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.125em;
+}
+
+.raise {
+  font-size: 0.5625em;
+  line-height: 1.4;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  display: inline-block;
+  position: relative;
+  top: -.55em;
+  border-bottom: 2px solid @primary;
+}
+
+.number {
+  margin-right: 25px;
+  @media screen and (max-width: 479px) {
+    text-align: left;
+    margin-right: 15px;
+  }
+}
+
+.simplelist {
+  .subtitle;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+}
+
+.metadata {
+  font-family: @sans;
+  color: @light;
+  font-size: 1em;
+  line-height: 3em;
+  margin-bottom: .5em;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 0.125em;
+  strong {
+    color: @boldtext;
+  }
+  span {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.divider {
+  clear: both;
+  margin: 50px auto;
+  text-align: center;
+  width: 50px;
+  height: 2px;
+  background-color: @primary;
+}
+
+.getmore {
+  text-align: center;
+  font-family: @sans;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-size: 1em;
+  line-height: 1;
+  clear: both;
+  display: block;
+  .mediumlinks(0, 1.1em);
 }
