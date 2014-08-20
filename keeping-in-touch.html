@@ -11,23 +11,30 @@
     <link href="css/design.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7014452/749142/css/fonts.css" />
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var map_canvas = document.getElementById('map_canvas');
-        var map_options = {
-          center: new google.maps.LatLng(40.019827, -105.270573),
-          zoom: 13,
-          scrollwheel: false,
-    navigationControl: false,
-    mapTypeControl: false,
-    scaleControl: false,
-    draggable: false,
-
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', init);
+        function init() {
+            var myLatlng = new google.maps.LatLng(40.019827, -105.270573);
+            var mapOptions = {
+                zoom: 14,
+                scrollwheel: false,
+                navigationControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                draggable: false,
+                center: myLatlng,
+                styles: [   {       featureType:'water',        stylers:[{color:'#00B5FB'},{visibility:'on'}]   },{     featureType:'landscape',        stylers:[{color:'#f2f2f2'}] },{     featureType:'road',     stylers:[{saturation:-100},{lightness:45}]  },{     featureType:'road.highway',     stylers:[{visibility:'simplified'}] },{     featureType:'road.arterial',        elementType:'labels.icon',      stylers:[{visibility:'off'}]    },{     featureType:'administrative',       elementType:'labels.text.fill',     stylers:[{color:'#444444'}] },{     featureType:'transit',      stylers:[{visibility:'off'}]    },{     featureType:'poi',      stylers:[{visibility:'off'}]    }]
+            };
+            var mapElement = document.getElementById('map_canvas');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var marker = new google.maps.Marker({ position: myLatlng, map: map, title: 'Hello World!'});
+            var infowindow = new google.maps.InfoWindow({
+              content: '<h3><a href="https://www.google.com/maps/place/1910+Pearl+St,+Boulder,+CO+80302/@40.0198274,-105.270573,17z/data=!3m1!4b1!4m2!3m1!1s0x876bec2a4a863931:0x13292dcc4848351f" target="_blank">The Studio of Andy Stone</a><br />1910 Pearl St.<br />Boulder, CO 80302',
+              maxWidth: 200
+            });
+            google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
         }
-        var map = new google.maps.Map(map_canvas, map_options)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </head>
 
@@ -120,7 +127,7 @@
                     <div class="footerinformation">
                         <p>The Studio of Andy Stone is proud to be a Colorado-based company.</p>
                         <p>When not designing, you can find Andy Stone biking or skiing—depending on the season. </p>
-                        <p>1910 Pearl St. Boulder, CO 80301</p>
+                        <p>1910 Pearl St. Boulder, CO 80302</p>
                     </div>
                 </div>
 
