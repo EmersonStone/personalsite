@@ -1,0 +1,32 @@
+.leadin {
+    position: relative;
+    top: -13px;
+    float: left;
+    width: 100%;
+    background: url(../img/designreading.png) top center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    padding: 120px 0 90px;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(5,64,87,.8);
+    }
+    h3, .callout {
+        color: @white;
+    }
+    .divider {
+        background-color: @white;
+        margin: 40px auto 30px;
+    }
+    .callout {
+        .make-row;
+        .make-xs-column(10);
+        .make-xs-column-offset(1);
+    }
+}

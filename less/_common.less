@@ -83,6 +83,23 @@ p {
   .mediumlinks(0, 1.1em);
 }
 
+em {
+  font-style: italic;
+  color: @boldtext;
+}
+
+ol {
+  font-size: 1.375em;
+  margin-bottom: 1.375em;
+  list-style: decimal;
+  li {
+    padding: 1.375em 0;
+    border-top: 1px solid @pale;
+    &:last-of-type {
+      border-bottom: 1px solid @pale;
+    }
+  }
+}
 
 ul {
   list-style: none;
@@ -224,6 +241,7 @@ hr {
   width: 50px;
   height: 2px;
   background-color: @primary;
+  position: relative;
 }
 
 .getmore {
@@ -253,5 +271,22 @@ svg {
   @media screen and (max-width: 479px) {
     display: none;
     visibility: hidden;
+  }
+}
+
+.simplenavigation {
+  .make-row;
+  color: @light;
+  font-family: @sans;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  .mediumlinks;
+  .previous {
+    float: left;
+    margin: 27px 15px;
+  }
+  .next {
+    float: right;
+    margin: 27px 15px;
   }
 }
