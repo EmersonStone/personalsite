@@ -2210,7 +2210,6 @@ nav ul:nth-of-type(2) {
 }
 .currentinterests .metadata {
   line-height: 2.4em;
-  margin-bottom: .25em;
 }
 .currentinterests ul {
   margin-left: -15px;
@@ -2299,6 +2298,9 @@ nav ul:nth-of-type(2) {
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+}
+.standardservices p {
+  margin-bottom: 2.25em;
 }
 .services {
   margin-top: 5px;
