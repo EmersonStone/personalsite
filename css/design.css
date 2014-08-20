@@ -1521,6 +1521,9 @@ hr {
     margin-left: 8.333333333333332%;
   }
 }
+p.callout {
+  margin-top: 20px;
+}
 .mainparagraph {
   font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
   color: #555555;
@@ -2493,6 +2496,13 @@ h4 {
 .leadin h3,
 .leadin .callout {
   color: #ffffff;
+}
+.leadin a {
+  color: #ffffff;
+}
+.leadin a:hover,
+.leadin a:focus {
+  opacity: .75;
 }
 .leadin .divider {
   background-color: #ffffff;
