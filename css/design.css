@@ -2383,6 +2383,7 @@ nav ul:nth-of-type(2) {
   margin-right: -15px;
   margin-bottom: 25px;
   border-bottom: 1px solid #cccccc;
+  letter-spacing: 0;
 }
 .currentinterests ul a {
   display: block;
