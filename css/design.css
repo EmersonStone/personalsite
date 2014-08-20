@@ -1426,6 +1426,12 @@ ol li {
 ol li:last-of-type {
   border-bottom: 1px solid #cccccc;
 }
+@media screen and (max-width: 845px) {
+  ol li {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
 ul {
   list-style: none;
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
@@ -2305,7 +2311,7 @@ nav ul:nth-of-type(2) {
 }
 .currentinterests ul li {
   border-top: 1px solid #cccccc;
-  line-height: 1.181818182;
+  line-height: 1.3;
   padding: 34px 15px 5px;
   margin-bottom: 1px;
 }
