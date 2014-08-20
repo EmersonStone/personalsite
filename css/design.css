@@ -946,7 +946,11 @@ th {
 .historyphoto:before,
 .historyphoto:after,
 .leadin .callout:before,
-.leadin .callout:after {
+.leadin .callout:after,
+.contact:before,
+.contact:after,
+.contact:before,
+.contact:after {
   content: " ";
   display: table;
 }
@@ -970,7 +974,9 @@ th {
 .standardservices:after,
 .history:after,
 .historyphoto:after,
-.leadin .callout:after {
+.leadin .callout:after,
+.contact:after,
+.contact:after {
   clear: both;
 }
 .center-block {
@@ -2329,6 +2335,7 @@ nav ul:nth-of-type(2) {
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 27px;
 }
 @media (min-width: 992px) {
   .previousclients {
@@ -2375,9 +2382,13 @@ nav ul:nth-of-type(2) {
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 27px;
 }
 .standardservices p {
   margin-bottom: 2.25em;
+}
+.standardservices p:last-of-type {
+  margin-bottom: 1em;
 }
 .services {
   margin-top: 5px;
@@ -2404,6 +2415,7 @@ h4 {
   margin-bottom: 4px;
 }
 .history {
+  margin-top: 27px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -2497,7 +2509,8 @@ h4 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(5, 64, 87, 0.8);
+  background: #054057;
+  opacity: 0.8;
 }
 .leadin h3,
 .leadin .callout {
@@ -2527,6 +2540,72 @@ h4 {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 8.333333333333332%;
+}
+.contact {
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 992px) {
+  .contact {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    margin-left: 16.666666666666664%;
+  }
+}
+.contactinformation {
+  margin-top: 27px;
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .contactinformation {
+    float: left;
+    width: 41.66666666666667%;
+  }
+}
+@media (min-width: 768px) {
+  .contactinformation:first-of-type {
+    margin-left: 8.333333333333332%;
+  }
+}
+.contactinformation h3 {
+  font-size: 1.125em;
+  color: #242423;
+  letter-spacing: 0.0625em;
+}
+.contactinformation li {
+  font-family: "Hoefler Text A", "Hoefler Text B", georgia, serif;
+  text-transform: none;
+  font-size: 1.375em;
+  margin: .75em 0;
+}
+#map_canvas {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: -90px;
+  border-top: 2px solid #00b5fb;
+  border-bottom: 2px solid #00b5fb;
+  position: relative;
+  z-index: -1;
 }
 @media screen and (max-width: 480px) {
   .callout {

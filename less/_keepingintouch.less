@@ -1,0 +1,35 @@
+.contact {
+    .maincontent;
+    .make-row;
+}
+
+.contactinformation {
+    margin-top: 27px;
+    .make-xs-column(6);
+    .make-sm-column(5);
+    &:first-of-type {
+        .make-sm-column-offset(1);
+    }
+    h3 {
+        font-size: 1.125em;
+        color: @boldtext;
+        letter-spacing: 0.0625em;
+    }
+    li {
+        font-family: @serif;
+        text-transform: none;
+        font-size: 1.375em;
+        margin: .75em 0;
+    }
+}
+
+#map_canvas {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: -90px;
+    border-top: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    position: relative;
+    z-index: -1;
+}
