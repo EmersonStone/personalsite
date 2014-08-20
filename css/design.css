@@ -915,6 +915,8 @@ th {
 .row:after,
 .maincontent:before,
 .maincontent:after,
+.leadin .callout:before,
+.leadin .callout:after,
 .simplenavigation:before,
 .simplenavigation:after,
 .hero:before,
@@ -945,8 +947,8 @@ th {
 .history:after,
 .historyphoto:before,
 .historyphoto:after,
-.leadin .callout:before,
-.leadin .callout:after,
+.casestudyoverview:before,
+.casestudyoverview:after,
 .contact:before,
 .contact:after,
 .contact:before,
@@ -959,6 +961,7 @@ th {
 .container-fluid:after,
 .row:after,
 .maincontent:after,
+.leadin .callout:after,
 .simplenavigation:after,
 .hero:after,
 .footercontent:after,
@@ -974,7 +977,7 @@ th {
 .standardservices:after,
 .history:after,
 .historyphoto:after,
-.leadin .callout:after,
+.casestudyoverview:after,
 .contact:after,
 .contact:after {
   clear: both;
@@ -1661,6 +1664,54 @@ svg {
     display: none;
     visibility: hidden;
   }
+}
+.leadin {
+  position: relative;
+  top: -13px;
+  float: left;
+  width: 100%;
+  z-index: 0;
+  padding: 140px 0 110px;
+}
+.leadin:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #054057;
+  opacity: 0.8;
+}
+.leadin h3,
+.leadin .callout {
+  color: #ffffff;
+}
+.leadin a {
+  color: #ffffff;
+}
+.leadin a:hover,
+.leadin a:focus {
+  opacity: .75;
+}
+.leadin .divider {
+  background-color: #ffffff;
+  margin: 40px auto 30px;
+}
+.leadin .callout {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  float: left;
+  width: 83.33333333333334%;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 8.333333333333332%;
 }
 .simplenavigation {
   margin-left: -15px;
@@ -2471,6 +2522,36 @@ h4 {
 .historyphoto img {
   width: 100%;
 }
+.casestudypage {
+  background: url(../img/fgpress.jpg) top center no-repeat;
+  background-size: cover;
+}
+.casestudyoverview {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 65px;
+}
+@media (min-width: 992px) {
+  .casestudyoverview {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+@media (min-width: 992px) {
+  .casestudyoverview {
+    margin-left: 16.666666666666664%;
+  }
+}
+p.metadata {
+  line-height: 2em;
+}
 .articlesamplephoto {
   position: relative;
   min-height: 1px;
@@ -2491,55 +2572,9 @@ h4 {
     margin-left: 8.333333333333332%;
   }
 }
-.leadin {
-  position: relative;
-  top: -13px;
-  float: left;
-  width: 100%;
+.singlearticlepage {
   background: url(../img/designreading.png) top center no-repeat;
   background-size: cover;
-  z-index: 0;
-  padding: 120px 0 90px;
-}
-.leadin:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #054057;
-  opacity: 0.8;
-}
-.leadin h3,
-.leadin .callout {
-  color: #ffffff;
-}
-.leadin a {
-  color: #ffffff;
-}
-.leadin a:hover,
-.leadin a:focus {
-  opacity: .75;
-}
-.leadin .divider {
-  background-color: #ffffff;
-  margin: 40px auto 30px;
-}
-.leadin .callout {
-  margin-left: -15px;
-  margin-right: -15px;
-  position: relative;
-  float: left;
-  width: 83.33333333333334%;
-  min-height: 1px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 8.333333333333332%;
 }
 .contact {
   position: relative;

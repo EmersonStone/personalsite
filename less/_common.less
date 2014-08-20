@@ -282,6 +282,44 @@ svg {
   }
 }
 
+.leadin {
+    position: relative;
+    top: -13px;
+    float: left;
+    width: 100%;
+    z-index: 0;
+    padding: 140px 0 110px;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: @secondary;
+        opacity: .8
+    }
+    h3, .callout {
+        color: @white;
+    }
+    a {
+        color: @white;
+        &:hover, &:focus {
+            opacity: .75;
+        }
+    }
+    .divider {
+        background-color: @white;
+        margin: 40px auto 30px;
+    }
+    .callout {
+        .make-row;
+        .make-xs-column(10);
+        .make-xs-column-offset(1);
+    }
+}
+
 .simplenavigation {
   .make-row;
   color: @light;
