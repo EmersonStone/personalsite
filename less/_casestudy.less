@@ -1,6 +1,32 @@
-.casestudypage {
+.leadin-casestudy {
     background:  url(../img/fgpress.jpg) top center no-repeat;
     background-size: cover;
+    height: auto;
+    float: left;
+    padding: 120px 0 90px;
+    position: relative;
+    z-index: 0;
+    top: -13px;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.5;
+    }
+    .container {
+        background: none;
+    }
+    .subtitle {
+        margin-bottom: 0;
+    }
+    .callout, .subtitle {
+        color: @white;
+    }
 }
 
 .casestudycontent {
@@ -10,6 +36,7 @@
 }
 
 .casestudymain {
+    .make-row;
     .make-md-column(8);
     .make-md-column-offset(2);
 }

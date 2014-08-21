@@ -126,9 +126,9 @@ hr {
   background: @white;
     .subtitle {
       margin-bottom: 27px;
-    @media screen and (max-width: 479px) {
-      text-align: left;
-    }
+//   @media screen and (max-width: 479px) {
+//      text-align: left;
+//   }
   }
 }
 
@@ -179,6 +179,14 @@ hr {
   font-style: italic;
   .make-sm-column(10);
   .make-sm-column-offset(1);
+}
+
+.big {
+  font-size: 3em;
+  @media screen and (max-width: 479px) {
+    font-size: 2.25em;
+  }
+  padding-bottom: 5px;
 }
 
 p.callout {
@@ -291,39 +299,31 @@ svg {
 
 .leadin {
     position: relative;
-    top: -13px;
-    float: left;
+    top: 27px;
     width: 100%;
     z-index: 0;
-    padding: 140px 0 110px;
-    &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: @secondary;
-        opacity: .8
-    }
-    h3, .callout {
-        color: @white;
-    }
-    a {
-        color: @white;
-        &:hover, &:focus {
-            opacity: .75;
-        }
-    }
     .divider {
-        background-color: @white;
         margin: 40px auto 30px;
+        background: @white;
     }
-    .callout {
+    .leadphoto {
+      .make-row;
+      .make-xs-column(12);
+      .make-xs-column-offset(0);
+      .make-sm-column(8);
+      .make-sm-column-offset(2);
+      .make-md-column(6);
+      .make-md-column-offset(3);
+      .clearfix;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .callout, .subtitle {
         .make-row;
-        .make-xs-column(10);
-        .make-xs-column-offset(1);
+        .make-xs-column(12);
+        .make-xs-column-offset(0);
     }
 }
 
