@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 	<div id="container">
 		<div class="content">
-			<div class="hero heroimage">
+			<div class="hero<?php echo is_front_page() ? ' heroimage' : '';?>">
 				<div class="topbar">
 					<a href="javascript:;" id="menu-toggle">Menu <span class="mobile-nav">%</span></a>
 				</div>

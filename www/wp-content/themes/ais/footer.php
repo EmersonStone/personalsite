@@ -16,9 +16,9 @@
 		<h3>Navigation</h3>
 		<ul>
 		    <li><a href="/" class="selected">Introduction</a></li>
-		    <li><a href="working.html">Work</a></li>
-		    <li><a href="writing.html">Journal</a></li>
-		    <li><a href="keeping-in-touch.html">Contact</a></li>
+		    <li><a href="/working">Work</a></li>
+		    <li><a href="/writing">Journal</a></li>
+		    <li><a href="/keeping-in-touch">Contact</a></li>
 		</ul>
 		<h3>Social</h3>
 		<ul>
