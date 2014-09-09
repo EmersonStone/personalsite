@@ -8,18 +8,32 @@
  */
 ?>
 
-	</div><!-- #content -->
+	</div>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'ais' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'ais' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'ais' ), 'ais', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
-<?php wp_footer(); ?>
+	<nav>
+	    <a href="javascript:;" id="nav-close">$</a>
+		<h3>Navigation</h3>
+		<ul>
+		    <li><a href="/" class="selected">Introduction</a></li>
+		    <li><a href="working.html">Work</a></li>
+		    <li><a href="writing.html">Journal</a></li>
+		    <li><a href="keeping-in-touch.html">Contact</a></li>
+		</ul>
+		<h3>Social</h3>
+		<ul>
+		    <li><a href="http://twitter.com/andystone" target="_blank">Twitter</a></li>
+		    <li><a href="http://dribbble.com/andystone" target="_blank">Dribbble</a></li>
+		    <li><a href="http://rdio.com/people/andystone" target="_blank">Rdio</a></li>
+		    <li><a href="http://medium.com/@andystone" target="_blank">Medium</a></li>
+		    <li><a href="http://andystone.vsco.co/" target="_blank">Vsco</a></li>
+		</ul>
+		<div class="logomark">
+			<span class="rabbit">"</span>
+		</div>
+	</nav>
 
+
+</div>
 </body>
 </html>
