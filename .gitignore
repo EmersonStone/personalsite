@@ -1,3 +1,5 @@
 config-local.php
 config-staging.php
 config-production.php
+www/wp-content/plugins
+www/wp-content/uploads
