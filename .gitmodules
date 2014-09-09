@@ -1,0 +1,3 @@
+[submodule "www/WordPress"]
+	path = www/WordPress
+	url = https://github.com/WordPress/WordPress
