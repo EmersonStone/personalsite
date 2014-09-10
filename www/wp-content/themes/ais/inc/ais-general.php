@@ -9,3 +9,6 @@ function ais_enqueueScriptsAndStyles() {
 	wp_enqueue_style('ais', get_template_directory_uri().'/css/design.css');
 }
 add_action('wp_enqueue_scripts', 'ais_enqueueScriptsAndStyles');
+
+
+require_once(__DIR__.'/ais-projects.php');
