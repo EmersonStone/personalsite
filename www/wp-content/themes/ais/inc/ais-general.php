@@ -10,5 +10,13 @@ function ais_enqueueScriptsAndStyles() {
 }
 add_action('wp_enqueue_scripts', 'ais_enqueueScriptsAndStyles');
 
+function ais_addPostClasses($classes) {
+	global $post;
+	if ($post->post_type == 'post') {
+		$classes[] = 'writing';
+	}
+	return $classes;
+}
+add_filter('post_class', 'ais_addPostClasses');
 
 require_once(__DIR__.'/ais-projects.php');

@@ -4,6 +4,49 @@
  */
 ?>
 
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="articlesamplephoto">
+		<?php 
+		if (has_post_thumbnail($post->ID)) {
+			$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+		?>
+			<a href="<?php echo get_permalink();?>"><img src="<?php echo $image[0]; ?>"></a>
+		<?php 
+		} 
+		?>
+	</div>
+	<div class="articlecontent">
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<span class="metadata">
+			<?php ais_posted_on(); ?>
+			<?php
+			$tags_list = get_the_tag_list('', __(', ', 'ais'));
+			if ($tags_list) {
+				echo '<span>|</span>';
+				printf(__('%1$s', 'ais'), $tags_list);
+			}
+			?>
+		</span>
+		<?php 
+			ob_start();
+			the_content(sprintf(
+				__('Continue reading %s <span class="meta-nav getmore">&rarr;</span>', 'ais'),
+				the_title('<span class="screen-reader-text">"', '"</span>', false)
+			));
+			$content = ob_get_clean();
+			echo substr(strip_tags($content), 0, 300).'&hellip;';
+		?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'ais' ),
+				'after'	 => '</div>',
+			) );
+		?>
+		<?php edit_post_link( __( 'Edit', 'ais' ), '<span class="edit-link">', '</span>' ); ?>
+	</div>
+</div>
+
+<?php /* 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
@@ -17,7 +60,6 @@
 
 	<div class="entry-content">
 		<?php
-			/* translators: %s: Name of current post */
 			the_content( sprintf(
 				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'ais' ), 
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
@@ -27,7 +69,7 @@
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'ais' ),
-				'after'  => '</div>',
+				'after'	 => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
@@ -35,7 +77,6 @@
 	<footer class="entry-footer">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
-				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'ais' ) );
 				if ( $categories_list && ais_categorized_blog() ) :
 			?>
@@ -45,7 +86,6 @@
 			<?php endif; // End if categories ?>
 
 			<?php
-				/* translators: used between list items, there is a space after the comma */
 				$tags_list = get_the_tag_list( '', __( ', ', 'ais' ) );
 				if ( $tags_list ) :
 			?>
@@ -62,3 +102,4 @@
 		<?php edit_post_link( __( 'Edit', 'ais' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+*/?>
