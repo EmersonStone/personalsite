@@ -38,6 +38,9 @@ get_header(); ?>
 					get_template_part( 'content', get_post_format() );
 				?>
 
+				<div class="clearfix"></div>
+				<div class="divider"></div>
+
 			<?php endwhile; ?>
 
 			<?php ais_paging_nav(); ?>

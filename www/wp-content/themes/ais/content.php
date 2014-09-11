@@ -42,7 +42,7 @@
 				the_title('<span class="screen-reader-text">"', '"</span>', false)
 			));
 			$content = ob_get_clean();
-			echo substr(strip_tags($content), 0, 300).'&hellip;';
+			echo substr(strip_tags($content), 0, 300).' &hellip;';
 		?>
 		<?php
 			wp_link_pages( array(
@@ -52,6 +52,7 @@
 		?>
 		<?php edit_post_link( __( 'Edit', 'ais' ), '<span class="edit-link">', '</span>' ); ?>
 	</div>
+	<div class="getmore"><a href="<?php echo get_permalink(); ?>">Continue Reading</a></div>
 </div>
 
 <?php /* 
