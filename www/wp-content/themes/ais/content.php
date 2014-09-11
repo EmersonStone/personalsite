@@ -42,7 +42,7 @@
 				the_title('<span class="screen-reader-text">"', '"</span>', false)
 			));
 			$content = ob_get_clean();
-			echo substr(strip_tags($content), 0, 300).' &hellip;';
+			echo '<p>'.substr(strip_tags($content), 0, 300).' &hellip;</p>';
 		?>
 		<?php
 			wp_link_pages( array(
