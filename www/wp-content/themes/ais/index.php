@@ -49,11 +49,11 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php endif; ?>
-
-
 			<div class="clearfix"></div>
 			<div class="divider"></div>
+
+
+		<?php endif; ?>
 
 		</div>
 
