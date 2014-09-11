@@ -6,7 +6,7 @@
 				<h2 class="callout">Hello from Boulder, Colorado. My name is Andy Stone and I run a small design studio that focuses on branding and digital projects.</h2>
 				<div class="aboutme">
 					<div class="profilepic"><img src="<?php echo get_template_directory_uri();?>/img/andy-stone.jpg" alt="Andy Stone graphic design"></div>
-					<p>Over the last nine years, I've worked in print and digital design for startups and national brands. After five years of working in the agency world, the last few years has revolved around more digital-product design and development. In my free time, I’m building an app for restaurant owners called <a href="http://bistro.is/" target="_blank">Bistro</a> and a reading app for the iPhone that is still in the works. If you’d like to chat about your next design project, please <a href="#">get in touch</a>.</p>
+					<p>Over the last nine years, I've worked in print and digital design for startups and national brands. After five years of working in the agency world, the last few years has revolved around more digital-product design and development. In my free time, I’m building an app for restaurant owners called <a href="http://bistro.is/" target="_blank">Bistro</a> and a reading app for the iPhone that is still in the works. If you’d like to chat about your next design project, please <a href="/keeping-in-touch">get in touch</a>.</p>
 				</div>
 			</div>
 
@@ -14,27 +14,79 @@
 
 			<div class="recentwork">
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 2 </span>Featured Work</h3>
-				<p>My favorite work work over the last couple of years has focused on branding and digital design for consumer-facing products. Click on any project to read about the process or see more in <a href="#">my portfolio</a>.</p>
+				<p>My favorite work work over the last couple of years has focused on branding and digital design for consumer-facing products. Click on any project to read about the process or see more in <a href="/showing-off">my portfolio</a>.</p>
 			</div>
 			<div class="recentworksamples">
 				<div class="recentworksample">
-					<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample1.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
+					<a href="/showing-off"><img src="<?php echo get_template_directory_uri();?>/img/sample1.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
 				</div>
 				<div class="recentworksample">
-					<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample2.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
+					<a href="/showing-off"><img src="<?php echo get_template_directory_uri();?>/img/sample2.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
 				</div>
 				<div class="recentworksample">
-					<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample3.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
+					<a href="/showing-off"><img src="<?php echo get_template_directory_uri();?>/img/sample3.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
 				</div>
 				<div class="clearfix"></div>
-				<div class="getmore"><a href="#">See More Work</a></div>
+				<div class="getmore"><a href="/showing-off">See More Work</a></div>
 			</div>
+
+			<?php
+			$posts = get_posts(array(
+				'posts_per_page' => 1
+			));
+			
+			if (count($posts)) {
+				$post = $posts[0];
+				setup_postdata($post);
+			?>
 
 			<div class="divider"></div>
 
 			<div class="writing">
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 3 </span>Most Recent Article</h3>
+				
 				<div class="articlesamplephoto">
+					<?php 
+					if (has_post_thumbnail($post->ID)) {
+						$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+					?>
+						<a href="<?php echo get_permalink();?>"><img src="<?php echo $image[0]; ?>"></a>
+					<?php 
+					} 
+					?>
+				</div>
+				<div class="articlecontent">
+					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+					<span class="metadata">
+						<?php ais_posted_on(); ?>
+						<?php
+						$tags_list = get_the_tag_list('', __(', ', 'ais'));
+						if ($tags_list) {
+							echo '<span>|</span>';
+							printf(__('%1$s', 'ais'), $tags_list);
+						}
+						?>
+					</span>
+					<?php 
+						ob_start();
+						the_content(sprintf(
+							__('Continue reading %s <span class="meta-nav getmore">&rarr;</span>', 'ais'),
+							the_title('<span class="screen-reader-text">"', '"</span>', false)
+						));
+						$content = ob_get_clean();
+						echo substr(strip_tags($content), 0, 300).'&hellip;';
+					?>
+					<?php
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . __( 'Pages:', 'ais' ),
+							'after'	 => '</div>',
+						) );
+					?>
+					<?php edit_post_link( __( 'Edit', 'ais' ), '<span class="edit-link">', '</span>' ); ?>
+				</div>
+				<?php /* 
+				<div class="articlesamplephoto">
+					
 					<a href="singlearticle.html"><img src="<?php echo get_template_directory_uri();?>/img/designreading.png" alt="Recommended reading for designers"></a>
 				</div>
 				<div class="articlecontent">
@@ -44,7 +96,12 @@
 				</div>
 
 				<div class="getmore"><a href="singlearticle.html">Continue Reading</a></div>
+				*/?>
 			</div>
+
+			<?php
+			}	// if (count($posts))
+			?>
 
 			<div class="clearfix"></div>
 			<div class="divider"></div>
@@ -78,46 +135,8 @@
 				<div class="clearfix"></div>
 				<div class="getmore"><a href="#">Load More</a></div>
 			</div>
-
-
 		</div>
 
+		<?php include 'inc/ais-footer.php'; ?>
 
-		<footer>
-		<div class="bottomborder"></div>
-			<div class="container">
-				<div class="footerlogo">
-					<a href="#"><span class="rabbit">"</span></a>
-				</div>
-				<div class="footercontent">
-					<div class="footernavigation">
-						<ul>
-							<li>Menu</li>
-							<li><a href="/">Introduction</a></li>
-						    <li><a href="working.html">Work</a></li>
-						    <li><a href="writing.html">Journal</a></li>
-						    <li><a href="keeping-in-touch.html">Contact</a></li>
-						</ul>
-					</div>
-					<div class="footernavigation">
-						<ul>
-							<li>Social</li>
-							<li><a href="http://twitter.com/andystone" target="_blank">Twitter</a></li>
-							<li><a href="http://dribbble.com/andystone" target="_blank">Dribbble</a></li>
-							<li><a href="http://rdio.com/people/andystone" target="_blank">Rdio</a></li>
-							<li><a href="http://medium.com/@andystone" target="_blank">Medium</a></li>
-							<li><a href="http://andystone.vsco.co/" target="_blank">Vsco</a></li>
-						</ul>
-					</div>
-					<div class="footerinformation">
-						<p>The Studio of Andy Stone is proud to be a Colorado-based company.</p>
-						<p>When not designing, you can find Andy Stone biking or skiing—depending on the season. </p>
-						<p>1910 Pearl St. Boulder, CO 80302</p>
-					</div>
-				</div>
-
-			</div>
-
-		</footer>
-		
 <?php get_footer('home'); ?>

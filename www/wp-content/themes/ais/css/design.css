@@ -1357,7 +1357,7 @@ body {
     font-size: 14px;
   }
 }
-a {
+a, a:visited {
   text-decoration: none;
   outline: none;
   color: #00b5fb;
@@ -1422,7 +1422,7 @@ p {
   margin-bottom: 1em;
   color: #555555;
 }
-p a {
+p a, p a:visited {
   color: #242423;
   background-position: 0 1.1em;
   background-size: 1px 1px;
@@ -1663,7 +1663,7 @@ p.callout {
   clear: both;
   display: block;
 }
-.getmore a {
+.getmore a, .getmore a:visited {
   color: #242423;
   background-position: 0 1.1em;
   background-size: 1px 1px;
@@ -1790,7 +1790,7 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.0625em;
 }
-.simplenavigation a {
+.simplenavigation a, .simplenavigation a:visited {
   color: #242423;
   background-position: 0 1.1em;
   background-size: 1px 1px;
@@ -2076,7 +2076,7 @@ nav li {
   width: 100%;
   display: block;
 }
-nav li a {
+nav li a, nav li a:visited {
   padding-left: 28px;
   display: inline-block;
   color: #cccccc;

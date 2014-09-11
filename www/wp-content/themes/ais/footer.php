@@ -15,8 +15,8 @@
 	    <a href="javascript:;" id="nav-close">$</a>
 		<h3>Navigation</h3>
 		<ul>
-		    <li><a href="/" class="selected">Introduction</a></li>
-		    <li><a href="/working">Work</a></li>
+		    <li><a href="/">Introduction</a></li>
+		    <li><a href="/showing-off">Work</a></li>
 		    <li><a href="/writing">Journal</a></li>
 		    <li><a href="/keeping-in-touch">Contact</a></li>
 		</ul>
