@@ -16,7 +16,7 @@
 		else {
 			$media = get_attached_media('image', $post->ID);
 			if (count($media)) {
-				$image = $media[0];
+				$image = $media[array_keys($media)[0]];
 				$image = wp_get_attachment_image_src($image->ID, 'single-post-thumbnail');
 				echo '<a href="'.get_permalink().'"><img src="'.$image[0].'"></a>';
 			}
