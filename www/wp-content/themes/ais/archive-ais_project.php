@@ -23,6 +23,28 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="recentworksamples">
+					<?php
+					$projects = get_posts(array(
+						'post_type' => 'ais_project',
+						'posts_per_page' => 3
+					));
+					
+					foreach ($projects as $project) {
+						$thumbURL = wp_get_attachment_url(get_post_thumbnail_id($project->ID));
+						echo '
+							<div class="recentworksample">
+								<a href="'.get_permalink($project->ID).'">
+									<img src="'.$thumbURL.'" alt="Recent work from Andy Stone in Boulder, CO">
+								</a>
+								<div class="getmore">
+									<a href="'.get_permalink($project->ID).'">'.get_the_title($project->ID).'</a>
+								</div>
+							</div>
+							
+						';
+					}
+					?>
+					<?php /* 
 					<div class="recentworksample">
 						<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample1.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
 						<div class="getmore"><a href="case-study.html">FG Press</a></div>
@@ -35,6 +57,7 @@ get_header(); ?>
 						<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample3.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
 						<div class="getmore"><a href="case-study.html">Vail</a></div>
 					</div>
+					*/?>
 				</div>
 
 			<?php endwhile; ?>
@@ -126,7 +149,7 @@ get_header(); ?>
 			<div class="clearfix"></div>
 			<div class="divider"></div>
 
-			<p class="callout">If you have enjoyed the projects you’ve seen and would like to work together, please <a href="#">get in touch</a>.</p>
+			<p class="callout">If you have enjoyed the projects you’ve seen and would like to work together, please <a href="/keeping-in-touch">get in touch</a>.</p>
 
 			<div class="clearfix"></div>
 			<div class="divider"></div>
