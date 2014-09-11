@@ -84,6 +84,7 @@
 					?>
 					<?php edit_post_link( __( 'Edit', 'ais' ), '<span class="edit-link">', '</span>' ); ?>
 				</div>
+				<div class="getmore"><a href="<?php echo get_permalink(); ?>">Continue Reading</a></div>
 				<?php /* 
 				<div class="articlesamplephoto">
 					
