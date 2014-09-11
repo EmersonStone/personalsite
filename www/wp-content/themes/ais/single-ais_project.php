@@ -85,7 +85,7 @@
 			<div class="clearfix"></div>
 			<div class="divider"></div>
 
-			<p class="callout">If you enjoyed this project and would like to work together, <a href="keeping-in-touch.html">get in touch</a>.</p>
+			<p class="callout">If you enjoyed this project and would like to work together, <a href="/keeping-in-touch">get in touch</a>.</p>
 
 			<div class="clearfix"></div>
 			<div class="divider"></div>
