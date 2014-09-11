@@ -11,7 +11,7 @@
 	</div>
 
 
-	<nav>
+	<nav class="sidebar-nav">
 	    <a href="javascript:;" id="nav-close">$</a>
 		<h3>Navigation</h3>
 		<ul>
