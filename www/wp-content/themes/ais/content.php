@@ -12,7 +12,15 @@
 		?>
 			<a href="<?php echo get_permalink();?>"><img src="<?php echo $image[0]; ?>"></a>
 		<?php 
-		} 
+		}
+		else {
+			$media = get_attached_media('image', $post->ID);
+			if (count($media)) {
+				echo '<!--';
+				print_r($media);
+				echo '-->';
+			}
+		}
 		?>
 	</div>
 	<div class="articlecontent">
