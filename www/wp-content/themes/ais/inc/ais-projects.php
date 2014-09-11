@@ -30,7 +30,7 @@ function ais_initProjects() {
 
 	register_post_type('ais_project', array(
 		'labels' => array(
-			'name' => 'Project',
+			'name' => 'Projects',
 			'singular_name' => 'Project',
 			'add_new_item' => 'Add New Project',
 			'edit_item' => 'Edit Project',
