@@ -91,8 +91,33 @@
 			<div class="divider"></div>
 
 			<div class="simplenavigation">
-				<div class="previous"><a href="#">Previous Project</a></div>
-				<div class="next"><a href="#">Next Project</a></div>
+				
+				<?php
+				$projects = $projects = get_posts(array(
+					'post_type' => 'ais_project',
+					'posts_per_page' => -1
+				));
+				
+				$prevProject = null;
+				$nextProject = null;
+				for ($i = 0; $i < count($projects); $i++) {
+					if ($projects[$i]->ID == $post->ID) {
+						if ($i > 0) {
+							$prevProject = $projects[$i - 1];
+						}
+						if ($i < count($projects) - 1) {
+							$nextProject = $projects[$i + 1];
+						}
+					}
+				}
+					
+				?>
+				<?php if ($prevProject) : ?>
+				<div class="previous"><a href="<?php echo get_permalink($prevProject); ?>">Previous Project</a></div>
+				<?php endif; ?>
+				<?php if ($prevProject) : ?>
+				<div class="next"><a href="<?php echo get_permalink($nextProject); ?>">Next Project</a></div>
+				<?php endif; ?>
 			</div>
 
 		</div>
