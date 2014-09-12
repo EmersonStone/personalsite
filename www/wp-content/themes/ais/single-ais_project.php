@@ -112,10 +112,14 @@
 					
 				?>
 				<?php if ($prevProject) : ?>
-				<div class="previous"><a href="<?php echo get_permalink($prevProject); ?>">Previous Project</a></div>
+				<div class="previous"><a href="<?php echo get_permalink($prevProject->ID); ?>">Previous Project</a></div>
+				<?php else : ?>
+				<div class="previous">Previous Project</div>
 				<?php endif; ?>
-				<?php if ($prevProject) : ?>
-				<div class="next"><a href="<?php echo get_permalink($nextProject); ?>">Next Project</a></div>
+				<?php if ($nextProject) : ?>
+				<div class="next"><a href="<?php echo get_permalink($nextProject->ID); ?>">Next Project</a></div>
+				<?php else : ?>
+				<div class="next">Next Project</div>
 				<?php endif; ?>
 			</div>
 

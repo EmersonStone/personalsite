@@ -56,36 +56,40 @@ get_header(); ?>
 				) );
 			?>
 
-			<p class="callout">If you liked this article, please let me know. You can find me on <a href="http://twitter.com/andystone" target="_blank">twitter.</p>
+			<p class="callout">If you liked this article, please let me know. You can find me on <a href="http://twitter.com/andystone" target="_blank">twitter.</a></p>
 
 			<div class="clearfix"></div>
 			<div class="divider"></div>
 
 			<div class="simplenavigation">
 				<?php
-				$projects = $projects = get_posts(array(
+				$articles = get_posts(array(
 					'posts_per_page' => -1
 				));
 				
-				$prevProject = null;
-				$nextProject = null;
-				for ($i = 0; $i < count($projects); $i++) {
-					if ($projects[$i]->ID == $post->ID) {
+				$prevArticle = null;
+				$nextArticle = null;
+				for ($i = 0; $i < count($articles); $i++) {
+					if ($articles[$i]->ID == $post->ID) {
 						if ($i > 0) {
-							$prevProject = $projects[$i - 1];
+							$prevArticle = $articles[$i - 1];
 						}
-						if ($i < count($projects) - 1) {
-							$nextProject = $projects[$i + 1];
+						if ($i < count($articles) - 1) {
+							$nextArticle = $articles[$i + 1];
 						}
 					}
 				}
 					
 				?>
-				<?php if ($prevProject) : ?>
-				<div class="previous"><a href="<?php echo get_permalink($prevProject); ?>">Previous Project</a></div>
+				<?php if ($prevArticle) : ?>
+				<div class="previous"><a href="<?php echo get_permalink($prevArticle->ID); ?>">Previous Article</a></div>
+				<?php else : ?>
+				<div class="previous">Previous Article</div>
 				<?php endif; ?>
-				<?php if ($prevProject) : ?>
-				<div class="next"><a href="<?php echo get_permalink($nextProject); ?>">Next Project</a></div>
+				<?php if ($nextArticle) : ?>
+				<div class="next"><a href="<?php echo get_permalink($nextArticle->ID); ?>">Next Article</a></div>
+				<?php else : ?>
+				<div class="next">Next Article</div>
 				<?php endif; ?>
 			</div>
 <?php /* 
