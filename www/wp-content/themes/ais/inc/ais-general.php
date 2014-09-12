@@ -19,4 +19,20 @@ function ais_addPostClasses($classes) {
 }
 add_filter('post_class', 'ais_addPostClasses');
 
+// Tags are not linked.
+function ais_getTagList($forPost = NULL) {
+	global $post;
+	if (!$forPost) {
+		$forPost = $post;
+	}
+	$result = '';
+	$tags = array_values(get_the_tags($forPost->ID));
+	if (count($tags)) {
+		for ($i = 0, $nTags = count($tags); $i < $nTags; $i++) {
+			$result .= $tags[$i]->name.($i < $nTags - 1 ? ', ' : '');
+		}
+	}
+	return $result;
+}
+
 require_once(__DIR__.'/ais-projects.php');

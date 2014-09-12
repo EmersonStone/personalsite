@@ -30,10 +30,10 @@ get_header(); ?>
 				<span class="metadata">
 					<?php ais_posted_on(); ?>
 					<?php
-					$tags_list = get_the_tag_list('', __(', ', 'ais'));
-					if ($tags_list) {
+					$tagList = ais_getTagList();
+					if (strlen($tagList)) {
 						echo '<span>|</span>';
-						printf(__('%1$s', 'ais'), $tags_list);
+						echo $tagList;
 					}
 					?>
 				</span>
