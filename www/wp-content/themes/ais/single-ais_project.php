@@ -91,7 +91,6 @@
 			<div class="divider"></div>
 
 			<div class="simplenavigation">
-				
 				<?php
 				$projects = $projects = get_posts(array(
 					'post_type' => 'ais_project',
