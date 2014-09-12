@@ -16,19 +16,28 @@
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 2 </span>Featured Work</h3>
 				<p>My favorite work work over the last couple of years has focused on branding and digital design for consumer-facing products. Click on any project to read about the process or see more in <a href="/showing-off">my portfolio</a>.</p>
 			</div>
+			
 			<div class="recentworksamples">
-				<div class="recentworksample">
-					<a href="/showing-off"><img src="<?php echo get_template_directory_uri();?>/img/sample1.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
-				</div>
-				<div class="recentworksample">
-					<a href="/showing-off"><img src="<?php echo get_template_directory_uri();?>/img/sample2.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
-				</div>
-				<div class="recentworksample">
-					<a href="/showing-off"><img src="<?php echo get_template_directory_uri();?>/img/sample3.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
-				</div>
-				<div class="clearfix"></div>
-				<div class="getmore"><a href="/showing-off">See More Work</a></div>
+			<?php
+			$projects = get_posts(array(
+				'post_type' => 'ais_project',
+				'posts_per_page' => 3
+			));
+			
+			foreach ($projects as $project) {
+				$thumbURL = wp_get_attachment_url(get_post_thumbnail_id($project->ID));
+				echo '
+					<div class="recentworksample">
+						<a href="'.get_permalink($project->ID).'">
+							<img src="'.$thumbURL.'" alt="Recent work from Andy Stone in Boulder, CO">
+						</a>
+					</div>
+					
+				';
+			}
+			?>
 			</div>
+
 
 			<?php
 			$posts = get_posts(array(
