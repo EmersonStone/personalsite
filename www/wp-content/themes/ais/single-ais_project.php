@@ -2,7 +2,16 @@
 
 <?php if (have_posts()) : the_post(); $meta = ais_getProjectMeta($post->ID); ?>
 	
-			<div class="leadin leadin-casestudy">
+		<?php
+			$thumbID = get_post_thumbnail_id($post->ID);
+			if ($thumbID) {
+				$thumbURL = wp_get_attachment_url($thumbID);
+				echo '<div class="leadin leadin-casestudy" style="background-image:url('.$thumbURL.')">';
+			}
+			else {
+				echo '<div class="leadin leadin-casestudy">';
+			}
+		?>
 				<div class="container">
 					<h3 class="subtitle"><?php the_title(); ?></h3>
 					<div class="clearfix"></div>
