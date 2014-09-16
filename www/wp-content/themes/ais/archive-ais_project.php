@@ -19,48 +19,30 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<div class="recentworksamples">
-					<?php
-					$projects = get_posts(array(
-						'post_type' => 'ais_project',
-						'posts_per_page' => 3
-					));
-					
-					foreach ($projects as $project) {
-						$thumbURL = wp_get_attachment_url(get_post_thumbnail_id($project->ID));
-						echo '
-							<div class="recentworksample">
-								<a href="'.get_permalink($project->ID).'">
-									<img src="'.$thumbURL.'" alt="Recent work from Andy Stone in Boulder, CO">
-								</a>
-								<div class="getmore">
-									<a href="'.get_permalink($project->ID).'">'.get_the_title($project->ID).'</a>
-								</div>
+			<div class="recentworksamples">
+				<?php
+				$projects = get_posts(array(
+					'post_type' => 'ais_project',
+					'posts_per_page' => 3
+				));
+				
+				foreach ($projects as $project) {
+					$thumbURL = wp_get_attachment_url(get_post_thumbnail_id($project->ID));
+					echo '
+						<div class="recentworksample">
+							<a href="'.get_permalink($project->ID).'">
+								<img src="'.$thumbURL.'" alt="Recent work from Andy Stone in Boulder, CO">
+							</a>
+							<div class="getmore">
+								<a href="'.get_permalink($project->ID).'">'.get_the_title($project->ID).'</a>
 							</div>
-							
-						';
-					}
-					?>
-					<?php /* 
-					<div class="recentworksample">
-						<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample1.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
-						<div class="getmore"><a href="case-study.html">FG Press</a></div>
-					</div>
-					<div class="recentworksample">
-						<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample2.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
-						<div class="getmore"><a href="case-study.html">OpenSnow</a></div>
-					</div>
-					<div class="recentworksample">
-						<a href="case-study.html"><img src="<?php echo get_template_directory_uri();?>/img/sample3.png" alt="Recent work from Andy Stone in Boulder, CO"></a>
-						<div class="getmore"><a href="case-study.html">Vail</a></div>
-					</div>
-					*/?>
-				</div>
+						</div>
+						
+					';
+				}
+				?>
+			</div>
 
-			<?php endwhile; ?>
 
 			<?php ais_paging_nav(); ?>
 
