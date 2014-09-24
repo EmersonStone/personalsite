@@ -78,10 +78,7 @@ function ais_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	$posted_on = sprintf(
-		_x( 'Published: %s', 'post date', 'ais' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
+	$posted_on = sprintf(_x( 'Published: %s', 'post date', 'ais' ), '<strong class="date">'.$time_string.'</strong>');
 
 	$byline = sprintf(
 		_x( 'by %s', 'post author', 'ais' ),
@@ -89,7 +86,7 @@ function ais_posted_on() {
 	);
 
 	//echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
-	echo '<span class="posted-on">' . $posted_on . '</span>';
+	echo $posted_on;
 
 }
 endif;

@@ -28,7 +28,7 @@
 		<span class="metadata">
 			<?php ais_posted_on(); ?>
 			<?php
-			$tags_list = get_the_tag_list('', __(', ', 'ais'));
+			$tags_list = ais_getTagList();
 			if ($tags_list) {
 				echo '<span>|</span>';
 				printf(__('%1$s', 'ais'), $tags_list);
