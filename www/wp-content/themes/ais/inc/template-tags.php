@@ -19,15 +19,29 @@ function ais_paging_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'ais' ); ?></h1>
-		<div class="nav-links">
+		<div class="simplenavigation">
 
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'ais' ) ); ?></div>
-			<?php endif; ?>
+			<div class="previous">
+			<?php 
+			if ( get_next_posts_link() ) {
+				next_posts_link( __( 'Previous Articles', 'ais' ) );
+			}
+			else {
+				echo 'Previous Articles';
+			}
+			?>
+			</div>
 
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'ais' ) ); ?></div>
-			<?php endif; ?>
+			<div class="next">
+			<?php 
+			if ( get_previous_posts_link() ) {
+				previous_posts_link('Next Articles');
+			}
+			else {
+				echo 'Next Articles';
+			}
+			?>
+			</div>
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
