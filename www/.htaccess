@@ -1,0 +1,25 @@
+
+## UTF-8 encoding for everything
+AddDefaultCharset utf-8
+
+DirectoryIndex index.php index.html
+
+## Enable gzip.
+## Highly recommended as it will increase speed for
+## both the console and your published site.
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/json application/javascript application/x-javascript
+</IfModule>
+## END gzip
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
