@@ -1715,16 +1715,16 @@ svg {
 .leadin .leadphoto {
   margin-left: -15px;
   margin-right: -15px;
-  float: left;
-  width: 100%;
-  margin-left: 0%;
   position: relative;
+  float: left;
+  width: 83.33333333333334%;
   min-height: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 8.333333333333332%;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -1736,17 +1736,6 @@ svg {
 @media (min-width: 768px) {
   .leadin .leadphoto {
     margin-left: 16.666666666666664%;
-  }
-}
-@media (min-width: 992px) {
-  .leadin .leadphoto {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .leadin .leadphoto {
-    margin-left: 25%;
   }
 }
 .leadin .leadphoto:before,
