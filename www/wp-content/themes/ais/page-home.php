@@ -14,7 +14,7 @@
 
 			<div class="recentwork">
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 2 </span>Featured Work</h3>
-				<p>My favorite work work over the last couple of years has focused on branding and digital design for consumer-facing products. Click on any project to read about the process or see more in <a href="/showing-off">my portfolio</a>.</p>
+				<p>My favorite work work over the last couple of years has focused on branding and digital design for consumer-facing products. Click on any project to read about the process or see more in <a href="/showing-off">the portfolio</a>.</p>
 			</div>
 
 			<div class="recentworksamples">
