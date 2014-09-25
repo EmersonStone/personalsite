@@ -26,6 +26,9 @@ a {
     outline: none;
     text-decoration: none;
   }
+  &:visited {
+    color: @primary;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -81,6 +84,9 @@ p {
   margin-bottom: 1em;
   color: @standardtext;
   .mediumlinks(0, 1.1em);
+  a:visited {
+    color: @primary;
+  }
 }
 
 em {
@@ -278,6 +284,9 @@ p.callout {
   clear: both;
   display: block;
   .mediumlinks(0, 1.1em);
+  a:visited {
+    color: @primary;
+  }
 }
 
 .svgcontainer {
@@ -334,6 +343,9 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.0625em;
   .mediumlinks;
+  a:visited {
+    color: @primary;
+  }
   .previous {
     float: left;
     margin: 27px 15px;
