@@ -26,3 +26,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php include 'inc/ais-footer.php'; ?>
+
+<?php get_footer(); ?>
