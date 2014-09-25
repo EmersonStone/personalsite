@@ -313,6 +313,8 @@ svg {
       .make-xs-column-offset(0);
       .make-sm-column(8);
       .make-sm-column-offset(2);
+      .make-md-column(6);
+      .make-md-column-offset(3);
       .clearfix;
       margin-bottom: 20px;
       img {
@@ -350,6 +352,7 @@ svg {
 }
 
 //Fixing SimpleGoods
-a.simple-goods-btn {
+a.simple-goods-btn, a.simple-goods-btn:hover, a.simple-goods-btn:focus {
   background: none;
+  background-image: none;
 }
