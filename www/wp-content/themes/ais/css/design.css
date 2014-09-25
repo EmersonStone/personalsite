@@ -1404,7 +1404,6 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.0625em;
-  color: #242423;
 }
 h4 {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
@@ -1820,6 +1819,10 @@ svg {
 .simplenavigation .next {
   float: right;
   margin: 27px 15px;
+}
+.post-edit-link,
+edit-link {
+  display: none;
 }
 .hero {
   text-align: center;
@@ -2528,8 +2531,10 @@ footer p {
 .standardservices p {
   margin-bottom: 2.25em;
 }
-.standardservices p:last-of-type {
-  margin-bottom: 1em;
+@media screen and (min-width: 768px) {
+  .standardservices p:last-of-type {
+    margin-bottom: 1em;
+  }
 }
 .services {
   margin-top: 5px;
@@ -2616,7 +2621,7 @@ h4 {
   width: 100%;
 }
 .leadin-casestudy {
-  background: url(../img/fgpress.jpg) top center no-repeat;
+  background: top center no-repeat;
   background-size: cover;
   height: auto;
   float: left;

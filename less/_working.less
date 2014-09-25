@@ -31,8 +31,10 @@
     }
     p {
         margin-bottom: 2.25em;
-        &:last-of-type {
-            margin-bottom: 1em;
+        @media screen and (min-width: 768px) {
+            &:last-of-type {
+                margin-bottom: 1em;
+            }
         }
     }
 }
