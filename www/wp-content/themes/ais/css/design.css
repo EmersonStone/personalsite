@@ -1824,6 +1824,13 @@ svg {
   float: right;
   margin: 27px 15px;
 }
+.error-404 .writing {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.error-404 .writing h2 {
+  margin-bottom: 20px;
+}
 .post-edit-link,
 edit-link {
   display: none;
