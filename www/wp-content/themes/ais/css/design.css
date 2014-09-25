@@ -1357,7 +1357,7 @@ body {
     font-size: 14px;
   }
 }
-a, a:visited {
+a {
   text-decoration: none;
   outline: none;
   color: #00b5fb;
@@ -1368,6 +1368,9 @@ a:focus {
   cursor: pointer;
   outline: none;
   text-decoration: none;
+}
+a:visited {
+  color: #00b5fb;
 }
 h1,
 h2,
@@ -1422,7 +1425,7 @@ p {
   margin-bottom: 1em;
   color: #555555;
 }
-p a, p a:visited {
+p a {
   color: #242423;
   background-position: 0 1.1em;
   background-size: 1px 1px;
@@ -1442,6 +1445,9 @@ p a:hover {
   p a:focus {
     text-decoration: underline;
   }
+}
+p a:visited {
+  color: #00b5fb;
 }
 em {
   font-style: italic;
@@ -1663,7 +1669,7 @@ p.callout {
   clear: both;
   display: block;
 }
-.getmore a, .getmore a:visited {
+.getmore a {
   color: #242423;
   background-position: 0 1.1em;
   background-size: 1px 1px;
@@ -1683,6 +1689,9 @@ p.callout {
   .getmore a:focus {
     text-decoration: underline;
   }
+}
+.getmore a:visited {
+  color: #00b5fb;
 }
 .svgcontainer {
   width: 100%;
@@ -1790,7 +1799,7 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.0625em;
 }
-.simplenavigation a, .simplenavigation a:visited {
+.simplenavigation a {
   color: #242423;
   background-position: 0 1.1em;
   background-size: 1px 1px;
@@ -1810,6 +1819,9 @@ svg {
   .simplenavigation a:focus {
     text-decoration: underline;
   }
+}
+.simplenavigation a:visited {
+  color: #00b5fb;
 }
 .simplenavigation .previous {
   float: left;
@@ -1983,6 +1995,7 @@ footer p {
   height: 100%;
   float: left;
   overflow-x: hidden;
+  background: #00b5fb !important;
 }
 .content {
   width: 100%;
@@ -2003,7 +2016,7 @@ footer p {
   transform: translate3d(-250px, 0, 0);
   overflow: hidden;
 }
-#container.pushed nav.sidebar-nav {
+#container.pushed .sidebar-nav {
   -webkit-transform: translate3d(0px, 0, 0);
   -moz-transform: translate3d(0px, 0, 0);
   -o-transform: translate3d(0px, 0, 0);
@@ -2011,11 +2024,11 @@ footer p {
   transform: translate3d(0px, 0, 0);
   overflow: hidden;
 }
-#container.pushed nav.sidebar-nav h3,
-#container.pushed nav.sidebar-nav ul {
+#container.pushed .sidebar-nav h3,
+#container.pushed .sidebar-nav ul {
   opacity: 1;
 }
-nav.sidebar-nav {
+.sidebar-nav {
   -webkit-transform: translate3d(250px, 0, 0);
   -moz-transform: translate3d(250px, 0, 0);
   -o-transform: translate3d(250px, 0, 0);
@@ -2045,7 +2058,7 @@ nav.sidebar-nav {
   -moz-box-shadow: inset 10px -10px 36px -10px rgba(0, 0, 0, 0.75);
   box-shadow: inset 10px -10px 36px -10px rgba(0, 0, 0, 0.75);
 }
-nav.sidebar-nav h3 {
+.sidebar-nav h3 {
   margin-top: 30px;
   padding-bottom: 16px;
   padding-left: 30px;
@@ -2058,7 +2071,7 @@ nav.sidebar-nav h3 {
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   opacity: 0;
 }
-nav.sidebar-nav ul {
+.sidebar-nav ul {
   float: left;
   margin-top: 5px;
   margin-bottom: 35px;
@@ -2069,14 +2082,14 @@ nav.sidebar-nav ul {
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   opacity: 0;
 }
-nav.sidebar-nav li {
+.sidebar-nav li {
   float: left;
   clear: both;
   font-weight: 300;
   width: 100%;
   display: block;
 }
-nav.sidebar-nav li a, nav.sidebar-nav li a:visited {
+.sidebar-nav li a {
   padding-left: 28px;
   display: inline-block;
   color: #cccccc;
@@ -2090,15 +2103,15 @@ nav.sidebar-nav li a, nav.sidebar-nav li a:visited {
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
-nav.sidebar-nav li a.selected {
+.sidebar-nav li a.selected {
   border-left: 2px solid #ffffff;
   color: #ffffff;
 }
-nav.sidebar-nav li a:hover {
+.sidebar-nav li a:hover {
   color: #ffffff;
   border-left: 2px solid #ffffff;
 }
-nav.sidebar-nav ul:nth-of-type(2) {
+.sidebar-nav ul:nth-of-type(2) {
   margin-bottom: 125px;
 }
 #menu-toggle {
@@ -2975,17 +2988,17 @@ p.metadata {
     right: 10px;
     top: -5px;
   }
-  nav {
+  .sidebar-nav {
     background: url(../img/nav-bg.jpg) no-repeat top center;
     background-size: cover;
   }
-  nav #nav-close {
+  .sidebar-nav #nav-close {
     top: -2px;
   }
-  nav h3 {
+  .sidebar-nav h3 {
     margin-top: 15px;
   }
-  nav li {
+  .sidebar-nav li {
     line-height: 2.571428571em;
   }
   .profilepic {
