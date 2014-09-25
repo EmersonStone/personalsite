@@ -12,19 +12,19 @@ get_header(); ?>
 
 		<div class="leadin">
 			<div class="leadphoto">
-				<?php 
+				<?php
 				if (has_post_thumbnail($post->ID)) {
 					$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 				?>
 					<a href="<?php echo get_permalink();?>"><img src="<?php echo $image[0]; ?>"></a>
-				<?php 
-				} 
+				<?php
+				}
 				?>
 			</div>
 			<div class="clearfix"></div>
 			<?php the_title( '<h2 class="callout big">', '</h2>' ); ?>
 		</div>
-		
+
 		<div class="writing">
 			<div class="articlecontent">
 				<span class="metadata">
@@ -66,7 +66,7 @@ get_header(); ?>
 				$articles = get_posts(array(
 					'posts_per_page' => -1
 				));
-				
+
 				$prevArticle = null;
 				$nextArticle = null;
 				for ($i = 0; $i < count($articles); $i++) {
@@ -79,20 +79,20 @@ get_header(); ?>
 						}
 					}
 				}
-					
+
 				?>
 				<?php if ($prevArticle) : ?>
-				<div class="previous"><a href="<?php echo get_permalink($prevArticle->ID); ?>">Previous Article</a></div>
+				<div class="previous"><a href="<?php echo get_permalink($prevArticle->ID); ?>">Newer Article</a></div>
 				<?php else : ?>
-				<div class="previous">Previous Article</div>
+				<div class="previous">Newer Article</div>
 				<?php endif; ?>
 				<?php if ($nextArticle) : ?>
-				<div class="next"><a href="<?php echo get_permalink($nextArticle->ID); ?>">Next Article</a></div>
+				<div class="next"><a href="<?php echo get_permalink($nextArticle->ID); ?>">Older Article</a></div>
 				<?php else : ?>
-				<div class="next">Next Article</div>
+				<div class="next">Older Article</div>
 				<?php endif; ?>
 			</div>
-<?php /* 
+<?php /*
 			<div class="simplenavigation">
 				<div class="previous"><a href="#">Previous Article</a></div>
 				<div class="next">Next Article</div>
