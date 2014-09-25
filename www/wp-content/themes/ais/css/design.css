@@ -1921,6 +1921,8 @@ footer p {
   height: 80px;
   margin-top: -53px;
   border: 1px solid #cccccc;
+  z-index: 2;
+  position: relative;
 }
 .footerlogo .rabbit {
   margin: 0;
@@ -2952,7 +2954,7 @@ p.metadata {
   border-top: 2px solid #00b5fb;
   border-bottom: 2px solid #00b5fb;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 @media screen and (max-width: 480px) {
   .callout {
