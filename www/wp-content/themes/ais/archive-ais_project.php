@@ -13,8 +13,8 @@ get_header(); ?>
 			<div class="clearfix"></div>
 			<div class="divider"></div>
 			<div class="recentwork">
-				<h3 class="subtitle">Case Studies</h3>
-				<p>Read about the full process of working on a design project from initial proposals and sketches to the final deliverables.</p>
+				<h3 class="subtitle">Featured Projects</h3>
+				<p>Read about the full process of working on a design project from initial concepts and sketches to the final deliverables.</p>
 			</div>
 
 		<?php if ( have_posts() ) : ?>
@@ -25,7 +25,7 @@ get_header(); ?>
 					'post_type' => 'ais_project',
 					'posts_per_page' => 3
 				));
-				
+
 				foreach ($projects as $project) {
 					$thumbURL = wp_get_attachment_url(get_post_thumbnail_id($project->ID));
 					echo '
@@ -37,7 +37,7 @@ get_header(); ?>
 								<a href="'.get_permalink($project->ID).'">'.get_the_title($project->ID).'</a>
 							</div>
 						</div>
-						
+
 					';
 				}
 				?>

@@ -30,7 +30,7 @@ function ais_initProjects() {
 
 	register_post_type('ais_project', array(
 		'labels' => array(
-			'name' => 'Projects',
+			'name' => 'Featured Design Projects',
 			'singular_name' => 'Project',
 			'add_new_item' => 'Add New Project',
 			'edit_item' => 'Edit Project',
@@ -78,7 +78,7 @@ function ais_getProjectMeta($postID) {
 
 function ais_renderProjectMetForm($post) {
 	$meta = ais_getProjectMeta($post->ID);
-	
+
 	echo '
 		<style>
 			.project-meta-form label span {
@@ -91,7 +91,7 @@ function ais_renderProjectMetForm($post) {
 			}
 		</style>
 		<div class="project-meta-form">
-	'; 	
+	';
 	echo '
 			<label class="project-client"><span>Client</span>
 				<input type="text" name="ais_project_client" value="'.esc_attr($meta['client']).'"><br>

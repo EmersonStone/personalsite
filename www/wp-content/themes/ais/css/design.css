@@ -1403,6 +1403,8 @@ h3 {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.0625em;
+  color: #242423;
 }
 h4 {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
