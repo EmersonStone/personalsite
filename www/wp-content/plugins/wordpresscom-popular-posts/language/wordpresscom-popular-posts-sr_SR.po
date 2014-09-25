@@ -1,0 +1,195 @@
+# Serbian translation for wordpresscom-popular-posts
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the wordpresscom-popular-posts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpresscom-popular-posts\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wppp\n"
+"POT-Creation-Date: 2012-03-14 10:56+0100\n"
+"PO-Revision-Date: 2011-08-07 22:04+0000\n"
+"Last-Translator: Предраг Љубеновић <Unknown>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-03-13 09:04+0000\n"
+"X-Generator: Launchpad (build 14933)\n"
+
+#: wppp.php:25 wppp.php:48
+msgid "Popular Posts"
+msgstr "Популарне објаве"
+
+#: wppp.php:45
+msgid "A list of your most popular posts"
+msgstr "Списак ваших најпопуларнијих објава"
+
+#: wppp.php:481
+msgid "Title"
+msgstr "Наслов"
+
+#: wppp.php:488
+msgid "Number of links shown"
+msgstr "Број приказаних линкова"
+
+#: wppp.php:495
+msgid ""
+"The length (in days) of the desired time frame.<br />(0 means unlimited)"
+msgstr ""
+"Дужина (број дана) жељеног временског интервала.<br />(остави 0 за "
+"бесконачно)"
+
+#: wppp.php:502
+msgid "Show: "
+msgstr "Прикажи: "
+
+#: wppp.php:504
+msgid "posts and pages"
+msgstr "објаве и странице"
+
+#: wppp.php:505
+msgid "only posts"
+msgstr "само објаве"
+
+#: wppp.php:506
+msgid "only pages"
+msgstr "само странице"
+
+#: wppp.php:518
+msgid ""
+"Format of the links. See <a href=\"http://wordpress.org/extend/plugins/"
+"wordpresscom-popular-posts/faq/\">docs</a> for help"
+msgstr ""
+"Формат линкова. Погледај <a href=\"http://wordpress.org/extend/plugins/"
+"wordpresscom-popular-posts/faq/\">упутства</a> за помоћ"
+
+#: wppp.php:526
+msgid ""
+"Note: your current theme doesn't support post thumbnails: you won't be able "
+"to set them."
+msgstr ""
+
+#: wppp.php:531
+#, fuzzy
+msgid ""
+"Width/height of the thumbnail image (if %post_thumbnail% is used in the "
+"format above)"
+msgstr "Дужина текста (уколико се %post_excerpt% користи)"
+
+#: wppp.php:534
+msgid " px"
+msgstr ""
+
+#: wppp.php:538
+msgid "Length of the excerpt (if %post_excerpt% is used in the format above)"
+msgstr "Дужина текста (уколико се %post_excerpt% користи)"
+
+#: wppp.php:541 wppp.php:555
+msgid " characters"
+msgstr " карактера"
+
+#: wppp.php:545
+msgid ""
+"Date/time format (if %post_time% is used in the format above). See <a href="
+"\"http://wordpress.org/extend/plugins/wordpresscom-popular-posts/faq/"
+"\">docs</a> for help"
+msgstr ""
+"Формат датума и времена (уколико се користи %post_time%). Погледајте <a href="
+"\"http://wordpress.org/extend/plugins/wordpresscom-popular-posts/faq/"
+"\">упутства</a> за помоћ"
+
+#: wppp.php:552
+msgid "Max length of the title links.<br />(0 means unlimited)"
+msgstr "Максимална дужина наслова <br />(остави 0 за без лимита)"
+
+#: wppp.php:559
+msgid "Exclude these posts: (separate the IDs by commas. e.g. 1,42,52)"
+msgstr "Не укључуј следеће објаве: (поделите ИД са зарезима, нпр. 1,42,52)"
+
+#: wppp.php:567
+msgid "Exclude these authors: (separate the IDs by commas. e.g. 1,42,52)"
+msgstr "Не укључуј следеће ауторе: (поделите ИД са зарезима, нпр. 1,42,52)"
+
+#: wppp.php:574
+msgid "Don't show posts/pages with a view count under"
+msgstr "Не приказуј објаве/странице са бројем прегледа испод"
+
+#: wppp.php:577
+msgid "(0 means unlimited)"
+msgstr "(0 значи неограничено)"
+
+#: wppp.php:581
+msgid "Kind of list"
+msgstr "Тип списка"
+
+#: wppp.php:583
+msgid "Unordered list (&lt;ul&gt;)"
+msgstr "Несортиран списак (&lt;ul&gt;)"
+
+#: wppp.php:584
+msgid "Ordered list (&lt;ol&gt;)"
+msgstr "Сортиран списак (&lt;ol&gt;)"
+
+#: wppp.php:585
+msgid "None (use custom format)"
+msgstr "Никакав (користи свој формат)"
+
+#: wppp.php:598
+msgid "Only show posts/pages in this category"
+msgstr "Приказуј само објаве/странице у овој категорији"
+
+#: wppp.php:599
+msgid "&lt;All categories&gt;"
+msgstr "&lt;Све категорије&gt;"
+
+#: wppp.php:613
+msgid "Enable cache (improves speed)"
+msgstr "Омогући кеш (побољшава брзину)"
+
+#: wppp.php:621
+msgid "Only show a cached version to the not logged in users"
+msgstr "Приказуј само кеширану верзију не пријављеним корисницима"
+
+#: wppp.php:646
+msgid "Magic number (raise it if you see less links than expected)"
+msgstr ""
+"Магични број (повећајте га уколико видите мање линкова него што сте "
+"очекивали)"
+
+#: wppp.php:736
+#, php-format
+msgid ""
+"Wordpress.com Popular Post &gt;= 2.0.0 is compatible with WordPress &gt;= "
+"2.8 only.<br />\n"
+"\tPlease either <a href='%s'>update</a> your WordPress installation, <a "
+"href='%s'>downgrade this plugin</a> to v1.3.6\n"
+"\tor <a href='%s'>uninstall it</a>."
+msgstr ""
+"Wordpress.com Попиларна објава &gt;= 2.0.0 је компатибилна искључиво са "
+"WordPress &gt;= 2.8.<br />\n"
+"\tМолимо вас да или <a href='%s'>освежите</a> вашу WordPress инсталацију, "
+"или <a href='%s'>користите старију верзију овог додатка</a> (v1.3.6)\n"
+"\tили <a href='%s'>га уклоните и обришите</a>."
+
+#. Plugin Name of an extension
+msgid "WordPress.com Popular Posts"
+msgstr "WordPress.com популарне објаве"
+
+#. Plugin URI of an extension
+msgid "http://polpoinodroidi.com/wordpress-plugins/wordpresscom-popular-posts/"
+msgstr ""
+"http://polpoinodroidi.com/wordpress-plugins/wordpresscom-popular-posts/"
+
+#. Description of an extension
+msgid "Shows the most popular posts, using data collected by"
+msgstr "Приказује популарне објаве, користећи податке сакупљене од"
+
+#. Author of an extension
+msgid "Frasten"
+msgstr "Frasten"
+
+#. Author URI of an extension
+msgid "http://polpoinodroidi.com"
+msgstr "http://polpoinodroidi.com"

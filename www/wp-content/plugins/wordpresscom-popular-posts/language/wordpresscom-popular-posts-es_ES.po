@@ -1,0 +1,193 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wppp\n"
+"POT-Creation-Date: 2012-03-14 10:56+0100\n"
+"PO-Revision-Date: 2011-06-27 15:39+0000\n"
+"Last-Translator: Fitoschido <fitoschido@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-03-13 09:04+0000\n"
+"X-Generator: Launchpad (build 14933)\n"
+
+#: wppp.php:25 wppp.php:48
+msgid "Popular Posts"
+msgstr "Entradas populares"
+
+#: wppp.php:45
+msgid "A list of your most popular posts"
+msgstr "Una lista de tus entradas más populares"
+
+#: wppp.php:481
+msgid "Title"
+msgstr "Título"
+
+#: wppp.php:488
+msgid "Number of links shown"
+msgstr "Número de enlaces a mostrar"
+
+#: wppp.php:495
+msgid ""
+"The length (in days) of the desired time frame.<br />(0 means unlimited)"
+msgstr "La extensión de tiempo deseada (en días).<br />(0 significa ilimitada)"
+
+#: wppp.php:502
+msgid "Show: "
+msgstr "Mostrar: "
+
+#: wppp.php:504
+msgid "posts and pages"
+msgstr "entradas y páginas"
+
+#: wppp.php:505
+msgid "only posts"
+msgstr "solo entradas"
+
+#: wppp.php:506
+msgid "only pages"
+msgstr "solo páginas"
+
+#: wppp.php:518
+msgid ""
+"Format of the links. See <a href=\"http://wordpress.org/extend/plugins/"
+"wordpresscom-popular-posts/faq/\">docs</a> for help"
+msgstr ""
+"Formato de los enlaces. Véase la <a href=\"http://wordpress.org/extend/"
+"plugins/wordpresscom-popular-posts/faq/\">documentación</a> para ayuda"
+
+#: wppp.php:526
+msgid ""
+"Note: your current theme doesn't support post thumbnails: you won't be able "
+"to set them."
+msgstr ""
+
+#: wppp.php:531
+#, fuzzy
+msgid ""
+"Width/height of the thumbnail image (if %post_thumbnail% is used in the "
+"format above)"
+msgstr ""
+"Extensión del extracto (si %post_excerpt% se usa en el formato anterior)"
+
+#: wppp.php:534
+msgid " px"
+msgstr ""
+
+#: wppp.php:538
+msgid "Length of the excerpt (if %post_excerpt% is used in the format above)"
+msgstr ""
+"Extensión del extracto (si %post_excerpt% se usa en el formato anterior)"
+
+#: wppp.php:541 wppp.php:555
+msgid " characters"
+msgstr " caracteres"
+
+#: wppp.php:545
+msgid ""
+"Date/time format (if %post_time% is used in the format above). See <a href="
+"\"http://wordpress.org/extend/plugins/wordpresscom-popular-posts/faq/"
+"\">docs</a> for help"
+msgstr ""
+"Formato fecha/hora (si %post_time% es usado en el formato anterior). ver <a "
+"href=\"http://wordpress.org/extend/plugins/wordpresscom-popular-posts/faq/"
+"\">docs</a> para ayuda"
+
+#: wppp.php:552
+msgid "Max length of the title links.<br />(0 means unlimited)"
+msgstr ""
+"Máxima extensión del título de los enlaces<br />(0 significa ilimitado)"
+
+#: wppp.php:559
+msgid "Exclude these posts: (separate the IDs by commas. e.g. 1,42,52)"
+msgstr ""
+"Excluir estas entradas: (separar las IDs con comas. Por ejemplo 1,42,52)"
+
+#: wppp.php:567
+msgid "Exclude these authors: (separate the IDs by commas. e.g. 1,42,52)"
+msgstr ""
+"Excluir a estos autores: (separar los identificadores con comas p.ej. "
+"1,42,52)"
+
+#: wppp.php:574
+msgid "Don't show posts/pages with a view count under"
+msgstr "No mostrar entradas/páginas con visitas menores a"
+
+#: wppp.php:577
+msgid "(0 means unlimited)"
+msgstr "(0 significa ilimitadas)"
+
+#: wppp.php:581
+msgid "Kind of list"
+msgstr "Clase de lista"
+
+#: wppp.php:583
+msgid "Unordered list (&lt;ul&gt;)"
+msgstr "Lista desordenada (&lt;ul&gt;)"
+
+#: wppp.php:584
+msgid "Ordered list (&lt;ol&gt;)"
+msgstr "Lista Ordenada (&lt;ol&gt;)"
+
+#: wppp.php:585
+msgid "None (use custom format)"
+msgstr "Ninguna (usar formato propio)"
+
+#: wppp.php:598
+msgid "Only show posts/pages in this category"
+msgstr "sólo mostrar entradas/páginas in esta categoría"
+
+#: wppp.php:599
+msgid "&lt;All categories&gt;"
+msgstr "&lt;Todas las categorías&gt;"
+
+#: wppp.php:613
+msgid "Enable cache (improves speed)"
+msgstr "Permitir cache (mejora la velocidad)"
+
+#: wppp.php:621
+msgid "Only show a cached version to the not logged in users"
+msgstr "Sólo mostrar una version guardada a usuarios no registrados"
+
+#: wppp.php:646
+msgid "Magic number (raise it if you see less links than expected)"
+msgstr "Número mágico (aumentar si ve menos enlaces de los que espera)"
+
+#: wppp.php:736
+#, php-format
+msgid ""
+"Wordpress.com Popular Post &gt;= 2.0.0 is compatible with WordPress &gt;= "
+"2.8 only.<br />\n"
+"\tPlease either <a href='%s'>update</a> your WordPress installation, <a "
+"href='%s'>downgrade this plugin</a> to v1.3.6\n"
+"\tor <a href='%s'>uninstall it</a>."
+msgstr ""
+"Wordpress.com Entradas Populares  &gt;= 2.0.0 es compatible con WordPress "
+"&gt;=  Sólo 2.8.<br />\n"
+"\tPor favor, <a href='%s'>actualice</a> su versión de WordPress, <a "
+"href='%s'>o use la versión v1.3.6 del plugin</a> \n"
+"\tor <a href='%s'>desinstalar</a>."
+
+#. Plugin Name of an extension
+msgid "WordPress.com Popular Posts"
+msgstr "Wordpress.com Entradas Populares"
+
+#. Plugin URI of an extension
+msgid "http://polpoinodroidi.com/wordpress-plugins/wordpresscom-popular-posts/"
+msgstr ""
+"http://polpoinodroidi.com/wordpress-plugins/wordpresscom-popular-posts/"
+
+#. Description of an extension
+msgid "Shows the most popular posts, using data collected by"
+msgstr "Muestra los post mas populares, usando la información recolectada por"
+
+#. Author of an extension
+msgid "Frasten"
+msgstr "Frasten"
+
+#. Author URI of an extension
+msgid "http://polpoinodroidi.com"
+msgstr "http://polpoinodroidi.com"

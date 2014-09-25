@@ -1,0 +1,336 @@
+# Copyright (C) 2014 OM4
+# This file is distributed under the same license as the Typekit Fonts for WordPress package.
+# Translators:
+# ThemeBoy <support@themeboy.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Typekit Fonts for WordPress\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/typekit-fonts-for-"
+"wordpress\n"
+"POT-Creation-Date: 2014-08-03 03:55:30+00:00\n"
+"PO-Revision-Date: 2014-08-03 22:07+1000\n"
+"Last-Translator: James Collins <james@om4.com.au>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/typekit-fonts-"
+"for-wordpress/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.6.7\n"
+
+#: typekit-admin.php:28
+msgid "Typekit Fonts"
+msgstr "Typekit フォント"
+
+#: typekit-admin.php:57
+msgid ""
+" Please <a href=\"%s\">click here for instructions</a> on how to obtain your "
+"Typekit embed code."
+msgstr ""
+"Typekit 埋め込みコードを取得するには<a href=\"%s\">ここをクリック</a>してくだ"
+"さい。"
+
+#: typekit-admin.php:60
+msgid "Invalid Typekit embed code. %s"
+msgstr "無効な Typekit 埋め込みコード。%s"
+
+#: typekit-admin.php:63
+msgid "You must enter your Typekit embed code. %s"
+msgstr "Typekit 埋め込みコードの入力が必要です。%s"
+
+#: typekit-admin.php:75
+msgid ""
+"Your Typekit embed code may be incorrect because  <a href=\"%1$s\" target="
+"\"_blank\">%1$s</a> does not exist. Please verify that your Typekit embed "
+"code is correct. If you have just published your kit, please try again in a "
+"few minutes."
+msgstr ""
+"<a href=\"%1$s\" target=\"_blank\">%1$s</a> が存在しないため、あなたの "
+"Typekit 埋め込みコードは無効です。Typekit 埋め込みコードが正しく入力されたこ"
+"とをお確かめください。新しく公開された場合は、数分後、再度試してください。"
+
+#: typekit-admin.php:86
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+#: typekit-admin.php:92
+msgid "Typekit Fonts for WordPress Settings"
+msgstr "WordPress 設定用 Typekit フォント"
+
+#: typekit-admin.php:93
+msgid ""
+"Typekit offer a service that allows you to select from a range of hundreds "
+"of high quality fonts for your WordPress website. The fonts are applied "
+"using the font-face standard, so they are standards compliant, fully "
+"licensed and accessible."
+msgstr ""
+"Typekit は、様々なフォントから選択し、あなたの WordPress サイトで使用すること"
+"ができるサービスを提供しています。標準の font-face を使用し適用されているの"
+"で、ライセンスの問題もなく、アクセシビリティ機能も埋め込まれてます。"
+
+#: typekit-admin.php:94
+msgid ""
+"To use this plugin you need to sign up with Typekit, and then configure the "
+"following options."
+msgstr ""
+"このプラグインを使用するには Typekit で登録し、下記のオプションを設定する必要"
+"があります。"
+
+#: typekit-admin.php:95
+msgid "Register with Typekit"
+msgstr "Typekit で登録する"
+
+#: typekit-admin.php:97
+msgid ""
+"Go to <a href=\"%s\" target=\"blank\">typekit.com</a> and register for an "
+"account"
+msgstr ""
+"<a href=\"%s\" target=\"blank\">typekit.com</a> にアクセスし、アカウントを登"
+"録してください"
+
+#: typekit-admin.php:98
+msgid "Choose a few fonts to add to your account and Publish them"
+msgstr "あなたのアカウントからフォントを選択し、公開してください"
+
+#: typekit-admin.php:99
+msgid ""
+"Go to the Kit Editor and get your Embed Code (link at the top right of the "
+"screen)"
+msgstr ""
+"Kit Editor へアクセスし、埋め込みコードを取得してください (画面右上のリンク)"
+
+#: typekit-admin.php:101
+msgid "Plugin Configuration"
+msgstr "プラグイン設定"
+
+#: typekit-admin.php:103
+msgid "Enter the whole 2 lines of your embed code into the box below."
+msgstr "下のボックスにあなたの埋め込みコードの全体の2行を入力してください。"
+
+#: typekit-admin.php:104
+msgid "Typekit Embed Code:"
+msgstr "Typekit 埋め込みコード:"
+
+#: typekit-admin.php:106
+msgid ""
+"You can add selectors using the Typekit Kit Editor. Alternatively you can "
+"define your own CSS rules in your own style sheet or using the Custom CSS "
+"Rules field below (technical note: these CSS rules will be embedded in the "
+"header of each page). Look at the advanced examples shown in the Typekit "
+"editor for ideas."
+msgstr ""
+"Typekit エディタを使用してセレクターを追加できます。あるいは下の「カスタム "
+"CSS ルール」フィールドを使用して自分の CSS ルールを追加できます(※この CSS "
+"ルールは各ページのヘッダーに埋め込まれます)。Typekit エディタに表示されている"
+"例をご覧ください。"
+
+#: typekit-admin.php:107
+msgid "Custom CSS Rules:"
+msgstr "カスタム CSS ルール:"
+
+#: typekit-admin.php:108
+msgid "Click here for help on CSS"
+msgstr "CSS ヘルプはこちら"
+
+#: typekit-admin.php:113
+msgid "Save Settings"
+msgstr "設定を保存"
+
+#: typekit-admin.php:115
+msgid "Help"
+msgstr "ヘルプ"
+
+#: typekit-admin.php:116
+msgid "Fonts not showing?"
+msgstr "フォントが表示されない場合"
+
+#: typekit-admin.php:118
+msgid ""
+"Have you created your Typekit account, added fonts to it and <strong>pressed "
+"Publish</strong>? Fonts aren't available until they are published."
+msgstr ""
+"Typekit アカウントを作成し、フォントを追加・公開しましたか？フォントは公開さ"
+"れるまで利用できません。"
+
+#: typekit-admin.php:119
+msgid ""
+"Have you <strong>waited a few minutes</strong> to allow Typekit time to send "
+"your fonts out around the world? Grab a cup of coffee and try again soon."
+msgstr ""
+"世界各国の Typekit サーバーが更新されるまで<strong>数分かかる場合があります</"
+"strong>。少し時間を置き、再度試してください。"
+
+#: typekit-admin.php:120
+msgid ""
+"Have you <strong>added CSS rules</strong> to display your fonts? If in "
+"doubt, just try the H2 rule shown in the example and see if that works for "
+"you."
+msgstr ""
+"フォントを表示する <strong>CSS ルールを追加</strong>しましたか？不明な場合、"
+"サンプルの H2 ルールで試してみてください。"
+
+#: typekit-admin.php:122
+msgid "CSS"
+msgstr "CSS"
+
+#: typekit-admin.php:123
+msgid ""
+"You can use CSS selectors to apply your new typekit fonts. The settings for "
+"this plugin allow you to add new CSS rules to your website to activate "
+"Typekit fonts. If you are using fonts for more than just a few elements, you "
+"may find it easier to manage this way. And using your own CSS rules is a "
+"good way to access different font weights."
+msgstr ""
+"この CSS セレクターを新規 Typekit フォントに適用できます。このプラグインの設"
+"定を使用して Typekit フォントに CSS ルールを追加できます。多くのエレメントに"
+"フォントを使用している場合、この管理方法をおすすめします。さらに、自分の CSS "
+"ルールを使用することによって文字の太さを変えることができます。"
+
+#: typekit-admin.php:124
+msgid ""
+"There are many options for using CSS, but here are a few common scenarios. "
+"Note: we've used proxima-nova for our examples, you'll need to change "
+"proxima-nova to the name of your chosen font from Typekit - your added font "
+"names will be visible in the Kit Editor."
+msgstr ""
+"CSS を使用する方法は様々ですが、ここでは一般的なシナリオを紹介します。注: こ"
+"の例では「proxima-nova」を使用しており、「proxima-nova」をあなたの選択した "
+"Typekit フォント名に変更しください。フォント名は Kit Editor で表示されていま"
+"す。"
+
+#: typekit-admin.php:125
+msgid "Headings"
+msgstr "見出し"
+
+#: typekit-admin.php:127
+msgid ""
+"If you want your Typekit fonts to be used for H2 headings, add a rule like "
+"this to your CSS Rules field:"
+msgstr ""
+"Typekit フォントを H2 見出しに使用されたい場合、次のようなルールを「CSS ルー"
+"ル」フィールドに追加してください:"
+
+#: typekit-admin.php:129
+msgid ""
+"(and you can add similar rules if you want to target other headings such as "
+"H3)"
+msgstr "(H3 など他の見出しにも似たようなルールでターゲティングできます)"
+
+#: typekit-admin.php:131
+msgid "Sidebar Headings"
+msgstr "サイドバーの見出し"
+
+#: typekit-admin.php:133
+msgid ""
+"If you want your Typekit fonts to be used for sidebar H2 headings, add a "
+"rule like this to your CSS Rules field:"
+msgstr ""
+"Typekit フォントをサイドバーの H2 見出しに使用されたい場合、次のようなルール"
+"を「CSS ルール」フィールドに追加してください:"
+
+#: typekit-admin.php:136
+msgid "Font Weights"
+msgstr "文字の太さ"
+
+#: typekit-admin.php:137
+msgid ""
+"If your Kit contains more than one weight and/or style for a particular "
+"font, you need to use numeric <code class=\"inline\">font-weight</code> "
+"values in your CSS rules to map to a font's weights."
+msgstr ""
+"あなたの Kit に複数の文字の太さまたはスタイルが含まれているフォントがある場合"
+"は、 文字の太さにマップするために数値の <code class=\"inline\">font-weight</"
+"code> を CSS ルールに含む必要があります。"
+
+#: typekit-admin.php:138
+msgid ""
+"Typekit fonts have been assigned values from 100 to 900 based on information "
+"from the font's designer. Web browsers also do some guessing as to which "
+"weight it should display if the specific value isn't present. Say your font "
+"has 100, 300 and 900. If you set your text with <code class=\"inline\">font-"
+"weight: 400</code>, it will choose the most appropriate (300 in this case)."
+"<br />Note: A <code class=\"inline\">font-weight</code> value of 400 "
+"corresponds to <code class=\"inline\">font-weight: normal;</code>"
+msgstr ""
+"フォントのデザイナーからの情報により、Typekit フォントは100から900までの値が"
+"割り当てられています。なお、値が存在しない場合はブラウザーが表示すべき文字の"
+"太さを自動的に判断します。例えば、100、300、900の太さを含むフォントがあるとし"
+"ます。テキストの設定が <code class=\"inline\">font-weight: 400</code> の場"
+"合、最も適している太さ(この場合は300)が選択されます。<br />注: 値が400の "
+"<code class=\"inline\">font-weight</code> は <code class=\"inline\">font-"
+"weight: normal;</code> に相当します。"
+
+#: typekit-admin.php:139
+msgid "See <a href=\"%s\">this help article</a> for more details."
+msgstr "詳しくは<a href=\"%s\">この投稿</a>をご覧ください。"
+
+#: typekit-admin.php:140
+msgid "Advanced targetting of fonts with CSS selectors"
+msgstr "CSSセレクタを持つフォントの高度なターゲッティング"
+
+#: typekit-admin.php:142
+msgid ""
+"You can target your fonts to specific parts of your website if you know a "
+"bit more about your current WordPress theme and where the font family is "
+"specified. All WordPress themes have a style.css file, and if you know how "
+"to check that you should be able to see the selectors in use. Or you can "
+"install Chris Pederick's Web Developer Toolbar for Firefox and use the CSS, "
+"View CSS option to see all the CSS rules in use for your theme. When you "
+"find the selectors that are used for font-family, you can create a rule just "
+"for that selector to override that rule."
+msgstr "使用中の WordPress テーマおよびフォントファミリーについて詳しい場合、"
+
+#: typekit-admin.php:143
+msgid "For example, if your theme has this CSS rule:"
+msgstr "例えば、使用中のテーマにこのCSSルールが存在する場合:"
+
+#: typekit-admin.php:145
+msgid ""
+"you could create this rule to apply your new font to the body of your "
+"website:"
+msgstr ""
+"このルールを作成することにより、あなたのフォントをウェブサイト本文に適用でき"
+"ます:"
+
+#: typekit-admin.php:148
+msgid "Where to go to get help"
+msgstr "ヘルプはこちら"
+
+#: typekit-admin.php:150
+msgid "<a href=\"%s\" target=\"_blank\">Typekit Support</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Typekit サポート</a>"
+
+#: typekit-admin.php:151
+msgid "<a href=\"%s\" target=\"_blank\">Sitepoint CSS Forums</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Sitepoint CSS フォーラム</a>"
+
+#: typekit-admin.php:152
+msgid "<a href=\"%s\" target=\"_blank\">W3Schools CSS Help</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">W3Schools CSS ヘルプ</a>"
+
+#. Plugin Name of the plugin/theme
+msgid "Typekit Fonts for WordPress"
+msgstr "ワードプレス用 Typekit フォント"
+
+#. Plugin URI of the plugin/theme
+msgid "http://om4.com.au/wordpress-plugins/typekit-fonts-for-wordpress-plugin/"
+msgstr ""
+"http://om4.com.au/wordpress-plugins/typekit-fonts-for-wordpress-plugin/"
+
+#. Description of the plugin/theme
+msgid ""
+"Use a range of hundreds of high quality fonts on your WordPress website by "
+"integrating the <a href=\"http://typekit.com\">Typekit</a> font service into "
+"your WordPress blog."
+msgstr ""
+"<a href=\"http://typekit.com\">Typekit</a> を使用することにより、様々なフォン"
+"トをあなたの WordPress ブログに埋め込むことができます。"
+
+#. Author of the plugin/theme
+msgid "OM4"
+msgstr "OM4"
+
+#. Author URI of the plugin/theme
+msgid "http://om4.com.au/"
+msgstr "http://om4.com.au/"

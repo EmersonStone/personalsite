@@ -1,0 +1,216 @@
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the wordpresscom-popular-posts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpresscom-popular-posts\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wppp\n"
+"POT-Creation-Date: 2012-03-14 10:56+0100\n"
+"PO-Revision-Date: 2012-02-02 17:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-10-06 17:22+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: wppp.php:25 wppp.php:48
+msgid "Popular Posts"
+msgstr "Posturi populare"
+
+#: wppp.php:45
+msgid "A list of your most popular posts"
+msgstr "O listă de mesajele dumneavoastră cele mai populare"
+
+#: wppp.php:481
+msgid "Title"
+msgstr "Titlul"
+
+#: wppp.php:488
+msgid "Number of links shown"
+msgstr "Numărul de legături indicat"
+
+#: wppp.php:495
+msgid ""
+"The length (in days) of the desired time frame.<br />(0 means unlimited)"
+msgstr ""
+"Дужина (број дана) жељеног временског интервала.<br />(остави 0 за "
+"бесконачно)"
+
+#: wppp.php:502
+msgid "Show: "
+msgstr "Arată: "
+
+#: wppp.php:504
+msgid "posts and pages"
+msgstr "posturi şi pagini"
+
+#: wppp.php:505
+msgid "only posts"
+msgstr "numai mesajele"
+
+#: wppp.php:506
+msgid "only pages"
+msgstr "numai pagini"
+
+#: wppp.php:518
+msgid ""
+"Format of the links. See <a href=\"http://wordpress.org/extend/plugins/"
+"wordpresscom-popular-posts/faq/\">docs</a> for help"
+msgstr ""
+"Формат линкова. Погледај <a href=\"http://wordpress.org/extend/plugins/"
+"wordpresscom-popular-posts/faq/\">упутства</a> за помоћ"
+
+#: wppp.php:526
+msgid ""
+"Note: your current theme doesn't support post thumbnails: you won't be able "
+"to set them."
+msgstr ""
+
+#: wppp.php:531
+#, fuzzy
+msgid ""
+"Width/height of the thumbnail image (if %post_thumbnail% is used in the "
+"format above)"
+msgstr ""
+"Lungimea de extras (dacă % post_excerpt % este folosit în formatul de mai "
+"sus)"
+
+#: wppp.php:534
+msgid " px"
+msgstr ""
+
+#: wppp.php:538
+msgid "Length of the excerpt (if %post_excerpt% is used in the format above)"
+msgstr ""
+"Lungimea de extras (dacă % post_excerpt % este folosit în formatul de mai "
+"sus)"
+
+#: wppp.php:541 wppp.php:555
+msgid " characters"
+msgstr " caractere"
+
+#: wppp.php:545
+msgid ""
+"Date/time format (if %post_time% is used in the format above). See <a href="
+"\"http://wordpress.org/extend/plugins/wordpresscom-popular-posts/faq/"
+"\">docs</a> for help"
+msgstr ""
+"Формат датума и времена (уколико се користи %post_time%). Погледајте <a href="
+"\"http://wordpress.org/extend/plugins/wordpresscom-popular-posts/faq/"
+"\">упутства</a> за помоћ"
+
+#: wppp.php:552
+msgid "Max length of the title links.<br />(0 means unlimited)"
+msgstr "Max lungime de link-uri de titlul. < br />(0 means unlimited)"
+
+#: wppp.php:559
+msgid "Exclude these posts: (separate the IDs by commas. e.g. 1,42,52)"
+msgstr ""
+"Exclude aceste posturi: (ID-uri se separă prin virgule. exemplu 1,42,52)Не "
+"укључуј следеће постове: (поделите ИД поста са зарезима, нпр. 1,42,52)"
+
+#: wppp.php:567
+#, fuzzy
+msgid "Exclude these authors: (separate the IDs by commas. e.g. 1,42,52)"
+msgstr ""
+"Excluderea acestor autori: (ID-uri se separă prin virgule. exemplu 1,42,52)"
+"Не укључуј следеће постове: (поделите ИД поста са зарезима, нпр. 1,42,52)"
+
+#: wppp.php:574
+msgid "Don't show posts/pages with a view count under"
+msgstr "Nu arată posturi/pagini cu un număr de vizualizare sub"
+
+#: wppp.php:577
+msgid "(0 means unlimited)"
+msgstr "(0 înseamnă nelimitat)"
+
+#: wppp.php:581
+msgid "Kind of list"
+msgstr "Tip de listă"
+
+#: wppp.php:583
+#, fuzzy
+msgid "Unordered list (&lt;ul&gt;)"
+msgstr "Listă neordonată (<ul>)"
+
+#: wppp.php:584
+#, fuzzy
+msgid "Ordered list (&lt;ol&gt;)"
+msgstr "Listă ordonată (<ol>)"
+
+#: wppp.php:585
+msgid "None (use custom format)"
+msgstr "Nici unul (utilizare format particularizat)"
+
+#: wppp.php:598
+msgid "Only show posts/pages in this category"
+msgstr "Doar arată posturi/paginile din această categorie"
+
+#: wppp.php:599
+#, fuzzy
+msgid "&lt;All categories&gt;"
+msgstr "< toate categoriile >"
+
+#: wppp.php:613
+msgid "Enable cache (improves speed)"
+msgstr "Permite cache (îmbunătăţeşte viteza)"
+
+#: wppp.php:621
+msgid "Only show a cached version to the not logged in users"
+msgstr "Doar arată o versiune cache nu logat utilizatori"
+
+#: wppp.php:646
+msgid "Magic number (raise it if you see less links than expected)"
+msgstr ""
+"Număr Magic (raise it dacă tu a vedea link-uri mai puţin decât de aşteptat)"
+"Магични број (повећајте га уколико видите мање линкова него што сте "
+"очекивали)"
+
+#: wppp.php:736
+#, fuzzy, php-format
+msgid ""
+"Wordpress.com Popular Post &gt;= 2.0.0 is compatible with WordPress &gt;= "
+"2.8 only.<br />\n"
+"\tPlease either <a href='%s'>update</a> your WordPress installation, <a "
+"href='%s'>downgrade this plugin</a> to v1.3.6\n"
+"\tor <a href='%s'>uninstall it</a>."
+msgstr ""
+"Wordpress.com Popular Post >= 2.0.0 је компатибилан исклјучиво са WordPress "
+">= 2.8.<br />\n"
+"\tМолимо вас да или <a href='%s'>освежите</a> вашу WordPress инсталацију, "
+"или <a href='%s'>користите старију верзију овог додатка</a> (v1.3.6)\n"
+"\tили <a href='%s'>га уклоните и обришите</a>."
+
+#. Plugin Name of an extension
+msgid "WordPress.com Popular Posts"
+msgstr "WordPress.com posturi populare"
+
+#. Plugin URI of an extension
+msgid "http://polpoinodroidi.com/wordpress-plugins/wordpresscom-popular-posts/"
+msgstr ""
+"http://polpoinodroidi.com/Wordpress-plugins/wordpresscom-popular-Posts/"
+"http://polpoinodroidi.com/wordpress-plugins/wordpresscom-popular-posts/"
+
+#. Description of an extension
+msgid "Shows the most popular posts, using data collected by"
+msgstr "Arată cele mai populare posturi, folosind datele colectate de"
+
+#. Author of an extension
+msgid "Frasten"
+msgstr "Frasten"
+
+#. Author URI of an extension
+msgid "http://polpoinodroidi.com"
+msgstr "http://polpoinodroidi.com"
+
+#~ msgid ""
+#~ "Shows the most popular posts, using data collected by <a href='http://"
+#~ "wordpress.org/extend/plugins/stats/'>WordPress.com stats</a> plugin."
+#~ msgstr ""
+#~ "Приказ најпопуларнијих постова, користећи податке које је сакупио  <a "
+#~ "href='http://wordpress.org/extend/plugins/stats/'>WordPress.com stats</a> "
+#~ "додатак."
