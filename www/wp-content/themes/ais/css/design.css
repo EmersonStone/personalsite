@@ -1369,9 +1369,6 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-a:visited {
-  color: #00b5fb;
-}
 h1,
 h2,
 h3,
@@ -1445,9 +1442,6 @@ p a:hover {
   p a:focus {
     text-decoration: underline;
   }
-}
-p a:visited {
-  color: #00b5fb;
 }
 em {
   font-style: italic;
@@ -1690,9 +1684,6 @@ p.callout {
     text-decoration: underline;
   }
 }
-.getmore a:visited {
-  color: #00b5fb;
-}
 .svgcontainer {
   width: 100%;
   height: 1px;
@@ -1819,9 +1810,6 @@ svg {
   .simplenavigation a:focus {
     text-decoration: underline;
   }
-}
-.simplenavigation a:visited {
-  color: #00b5fb;
 }
 .simplenavigation .previous {
   float: left;
@@ -1995,7 +1983,6 @@ footer p {
   height: 100%;
   float: left;
   overflow-x: hidden;
-  background: #00b5fb !important;
 }
 .content {
   width: 100%;

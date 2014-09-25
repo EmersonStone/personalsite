@@ -1,9 +1,9 @@
 /*
 Theme Name: ais
-Theme URI: 
+Theme URI:
 Author: Andy Stone and Eric Miller, using Underscores.me
 Author URI: http://patternleaf.com
-Description: 
+Description:
 Version: 1.0-wpcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -412,7 +412,7 @@ textarea {
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 5.1 Links
---------------------------------------------------------------*/
+
 a {
 	color: royalblue;
 }
@@ -426,6 +426,7 @@ a:focus,
 a:active {
 	color: midnightblue;
 }
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 5.2 Menus
