@@ -1995,6 +1995,7 @@ footer p {
   height: 100%;
   float: left;
   overflow-x: hidden;
+  background: #00b5fb !important;
 }
 .content {
   width: 100%;
