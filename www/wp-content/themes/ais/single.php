@@ -56,7 +56,7 @@ get_header(); ?>
 				) );
 			?>
 
-			<p class="callout">If you liked this article, please let me know. You can find me on <a href="http://twitter.com/andystone" target="_blank">twitter.</a></p>
+			<p class="callout">If you liked this article, let me know. You can find me on <a href="http://twitter.com/andystone" target="_blank">twitter.</a></p>
 
 			<div class="clearfix"></div>
 			<div class="divider"></div>
