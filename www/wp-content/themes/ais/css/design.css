@@ -1717,15 +1717,26 @@ svg {
   margin-right: -15px;
   position: relative;
   float: left;
-  width: 83.33333333333334%;
+  width: 100%;
   min-height: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 8.333333333333332%;
+  margin-left: 0%;
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .leadin .leadphoto {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .leadin .leadphoto {
+    margin-left: 25%;
+  }
 }
 @media (min-width: 768px) {
   .leadin .leadphoto {
@@ -2341,14 +2352,14 @@ footer p {
   margin-right: -15px;
   position: relative;
   float: left;
-  width: 83.33333333333334%;
+  width: 100%;
   min-height: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 8.333333333333332%;
+  margin-left: 0%;
   margin-bottom: 25px;
   -webkit-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);

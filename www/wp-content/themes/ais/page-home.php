@@ -16,14 +16,14 @@
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 2 </span>Featured Work</h3>
 				<p>My favorite work work over the last couple of years has focused on branding and digital design for consumer-facing products. Click on any project to read about the process or see more in <a href="/showing-off">my portfolio</a>.</p>
 			</div>
-			
+
 			<div class="recentworksamples">
 			<?php
 			$projects = get_posts(array(
 				'post_type' => 'ais_project',
 				'posts_per_page' => 3
 			));
-			
+
 			foreach ($projects as $project) {
 				$thumbURL = wp_get_attachment_url(get_post_thumbnail_id($project->ID));
 				echo '
@@ -32,7 +32,7 @@
 							<img src="'.$thumbURL.'" alt="Recent work from Andy Stone in Boulder, CO">
 						</a>
 					</div>
-					
+
 				';
 			}
 			?>
@@ -42,7 +42,7 @@
 			$posts = get_posts(array(
 				'posts_per_page' => 1
 			));
-			
+
 			if (count($posts)) {
 				$post = $posts[0];
 				setup_postdata($post);
@@ -52,15 +52,15 @@
 
 			<div class="writing">
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 3 </span>Most Recent Article</h3>
-				
+
 				<div class="articlesamplephoto">
-					<?php 
+					<?php
 					if (has_post_thumbnail($post->ID)) {
 						$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 					?>
 						<a href="<?php echo get_permalink();?>"><img src="<?php echo $image[0]; ?>"></a>
-					<?php 
-					} 
+					<?php
+					}
 					?>
 				</div>
 				<div class="articlecontent">
@@ -70,12 +70,12 @@
 						<?php
 						$tagList = ais_getTagList();
 						if (strlen($tagList)) {
-							echo '<span>|</span>';
+							echo '<span> | </span>';
 							echo $tagList;
 						}
 						?>
 					</span>
-					<?php 
+					<?php
 						ob_start();
 						the_content(sprintf(
 							__('Continue reading %s <span class="meta-nav getmore">&rarr;</span>', 'ais'),
@@ -93,9 +93,9 @@
 					<?php edit_post_link( __( 'Edit', 'ais' ), '<span class="edit-link">', '</span>' ); ?>
 				</div>
 				<div class="getmore"><a href="<?php echo get_permalink(); ?>">Continue Reading</a></div>
-				<?php /* 
+				<?php /*
 				<div class="articlesamplephoto">
-					
+
 					<a href="singlearticle.html"><img src="<?php echo get_template_directory_uri();?>/img/designreading.png" alt="Recommended reading for designers"></a>
 				</div>
 				<div class="articlecontent">

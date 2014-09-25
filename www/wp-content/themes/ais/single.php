@@ -32,7 +32,7 @@ get_header(); ?>
 					<?php
 					$tagList = ais_getTagList();
 					if (strlen($tagList)) {
-						echo '<span>|</span>';
+						echo '<span> | </span>';
 						echo $tagList;
 					}
 					?>

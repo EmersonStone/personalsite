@@ -6,12 +6,12 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="articlesamplephoto">
-		<?php 
+		<?php
 		if (has_post_thumbnail($post->ID)) {
 			$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
 		?>
 			<a href="<?php echo get_permalink();?>"><img src="<?php echo $image[0]; ?>"></a>
-		<?php 
+		<?php
 		}
 		else {
 			$media = get_attached_media('image', $post->ID);
@@ -30,12 +30,12 @@
 			<?php
 			$tags_list = ais_getTagList();
 			if ($tags_list) {
-				echo '<span>|</span>';
+				echo '<span> | </span>';
 				printf(__('%1$s', 'ais'), $tags_list);
 			}
 			?>
 		</span>
-		<?php 
+		<?php
 			ob_start();
 			the_content(sprintf(
 				__('Continue reading %s <span class="meta-nav getmore">&rarr;</span>', 'ais'),
@@ -55,7 +55,7 @@
 	<div class="getmore"><a href="<?php echo get_permalink(); ?>">Continue Reading</a></div>
 </div>
 
-<?php /* 
+<?php /*
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
@@ -70,7 +70,7 @@
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'ais' ), 
+				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'ais' ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 		?>
