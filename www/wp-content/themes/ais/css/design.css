@@ -1715,28 +1715,17 @@ svg {
 .leadin .leadphoto {
   margin-left: -15px;
   margin-right: -15px;
-  position: relative;
   float: left;
   width: 100%;
+  margin-left: 0%;
+  position: relative;
   min-height: 1px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 0%;
   margin-bottom: 20px;
-}
-@media (min-width: 992px) {
-  .leadin .leadphoto {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .leadin .leadphoto {
-    margin-left: 25%;
-  }
 }
 @media (min-width: 768px) {
   .leadin .leadphoto {
@@ -1747,6 +1736,17 @@ svg {
 @media (min-width: 768px) {
   .leadin .leadphoto {
     margin-left: 16.666666666666664%;
+  }
+}
+@media (min-width: 992px) {
+  .leadin .leadphoto {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .leadin .leadphoto {
+    margin-left: 25%;
   }
 }
 .leadin .leadphoto:before,
@@ -1767,6 +1767,10 @@ svg {
 }
 .leadin .leadphoto img {
   width: 100%;
+}
+.leadin .leadphoto:hover,
+.leadin .leadphoto:focus {
+  opacity: .85;
 }
 .leadin .callout,
 .leadin .subtitle {

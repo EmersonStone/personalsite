@@ -309,16 +309,19 @@ svg {
     }
     .leadphoto {
       .make-row;
-      .make-md-column(6);
-      .make-md-column-offset(3);
-      .make-sm-column(8);
-      .make-sm-column-offset(2);
       .make-xs-column(12);
       .make-xs-column-offset(0);
+      .make-sm-column(8);
+      .make-sm-column-offset(2);
+      .make-md-column(6);
+      .make-md-column-offset(3);
       .clearfix;
       margin-bottom: 20px;
       img {
         width: 100%;
+      }
+      &:hover, &:focus {
+        opacity: .85;
       }
     }
     .callout, .subtitle {
