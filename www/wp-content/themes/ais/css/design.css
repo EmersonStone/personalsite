@@ -1738,17 +1738,6 @@ svg {
     margin-left: 16.666666666666664%;
   }
 }
-@media (min-width: 992px) {
-  .leadin .leadphoto {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .leadin .leadphoto {
-    margin-left: 25%;
-  }
-}
 .leadin .leadphoto:before,
 .leadin .leadphoto:after {
   content: " ";
@@ -1823,6 +1812,9 @@ svg {
 .post-edit-link,
 edit-link {
   display: none;
+}
+a.simple-goods-btn {
+  background: none;
 }
 .hero {
   text-align: center;
