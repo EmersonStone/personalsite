@@ -22,23 +22,23 @@ function ais_paging_nav() {
 		<div class="simplenavigation">
 
 			<div class="previous">
-			<?php 
-			if ( get_next_posts_link() ) {
-				next_posts_link( __( 'Previous Articles', 'ais' ) );
+			<?php
+			if ( get_previous_posts_link() ) {
+				previous_posts_link('Newer Articles');
 			}
 			else {
-				echo 'Previous Articles';
+				echo 'Newer Articles';
 			}
 			?>
 			</div>
 
 			<div class="next">
-			<?php 
-			if ( get_previous_posts_link() ) {
-				previous_posts_link('Next Articles');
+			<?php
+			if ( get_next_posts_link() ) {
+				next_posts_link( __( 'Older Articles', 'ais' ) );
 			}
 			else {
-				echo 'Next Articles';
+				echo 'Older Articles';
 			}
 			?>
 			</div>
