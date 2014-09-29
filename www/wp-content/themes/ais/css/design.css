@@ -1787,6 +1787,9 @@ svg {
   padding-right: 15px;
   margin-left: 0%;
 }
+.leadin .big {
+  color: #242423;
+}
 .simplenavigation {
   margin-left: -15px;
   margin-right: -15px;
