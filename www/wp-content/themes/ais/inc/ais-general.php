@@ -36,3 +36,4 @@ function ais_getTagList($forPost = NULL) {
 }
 
 require_once(__DIR__.'/ais-projects.php');
+require_once(__DIR__.'/ais-current-interests.php');

@@ -115,7 +115,43 @@
 			<div class="clearfix"></div>
 			<div class="divider"></div>
 
-			<div class="currentinterests">
+			<?php
+			$interests = ais_getCurrentInterests(0, 3);
+			if (count($interests)) {
+				echo '
+					<div class="currentinterests">
+						<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 4 </span>Current Interests</h3>
+						<p>
+							I love collecting interesting stories, works of art, and photographs from around the web and want to share my favorites on this site.
+						</p>
+						<ul>
+				';
+				foreach ($interests as $interest) {
+					$post = $interest;
+					setup_postdata($post);
+					$meta = ais_getCurrentInterestMeta($interest->ID);
+					// NOTE: semantically the li element be a direct descendant of the ul element.
+					// TODO.
+					echo '
+						<a href="'.$meta['link'].'">
+							<li>
+								<h5>'.get_the_title().'</h5>
+								<span class="metadata">'.$meta['source'].'</span>
+								<p>'.get_the_content().'</p>
+							</li>
+						</a>
+					';
+				}
+				echo '
+						</ul>
+						<div class="clearfix"></div>
+						<div class="getmore current-interests"><a href="#">Load More</a></div>
+					
+					</div> <!-- /currentinterests -->
+				';
+			}
+			?>
+			<?php /* 
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 4 </span>Current Interests</h3>
 				<p>I love collecting interesting stories, works of art, and photographs from around the web and want to share my favorites on this site.</p>
 				<ul>
@@ -144,7 +180,9 @@
 				<div class="clearfix"></div>
 				<div class="getmore"><a href="#">Load More</a></div>
 			</div>
+			*/ ?>
 		</div>
+
 
 		<?php include 'inc/ais-footer.php'; ?>
 

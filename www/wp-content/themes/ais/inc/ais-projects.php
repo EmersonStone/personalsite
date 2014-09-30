@@ -57,7 +57,7 @@ add_action('init', 'ais_initProjects');
 
 
 function ais_addProjectMetaBox() {
-	add_meta_box('ais-project-meta', 'Project Details', 'ais_renderProjectMetForm', 'ais_project', 'normal', 'high');
+	add_meta_box('ais-project-meta', 'Project Details', 'ais_renderProjectMetaForm', 'ais_project', 'normal', 'high');
 }
 add_action('add_meta_boxes', 'ais_addProjectMetaBox');
 
@@ -76,7 +76,7 @@ function ais_getProjectMeta($postID) {
 	return $meta;
 }
 
-function ais_renderProjectMetForm($post) {
+function ais_renderProjectMetaForm($post) {
 	$meta = ais_getProjectMeta($post->ID);
 
 	echo '
