@@ -103,3 +103,41 @@ function ais_getCurrentInterests($offset = 0, $limit = -1) {
 	));
 	return $posts;
 }
+
+// for ajax "load more" link
+function ais_respondToCurrentInterestRequest() {
+	global $post;
+	
+	if (isset($_GET['ais-get-current-interests'])) {
+		$offset = intval($_GET['ais-get-current-interests']['offset']);
+		$limit = intval($_GET['ais-get-current-interests']['limit']);
+		if (is_numeric($offset) && is_numeric($limit)) {
+			$response = array(
+				'success' => true,
+				'interests' => array()
+			);
+			$interests = ais_getCurrentInterests($offset, $limit);
+			if (count($interests)) {
+				foreach ($interests as $interest) {
+					$post = $interest;
+					setup_postdata($post);
+					$meta = ais_getCurrentInterestMeta($post->ID);
+					$data = array(
+						'title' => get_the_title(),
+						'content' => get_the_content(),
+						'source' => $meta['source'],
+						'link' => $meta['link']
+					);
+				}
+				$response['interests'][] = $data;
+			}
+			
+			echo json_encode($response);
+		}
+		else {
+			echo json_encode(array('success' => false, 'error' => 'No valid offset or limit provided.'));
+		}
+		die();
+	}
+}
+add_action('init', 'ais_respondToCurrentInterestRequest');
