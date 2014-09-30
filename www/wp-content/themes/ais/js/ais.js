@@ -28,7 +28,16 @@
 								$newInterest.find('h5').html(data.interests[i].title);
 								$newInterest.find('p').html(data.interests[i].content);
 								$newInterest.find('.metadata').html(data.interests[i].source);
-								$newInterest.find('a').attr('href', data.interests[i].link);
+								
+								// currently the ul's children are the anchors, which is wonky.
+								// handle both that case and the correction hopefully forthcoming.
+								if ($newInterest.get(0).tagName.toLowerCase() == 'a') {
+									$newInterest.attr('href', data.interests[i].link);
+								}
+								else {
+									$newInterest.find('a').attr('href', data.interests[i].link);
+								}
+								
 								
 								$('.currentinterests ul').append($newInterest);
 							}
