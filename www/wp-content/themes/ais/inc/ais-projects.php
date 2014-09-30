@@ -66,12 +66,16 @@ function ais_getProjectMeta($postID) {
 	$meta = get_post_meta($postID, 'ais_project_meta', true);
 	if (!is_array($meta)) {
 		$meta = array(
+			'project_header_bg_image' => '',
 			'client' => '',
 			'location' => '',
 			'location_link' => '',
 			'overview' => '',
 			'tagline' => ''
 		);
+	}
+	if (!isset($meta['project_header_bg_image'])) {
+		$meta['project_header_bg_image'] = '';
 	}
 	return $meta;
 }
@@ -82,17 +86,39 @@ function ais_renderProjectMetaForm($post) {
 	echo '
 		<style>
 			.project-meta-form label span {
-				width: 110px;
+				width: 120px;
 				display:block;
 				float:left;
 			}
 			.project-meta-form textarea {
 				width:100%;
 			}
+			.ais-admin-img-container {
+				margin-left:120px;
+			}
+			.ais-admin-img-container input {
+				display:block;
+				width:80%;
+			}
+			.ais-image-thumb {
+				width:200px;
+				padding:3px;
+				border:1px #ddd solid;
+				display:block;
+			}
+			
 		</style>
 		<div class="project-meta-form">
 	';
 	echo '
+			<label class="project-header-bg-image"><span>Header BG Image</span>
+				<div class="ais-admin-img-container">
+					<img class="ais-image-thumb" src="'.$meta['project_header_bg_image'].'">
+					<input type="text" name="ais_project_header_bg_image" value="'.esc_attr($meta['project_header_bg_image']).'">
+					<a href="#" id="ais-set-header-bg-image">Select Image From Media Library</a>
+				</div>
+				<br>
+			</label>
 			<label class="project-client"><span>Client</span>
 				<input type="text" name="ais_project_client" value="'.esc_attr($meta['client']).'"><br>
 			</label>
@@ -118,6 +144,7 @@ function ais_save_project_meta($postID) {
 	if($post && $post->post_type == 'ais_project') {
 		if (isset($_POST)) {
 			$meta = array(
+				'project_header_bg_image' => isset($_POST['ais_project_header_bg_image']) ? $_POST['ais_project_header_bg_image'] : '',
 				'client' => isset($_POST['ais_project_client']) ? strip_tags($_POST['ais_project_client']) : '',
 				'location' => isset($_POST['ais_project_location']) ? strip_tags($_POST['ais_project_location']) : '',
 				'location_link' => isset($_POST['ais_project_location_link']) ? strip_tags($_POST['ais_project_location_link']) : '',

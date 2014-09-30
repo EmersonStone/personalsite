@@ -3,10 +3,15 @@
 <?php if (have_posts()) : the_post(); $meta = ais_getProjectMeta($post->ID); ?>
 	
 		<?php
-			$thumbID = get_post_thumbnail_id($post->ID);
-			if ($thumbID) {
-				$thumbURL = wp_get_attachment_url($thumbID);
-				echo '<div class="leadin leadin-casestudy" style="background-image:url('.$thumbURL.')">';
+			$bgUrl = isset($meta['project_header_bg_image']) ? $meta['project_header_bg_image'] : '';
+			if (!strlen($bgUrl)) {
+				$thumbID = get_post_thumbnail_id($post->ID);
+				if ($thumbID) {
+					$bgUrl = wp_get_attachment_url($thumbID);
+				}
+			}
+			if (strlen($bgUrl)) {
+				echo '<div class="leadin leadin-casestudy" style="background-image:url('.$bgUrl.')">';
 			}
 			else {
 				echo '<div class="leadin leadin-casestudy">';

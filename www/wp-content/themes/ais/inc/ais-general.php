@@ -7,8 +7,22 @@ function ais_enqueueScriptsAndStyles() {
 	wp_enqueue_script('jquery', '//code.jquery.com/jquery-1.10.2.min.js');
 	wp_enqueue_script('ais', get_template_directory_uri().'/js/ais.js', array('jquery'));
 	wp_enqueue_style('ais', get_template_directory_uri().'/css/design.css');
+	wp_enqueue_style('ais', get_template_directory_uri().'/js/ais-admin-image-handling.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'ais_enqueueScriptsAndStyles');
+
+function ais_enqueueAdminScriptsAndStyles() {
+	$adminScreen = get_current_screen();
+	if ($adminScreen->post_type == 'ais_project') {
+		wp_enqueue_media();
+		wp_enqueue_script(
+			'ais-admin-image-handling', 
+			get_template_directory_uri().'/js/ais-admin-image-handling.js',
+			array('jquery')
+		);
+	}
+}
+add_action('admin_enqueue_scripts', 'ais_enqueueAdminScriptsAndStyles');
 
 function ais_addPostClasses($classes) {
 	global $post;
