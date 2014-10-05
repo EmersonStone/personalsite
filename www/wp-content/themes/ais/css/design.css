@@ -2319,6 +2319,7 @@ footer p {
   -moz-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   -o-transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   transition: all 0.25s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  cursor: pointer;
 }
 .recentworksample img:hover,
 .recentworksample img:focus {
