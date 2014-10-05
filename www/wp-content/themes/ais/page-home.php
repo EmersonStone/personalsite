@@ -133,7 +133,7 @@
 					// NOTE: semantically the li element be a direct descendant of the ul element.
 					// TODO.
 					echo '
-						<a href="'.$meta['link'].'">
+						<a href="'.$meta['link'].'" target="_blank">
 							<li>
 								<h5>'.get_the_title().'</h5>
 								<span class="metadata">'.$meta['source'].'</span>
@@ -146,12 +146,12 @@
 						</ul>
 						<div class="clearfix"></div>
 						<div class="getmore current-interests"><a href="#">Load More</a></div>
-					
+
 					</div> <!-- /currentinterests -->
 				';
 			}
 			?>
-			<?php /* 
+			<?php /*
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 4 </span>Current Interests</h3>
 				<p>I love collecting interesting stories, works of art, and photographs from around the web and want to share my favorites on this site.</p>
 				<ul>
