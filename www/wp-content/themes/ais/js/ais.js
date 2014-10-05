@@ -16,7 +16,6 @@
 
 		$('.getmore.current-interests').on('click', function(event) {
 			event.preventDefault();
-			console.log(($('.currentinterests ul').children().length));
 			$.get('/', { 'ais-get-current-interests': {
 					offset: ($('.currentinterests ul').children().length),
 					limit: 3

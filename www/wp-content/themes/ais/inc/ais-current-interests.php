@@ -128,8 +128,8 @@ function ais_respondToCurrentInterestRequest() {
 						'source' => $meta['source'],
 						'link' => $meta['link']
 					);
+					$response['interests'][] = $data;
 				}
-				$response['interests'][] = $data;
 			}
 			
 			echo json_encode($response);
