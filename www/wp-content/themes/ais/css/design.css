@@ -1978,6 +1978,7 @@ footer p {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 27px;
+  margin-top: 6px;
 }
 @media (min-width: 768px) {
   .footernavigation {
