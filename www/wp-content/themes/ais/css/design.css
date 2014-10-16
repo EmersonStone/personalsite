@@ -1539,7 +1539,7 @@ hr {
 }
 .callout {
   font-family: "Hoefler Titling A", "Hoefler Titling B", georgia, serif;
-  color: #888888;
+  color: #777777;
   font-size: 2.25em;
   line-height: 1.35;
   font-weight: 300;
@@ -1631,7 +1631,7 @@ p.callout {
 }
 .metadata {
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
-  color: #999999;
+  color: #888888;
   font-size: 1em;
   font-weight: 700;
   display: block;
@@ -1793,7 +1793,7 @@ svg {
 .simplenavigation {
   margin-left: -15px;
   margin-right: -15px;
-  color: #999999;
+  color: #888888;
   font-family: "Verlag A", "Verlag B", helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.0625em;
@@ -1933,7 +1933,7 @@ footer {
 }
 footer ul,
 footer p {
-  color: #999999;
+  color: #888888;
 }
 .footerlogo {
   border-radius: 50%;
