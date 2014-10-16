@@ -25,8 +25,8 @@
 						</ul>
 					</div>
 					<div class="footerinformation">
-						<p>The Studio of Andy Stone is proud to be a Colorado-based company.</p>
-						<p>When not designing, you can find Andy Stone biking or skiing—depending on the season. </p>
+						<p>The Studio of Andy Stone is proud to be a Colorado-based company. When not designing, you can find Andy biking or skiing, depending on the season.</p>
+						<p>If you'd like to use any code or design from this site, you can grab the project from Github—all free to use.</p>
 						<p>1910 Pearl St. Boulder, CO 80302</p>
 					</div>
 				</div>
