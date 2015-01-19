@@ -16,7 +16,7 @@
 				<div class="contactinformation">
 					<h3>Get in Touch</h3>
 					<ul>
-						<li><a href="#">hi@andy.is</a></li>
+						<li><a href="mailto:hi@andy.is?Subject=Hi%20Andy" target="_top">hi@andy.is</a></li>
 						<li>303.720.6809</li>
 						<li>1910 Pearl St.<br />Boulder, CO 80302</li>
 					</ul>
