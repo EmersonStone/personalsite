@@ -3,10 +3,10 @@
 	    <div class="container">
 			<div class="introduction">
 				<h3 class="subtitle"><span class="number">N<span class="raise">O</span> 1 </span>An Introduction</h3>
-				<h2 class="callout">Hello from Boulder, Colorado. My name is Andy Stone and I run a small design studio that focuses on branding and digital projects.</h2>
+				<h2 class="callout">Hello from Boulder, Colorado. My name is Andy Stone and I run a small design agency that focuses on branding and digital projects.</h2>
 				<div class="aboutme">
 					<div class="profilepic"><img src="<?php echo get_template_directory_uri();?>/img/andy-stone.jpg" alt="Andy Stone graphic design"></div>
-					<p>Over the last nine years, I've worked in print and digital design for startups and national brands. After five years of working in the agency world, the last few years has revolved around more digital-product design and development. In my free time, I’m building an app for restaurant owners called <a href="http://bistro.is/" target="_blank">Bistro</a> and a reading app for the iPhone that is still in the works. If you’d like to chat about your next design project, please <a href="/keeping-in-touch">get in touch</a>.</p>
+					<p>Over the last nine years, I've worked in print and digital design for startups and national brands. After five years of working in the agency world, the last few years has revolved around more digital-product design and development. I currently run <a href="http://emersonstone.com/" alt="Emerson Stone Design, Branding & Development in Boulder, CO">Emerson Stone</a> with my partner Jamie. If you’d like to chat about your next design project, please <a href="/keeping-in-touch">get in touch</a>.</p>
 				</div>
 			</div>
 
