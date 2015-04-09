@@ -25,7 +25,7 @@
 						</ul>
 					</div>
 					<div class="footerinformation">
-						<p>The Studio of Andy Stone is proud to be a Colorado-based company. When not designing, you can find Andy biking or skiing around Boulder and the local mountains.</p>
+						<p>Emerson Stone is proud to be a Colorado-based company. When not designing, you can find Andy biking or skiing around Boulder and the local mountains.</p>
 						<p>If you'd like to use any code or design from this site, you can grab the project from <a href="https://github.com/andyincolor/personalsite" target="_blank">Github</a>—all free to use.</p>
 						<p>1914 Pearl St. Boulder, CO 80302</p>
 					</div>
