@@ -18,7 +18,7 @@
 					<ul>
 						<li><a href="mailto:hi@andy.is?Subject=Hello" target="_top">hi@andy.is</a></li>
 						<li>303.720.6809</li>
-						<li>1910 Pearl St.<br />Boulder, CO 80302</li>
+						<li>1914 Pearl St.<br />Boulder, CO 80302</li>
 					</ul>
 				</div>
 				<div class="contactinformation">
@@ -60,7 +60,7 @@
 			var map = new google.maps.Map(mapElement, mapOptions);
 			var marker = new google.maps.Marker({ position: myLatlng, map: map, title: 'Hello World!'});
 			var infowindow = new google.maps.InfoWindow({
-			  content: '<h3><a href="https://www.google.com/maps/place/1910+Pearl+St,+Boulder,+CO+80302/@40.0198274,-105.270573,17z/data=!3m1!4b1!4m2!3m1!1s0x876bec2a4a863931:0x13292dcc4848351f" target="_blank">The Studio of Andy Stone</a><br />1910 Pearl St.<br />Boulder, CO 80302',
+			  content: '<h3><a href="https://www.google.com/maps/place/1914+Pearl+St,+Boulder,+CO+80302/@40.0198274,-105.270573,17z/data=!3m1!4b1!4m2!3m1!1s0x876bec2a4a863931:0x13292dcc4848351f" target="_blank">Emerson Stone</a><br />1914 Pearl St.<br />Boulder, CO 80302',
 			  maxWidth: 200
 			});
 			google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
