@@ -41,7 +41,7 @@
 
 		<?php include 'inc/ais-footer.php'; ?>
 
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyjFKcUhHvFiII2q0nKgzSSnZpw__CemQ&sensor=false"></script>
 	<script type="text/javascript">
 		google.maps.event.addDomListener(window, 'load', init);
 		function init() {
